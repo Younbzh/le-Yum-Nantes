@@ -75,7 +75,6 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-zinc-950 text-zinc-100">
-
       {/* Navigation */}
       <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-zinc-900/95 backdrop-blur-lg border-b border-white/5' : 'bg-transparent'}`}>
         <div className="max-w-7xl mx-auto px-6 py-4">
@@ -305,36 +304,89 @@ export default function App() {
           </h3>
           <p className="text-zinc-500 text-center mb-12 font-light">{siteConfig.pricing.includes}</p>
           
-          <div className="grid md:grid-cols-2 gap-8 mb-8">
-            <div className="bg-zinc-900/50 border border-white/10 rounded-2xl p-8">
-              <h4 className="text-2xl font-light text-amber-300 mb-6 text-center">Couples</h4>
-              <div className="space-y-4">
-                {siteConfig.pricing.couples.map((item, idx) => (
-                  <div key={idx} className="flex justify-between items-baseline">
-                    <div>
-                      <span className="text-zinc-400 font-light">{item.label}</span>
-                      <p className="text-zinc-500 text-xs">{item.note}</p>
+          <div className="space-y-8 mb-8">
+            {/* Journée */}
+            {siteConfig.pricing.journee && (
+              <div className="bg-zinc-900/50 border border-white/10 rounded-2xl p-8">
+                <h4 className="text-2xl font-light text-amber-300 mb-6 text-center">En Journée</h4>
+                <div className="grid md:grid-cols-3 gap-6">
+                  {siteConfig.pricing.journee.map((item, idx) => (
+                    <div key={idx} className="text-center">
+                      <p className="text-zinc-400 font-light mb-2">{item.label}</p>
+                      {item.note && <p className="text-zinc-500 text-xs mb-3">{item.note}</p>}
+                      <p className="text-3xl font-light text-amber-300">{item.price}</p>
                     </div>
-                    <span className="text-3xl font-light text-amber-300">{item.price}</span>
-                  </div>
-                ))}
+                  ))}
+                </div>
               </div>
-            </div>
+            )}
 
-            <div className="bg-zinc-900/50 border border-white/10 rounded-2xl p-8">
-              <h4 className="text-2xl font-light text-amber-300 mb-6 text-center">Célibataires</h4>
-              <div className="space-y-4">
-                {siteConfig.pricing.singles.map((item, idx) => (
-                  <div key={idx} className="flex justify-between items-baseline">
-                    <div>
-                      <span className="text-zinc-400 font-light">{item.label}</span>
-                      <p className="text-zinc-500 text-xs">{item.note}</p>
+            {/* Vendredi */}
+            {siteConfig.pricing.vendredi && (
+              <div className="bg-zinc-900/50 border border-white/10 rounded-2xl p-8">
+                <h4 className="text-2xl font-light text-amber-300 mb-6 text-center">Vendredi Soir</h4>
+                <div className="grid md:grid-cols-3 gap-6">
+                  {siteConfig.pricing.vendredi.map((item, idx) => (
+                    <div key={idx} className="text-center">
+                      <p className="text-zinc-400 font-light mb-2">{item.label}</p>
+                      {item.note && <p className="text-zinc-500 text-xs mb-3">{item.note}</p>}
+                      <p className="text-3xl font-light text-amber-300">{item.price}</p>
                     </div>
-                    <span className="text-3xl font-light text-amber-300">{item.price}</span>
-                  </div>
-                ))}
+                  ))}
+                </div>
               </div>
-            </div>
+            )}
+
+            {/* Samedi */}
+            {siteConfig.pricing.samedi && (
+              <div className="bg-zinc-900/50 border border-white/10 rounded-2xl p-8">
+                <h4 className="text-2xl font-light text-amber-300 mb-6 text-center">Samedi Soir - Couples uniquement</h4>
+                <div className="grid md:grid-cols-2 gap-6">
+                  {siteConfig.pricing.samedi.map((item, idx) => (
+                    <div key={idx} className="text-center">
+                      <p className="text-zinc-400 font-light mb-2">{item.label}</p>
+                      {item.note && <p className="text-zinc-500 text-xs mb-3">{item.note}</p>}
+                      <p className="text-3xl font-light text-amber-300">{item.price}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {/* Fallback pour structure simple couples/singles */}
+            {siteConfig.pricing.couples && siteConfig.pricing.singles && (
+              <div className="grid md:grid-cols-2 gap-8">
+                <div className="bg-zinc-900/50 border border-white/10 rounded-2xl p-8">
+                  <h4 className="text-2xl font-light text-amber-300 mb-6 text-center">Couples</h4>
+                  <div className="space-y-4">
+                    {siteConfig.pricing.couples.map((item, idx) => (
+                      <div key={idx} className="flex justify-between items-baseline">
+                        <div>
+                          <span className="text-zinc-400 font-light">{item.label}</span>
+                          <p className="text-zinc-500 text-xs">{item.note}</p>
+                        </div>
+                        <span className="text-3xl font-light text-amber-300">{item.price}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                <div className="bg-zinc-900/50 border border-white/10 rounded-2xl p-8">
+                  <h4 className="text-2xl font-light text-amber-300 mb-6 text-center">Célibataires</h4>
+                  <div className="space-y-4">
+                    {siteConfig.pricing.singles.map((item, idx) => (
+                      <div key={idx} className="flex justify-between items-baseline">
+                        <div>
+                          <span className="text-zinc-400 font-light">{item.label}</span>
+                          <p className="text-zinc-500 text-xs">{item.note}</p>
+                        </div>
+                        <span className="text-3xl font-light text-amber-300">{item.price}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            )}
           </div>
         </div>
       </section>
@@ -420,7 +472,6 @@ export default function App() {
           </p>
         </div>
       </footer>
-
     </div>
   );
 }
