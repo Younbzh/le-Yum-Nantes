@@ -1,201 +1,277 @@
-// 📁 src/config/siteConfig.ts - EUPHORIA SPA
+// 📁 src/config/siteConfig.ts - S64 SAUNA BAYONNE
 export const siteConfig = {
-  clubName: "Euphoria Spa",
-  city: "Benesse Maremne",
-  positioning: "Spa & Club Privé Libertin • Glamour, classe et sexy aux portes du Pays Basque",
+  clubName: "S64 Sauna",
+  city: "Bayonne",
+  positioning: "Le Sauna du Pays Basque • Gay, Bi & Mixte sur 600 m²",
   accentMode: "dark" as "dark" | "light",
 
   tone: {
     keywords: [
-      "glamour",
-      "classe",
-      "sexy",
-      "raffiné",
-      "élégant",
-      "respectueux",
-      "discret"
+      "ouvert",
+      "inclusif",
+      "accueillant",
+      "propre",
+      "varié",
+      "festif",
+      "tolérant"
     ],
     promise:
-      "Un véritable havre de bien-être et de liberté sur 250 m² d'espace intérieur. Nous vous accueillons toute l'année pour des soirées à thèmes où règne une atmosphère glamour et raffinée, propice à la détente, à la rencontre et à la découverte de nouveaux plaisirs.",
+      "Le plus grand sauna du Pays Basque depuis plus de 10 ans. Un espace de près de 600 m² entièrement climatisé, élégant et propre, où chacun peut profiter d'un moment de détente et de plaisir dans le respect et la convivialité.",
   },
 
   hero: {
-    title: "Bienvenue à Euphoria Spa",
-    subtitle: "Spa & Club Privé Libertin",
-    tagline: "\"Un havre de bien-être et de liberté\"",
-    description: "Situé aux portes du Pays Basque et des Landes, sur 250 m² d'espace glamour et raffiné",
-    cta: "Découvrir Euphoria"
+    title: "Bienvenue au S64",
+    subtitle: "Le Sauna du Pays Basque",
+    tagline: "\"600 m² de détente et de plaisir à Bayonne\"",
+    description: "Le seul sauna de Bayonne et du Pays Basque avec une programmation complète : Gay, Bi et Mixte",
+    cta: "Découvrir le S64"
   },
 
   audience: {
-    primary: "Couples",
-    secondary: "Dames seules",
-    tertiary: "Hommes seuls (nombre proportionné)",
-    philosophy: "Que vous soyez habitué(e) ou débutant(e), de tous âges, notre établissement vous offre un cadre élégant et respectueux des envies de chacun. Euphoria est un club où règne une atmosphère glamour et raffinée. Le respect et la discrétion sont nos maîtres mots. Les samedis soirs sont totalement réservés aux couples et aux femmes seules."
+    primary: "Public Gay",
+    secondary: "Couples mixtes et bi",
+    tertiary: "Toutes orientations selon programmation",
+    philosophy: "Au S64, nous proposons une programmation diversifiée pour accueillir tous les publics. Que vous soyez gay, bi, ou en couple mixte, vous trouverez des journées dédiées à vos envies. Notre tarif est le même pour tous, sans discrimination. La bisexualité masculine est omniprésente lors des soirées mixtes, une sexualité open est donc vivement conseillée."
   },
 
   spaces: [
     {
-      title: "Euphoria Club",
-      emoji: "🎊",
-      description: "Bar et Night-Club",
-      details: "Piste de danse avec DJ, cage et barre de pole dance pour toutes les audaces. Ambiance lounge en journée, club festif en soirée"
-    },
-    {
-      title: "Euphoria Spa",
+      title: "Jacuzzi",
       emoji: "🌊",
-      description: "Espace balnéo détente",
-      details: "Douches, sauna et bain à bulles dans un espace naturiste pour vous délasser ou vous rapprocher dans les bulles"
+      description: "Bain bouillonnant spacieux",
+      details: "Un grand bain à bulles où vous pourrez vous détendre et faire des rencontres dans une ambiance chaleureuse"
     },
     {
-      title: "Summer Pool",
-      emoji: "🏖️",
-      description: "Plage naturiste libertine",
-      details: "Votre plage privée pour les beaux jours, espace extérieur naturiste et libertin"
+      title: "Sauna Finlandais",
+      emoji: "🔥",
+      description: "Chaleur sèche traditionnelle",
+      details: "Un sauna maintenu à la température parfaite pour une détente profonde et des moments intenses"
     },
     {
-      title: "Salons de Relaxation",
+      title: "Hammam",
+      emoji: "💨",
+      description: "Vapeur et chaleur humide",
+      details: "Espace hammam pour une purification complète dans une atmosphère sensuelle"
+    },
+    {
+      title: "Cabines Privées",
+      emoji: "🚪",
+      description: "Multiples espaces de jeux",
+      details: "Cabines sobrement décorées avec gel et préservatifs à disposition. Propreté irréprochable"
+    },
+    {
+      title: "Douches Premium",
+      emoji: "🚿",
+      description: "Espace douches moderne",
+      details: "Douches spacieuses incluant une cabine pour douche intime comme on aimerait en voir partout"
+    },
+    {
+      title: "Salles de Repos",
       emoji: "🛋️",
-      description: "Deux espaces de détente",
-      details: "Des salons cosy à proximité de l'espace balnéo pour des moments de complicité"
-    },
-    {
-      title: "Espace Tapas",
-      emoji: "🍷",
-      description: "Restauration légère",
-      details: "Tapas offerts les jeudis (20h-22h) et samedis (20h-21h30) pour partager un moment convivial"
-    },
-    {
-      title: "Bar Central",
-      emoji: "🍸",
-      description: "Le point de rencontre",
-      details: "Bar convivial pour profiter d'un verre dans une ambiance chaleureuse et élégante"
+      description: "Zones de détente",
+      details: "Nombreuses salles de repos climatisées pour récupérer entre deux moments chauds"
     }
   ],
 
   values: [
-    { text: "3 espaces en 1", icon: "🎯" },
-    { text: "Glamour & Raffinement", icon: "💎" },
-    { text: "Respect & Discrétion", icon: "🤝" },
-    { text: "Dress code strict", icon: "👗" },
-    { text: "250 m² d'espace", icon: "🏢" }
+    { text: "600 m² d'espace", icon: "🏢" },
+    { text: "Entièrement climatisé", icon: "❄️" },
+    { text: "Tarif unique pour tous", icon: "💰" },
+    { text: "Soirées thématiques", icon: "🎉" },
+    { text: "Plus de 10 ans", icon: "🎂" }
   ],
 
   dressCode: {
-    ladies: "Pantalons, shorts, claquettes et baskets INTERDITS. Optez pour une robe ou jupe + talons pour révéler toute votre sensualité",
-    gentlemen: "Bermudas et claquettes INTERDITS. Pantalon + chemise ou polo exigé. Sneakers acceptées",
-    spirit: "Euphoria est un club libertin et sélect, où l'élégance et le raffinement sont de mise. Une tenue soignée est exigée pour préserver cette ambiance chic et sensuelle."
+    ladies: "Tenue sauna standard - Serviette fournie",
+    gentlemen: "Tenue sauna standard - Serviette fournie",
+    spirit: "Au S64, l'ambiance est décontractée et conviviale. Venez comme vous êtes, une serviette vous sera fournie à l'entrée."
   },
+
+  // Planning unique du S64 avec rotation Gay/Bi/Mixte
+  weeklySchedule: [
+    {
+      day: "Dimanche",
+      hours: "14h - 00h",
+      orientation: "100% Gay",
+      theme: "Soirée Mousse",
+      description: "La soirée mousse incontournable du S64"
+    },
+    {
+      day: "Lundi",
+      hours: "14h - 00h",
+      orientation: "100% Gay",
+      theme: "Black Cabine",
+      description: "Soirée spéciale dans le noir pour plus de sensations"
+    },
+    {
+      day: "Mardi",
+      hours: "14h - 02h",
+      orientation: "Mixte",
+      theme: "Soirée Minets",
+      description: "Toutes tendances bienvenues. Spécial -25 ans à 7€"
+    },
+    {
+      day: "Mercredi",
+      hours: "14h - 00h",
+      orientation: "100% Gay",
+      theme: "Naturiste",
+      description: "Soirée naturiste 100% gay"
+    },
+    {
+      day: "Jeudi",
+      hours: "14h - 02h",
+      orientation: "Bi",
+      theme: "Soirée Bi",
+      description: "Dédiée à la bisexualité, ouvert à tous"
+    },
+    {
+      day: "Vendredi",
+      hours: "14h - 02h",
+      orientation: "Mixte",
+      theme: "Week-end Mixte",
+      description: "Toutes tendances pour bien démarrer le week-end"
+    },
+    {
+      day: "Samedi",
+      hours: "14h - 02h",
+      orientation: "100% Gay",
+      theme: "Soirées thématiques",
+      description: "Bears, Fluo, et autres thématiques variées"
+    }
+  ],
 
   events: [
     {
-      title: "Jeudi Après-midi & Soirée",
-      schedule: "Jeudi 14h - 01h",
-      description: "Soirée mixte avec tapas de 20h à 22h",
-      atmosphere: "Ambiance lounge décontractée, idéale pour découvrir le club en douceur"
+      title: "Soirées 100% Gay",
+      schedule: "Dimanche, Lundi, Mercredi, Samedi",
+      description: "Clientèle exclusivement masculine",
+      atmosphere: "L'essentiel de la programmation avec des soirées thématiques variées"
     },
     {
-      title: "Vendredi Soir",
-      schedule: "Vendredi 20h - 02h",
-      description: "Soirée mixte - Couples, Dames seules & Hommes seuls",
-      atmosphere: "Démarrez le week-end dans une ambiance festive et glamour"
+      title: "Soirée Mousse du Dimanche",
+      schedule: "Chaque dimanche 14h-00h",
+      description: "La soirée phare du S64",
+      atmosphere: "Ambiance festive garantie dans une mer de mousse"
     },
     {
-      title: "Samedi Soir Premium",
-      schedule: "Samedi 20h - 03h",
-      description: "EXCLUSIVEMENT Couples et Dames seules + Tapas 20h-21h30",
-      atmosphere: "La soirée d'élite avec DJ, ambiance club et tapas inclus"
+      title: "Black Cabine du Lundi",
+      schedule: "Chaque lundi 14h-00h",
+      description: "Soirée dans le noir",
+      atmosphere: "Laissez vos autres sens prendre le dessus pour plus d'intensité"
     },
     {
-      title: "Dimanche Détente",
-      schedule: "Dimanche 14h - 19h30",
-      description: "Soirée mixte en journée",
-      atmosphere: "Terminez le week-end en beauté dans une ambiance décontractée"
+      title: "Mercredi Naturiste",
+      schedule: "Chaque mercredi 14h-00h",
+      description: "100% gay et 100% naturiste",
+      atmosphere: "Liberté totale dans le plus simple appareil"
+    },
+    {
+      title: "Jeudi Bi",
+      schedule: "Chaque jeudi 14h-02h",
+      description: "Soirée dédiée à la bisexualité",
+      atmosphere: "Pour ceux qui apprécient tous les plaisirs sans distinction"
+    },
+    {
+      title: "Mardi & Vendredi Mixtes",
+      schedule: "14h-02h",
+      description: "Couples et célibataires, toutes orientations",
+      atmosphere: "Ambiance open avec forte présence de bisexualité masculine"
+    },
+    {
+      title: "Samedi Thématique",
+      schedule: "Samedi 14h-02h",
+      description: "Bears, Fluo, et autres thèmes",
+      atmosphere: "Consultez le site pour les thématiques du mois"
     }
   ],
 
   pricing: {
-    jeudi: [
-      { label: "Couples", price: "30€", note: "+ 1 conso/pers" },
-      { label: "Hommes seuls", price: "35€", note: "+ 1 consommation" },
-      { label: "Avec tapas & vin", price: "+15€", note: "Couple 50€ / Homme 45€" }
+    gay: [
+      { label: "Entrée standard", price: "20€", note: "Dim, Lun, Mer, Sam" },
+      { label: "Moins de 25 ans", price: "7€", note: "Tarif jeune" },
+      { label: "Formule DUO", price: "33€", note: "Couple ou amis" },
+      { label: "Happy Night", price: "15€", note: "Dès 19h (21h samedi)" }
     ],
-    vendredi: [
-      { label: "Couples", price: "45€", note: "+ 1 conso/pers" },
-      { label: "Hommes seuls", price: "50€", note: "+ 1 consommation" },
-      { label: "Dames seules", price: "Tarif préférentiel", note: "Nous contacter" }
+    bi: [
+      { label: "Homme seul", price: "25€", note: "Jeudi toute la journée" },
+      { label: "Couple", price: "20€", note: "Jeudi" },
+      { label: "Femme seule", price: "Gratuit", note: "Jeudi" }
     ],
-    samedi: [
-      { label: "Couples", price: "45€", note: "+ tapas & vin + 1 conso/pers" },
-      { label: "Dames seules", price: "Tarif préférentiel", note: "Nous contacter" }
+    mixte: [
+      { label: "Homme seul", price: "25€", note: "Mardi & Vendredi" },
+      { label: "Couple", price: "20€", note: "Mardi & Vendredi" },
+      { label: "Femme seule", price: "Gratuit", note: "Mardi & Vendredi" }
     ],
-    dimanche: [
-      { label: "Couples", price: "40€", note: "+ 1 conso/pers" },
-      { label: "Hommes seuls", price: "50€", note: "+ 1 consommation" }
-    ],
-    includes: "🎁 Offre spéciale : Achat d'une bouteille (Alcool ou Champagne 100€) = Entrée Club+Spa offerte pour 2 personnes • 🎉 Formule Week-End : Venir le vendredi = Samedi offert"
+    includes: "Serviette fournie • Gel et préservatifs à disposition • Vestiaire sécurisé"
   },
 
   contact: {
     address: {
-      street: "D810 - Chemin des Sablerets",
-      city: "40220 Benesse Maremne",
-      region: "Entre Pays Basque et Landes",
-      access: "1 minute de la sortie 8 d'autoroute A63 • À deux pas de Capbreton et Hossegor"
+      street: "70 boulevard Alsace-Lorraine",
+      city: "64100 Bayonne",
+      region: "Pays Basque",
+      access: "Centre-ville de Bayonne"
     },
-    phone: "05 58 72 58 68",
-    email: "contact@euphoriaspa.fr",
-    website: "www.euphoriaspa.fr",
+    phone: "À confirmer",
+    email: "infos@s64-sauna-bayonne.com",
+    website: "www.s64-sauna-bayonne.com",
     hours: [
-      { day: "Lundi - Mercredi", time: "Fermé" },
-      { day: "Jeudi", time: "14h - 01h (Mixte + Tapas)" },
-      { day: "Vendredi", time: "20h - 02h (Mixte)" },
-      { day: "Samedi", time: "20h - 03h (Couples uniquement + Tapas)" },
-      { day: "Dimanche", time: "14h - 19h30 (Mixte)" }
+      { day: "Dimanche", time: "14h - 00h (100% Gay)" },
+      { day: "Lundi", time: "14h - 00h (100% Gay)" },
+      { day: "Mardi", time: "14h - 02h (Mixte)" },
+      { day: "Mercredi", time: "14h - 00h (100% Gay)" },
+      { day: "Jeudi", time: "14h - 02h (Bi)" },
+      { day: "Vendredi", time: "14h - 02h (Mixte)" },
+      { day: "Samedi", time: "14h - 02h (100% Gay)" }
     ],
-    parking: "Parking privé sur place • Service navette depuis hôtel partenaire disponible"
+    parking: "Stationnement en centre-ville de Bayonne"
   },
 
   highlights: [
-    "3 espaces en 1 : Club + Spa + Summer Pool (été)",
-    "250 m² d'espace glamour et raffiné",
-    "Soirées à thèmes chaque week-end",
-    "À proximité des plages naturistes de Capbreton/Hossegor",
-    "Accès facile : 1 min sortie A63",
-    "Hôtel partenaire avec service navette",
-    "Formule Week-End avantageuse",
-    "Tapas offerts jeudis et samedis",
-    "Ambiance glamour, classe et sexy",
-    "Hommes seuls acceptés avec comportement irréprochable",
-    "Samedis réservés aux couples et dames seules"
+    "Le plus grand sauna du Pays Basque (600 m²)",
+    "Plus de 10 ans d'expérience",
+    "Entièrement climatisé",
+    "Programmation variée : Gay, Bi, Mixte",
+    "Tarif unique pour tous - Pas de discrimination",
+    "Soirées thématiques régulières",
+    "Propreté reconnue et irréprochable",
+    "Équipements de qualité",
+    "Jacuzzi spacieux",
+    "Cabine douche intime unique",
+    "Gel et préservatifs partout",
+    "Ambiance conviviale et accueillante"
   ],
 
   features: [
-    "Night-Club avec DJ",
-    "Piste de danse + Cage + Pole dance",
-    "Espace balnéo : sauna + jacuzzi",
-    "Douches et vestiaires",
-    "2 salons de relaxation",
-    "Bar central convivial",
-    "Summer Pool (plage naturiste)",
-    "Service tapas",
-    "Parking privé",
-    "Service navette hôtel"
+    "Jacuzzi / Bain bouillonnant",
+    "Sauna finlandais",
+    "Hammam",
+    "Multiples cabines de jeux",
+    "Douches modernes",
+    "Cabine douche intime",
+    "Salles de repos",
+    "Vestiaires sécurisés",
+    "Climatisation intégrale",
+    "Bar"
   ],
 
-  weekendFormula: {
-    title: "Formule Week-End",
-    description: "Profitez pleinement de votre séjour : si vous venez le vendredi soir, l'entrée du samedi soir vous est offerte !",
-    conditions: "Valable selon conditions prévues, hors soirées spéciales ou privées"
-  },
+  thematicEvents: [
+    { name: "Soirée Mousse", day: "Dimanche", icon: "🫧" },
+    { name: "Black Cabine", day: "Lundi", icon: "🖤" },
+    { name: "Minets", day: "Mardi", icon: "👔" },
+    { name: "Naturiste", day: "Mercredi", icon: "🌿" },
+    { name: "Bi", day: "Jeudi", icon: "🔀" },
+    { name: "Bears", day: "Variable", icon: "🐻" },
+    { name: "Fluo", day: "Variable", icon: "💡" }
+  ],
 
   strategy: {
     goal:
-      "Mettre en avant le concept unique 3-en-1 d'Euphoria Spa : un club glamour, un spa détente et une plage naturiste. Souligner l'élégance, le raffinement et la localisation exceptionnelle entre Pays Basque et Landes.",
+      "Mettre en avant la spécificité unique du S64 : le seul sauna du Pays Basque avec une programmation complète Gay/Bi/Mixte. Souligner les 600 m² d'espace, la propreté, la climatisation et la politique tarifaire équitable.",
     explanation:
-      "Une présentation moderne qui reflète l'ambiance glamour et classe d'Euphoria, tout en mettant en avant ses atouts : situation géographique privilégiée, espaces variés et formules avantageuses.",
+      "Une présentation moderne qui valorise la diversité de la programmation, l'inclusion, et la qualité des installations dans le plus grand sauna de la région.",
   },
 
   disclaimer:
-    "Maquette illustrative non contractuelle, destinée à présenter une version moderne du site d'Euphoria Spa.",
+    "Maquette illustrative non contractuelle, destinée à présenter une version moderne du site du S64 Sauna Bayonne.",
 };
