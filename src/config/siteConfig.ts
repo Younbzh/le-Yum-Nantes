@@ -1,284 +1,317 @@
-// 📁 src/config/siteConfig.ts - LE LOKAL PAU
 export const siteConfig = {
-  clubName: "Le Lokal",
-  city: "Pau",
-  positioning: "Complexe libertin 3 en 1 • Sauna + Cinéma + Sex-shop • 250 m² au cœur de Pau",
-  accentMode: "dark" as "dark" | "light",
+  // IDENTITÉ
+  clubName: "Le Jardin des Trésors",
+  city: "Sainte-Hélène",
+  positioning: "Maison d'Assistants Maternels bienveillante dans le Morbihan",
+  accentMode: "light" as "dark" | "light",
 
+  // TONALITÉ
   tone: {
-    keywords: [
-      "tolérant",
-      "propre",
-      "convivial",
-      "accueillant",
-      "authentique",
-      "respectueux",
-      "chaleureux"
-    ],
-    promise:
-      "Le Lokal est un complexe unique à Pau qui réunit un sex-shop, un cinéma permanent et un sauna-balnéo de 250 m² dans un cadre authentique où la pierre apparente est superbement mise en valeur. Un lieu tolérant envers toutes les sexualités où règne la propreté et la convivialité.",
+    keywords: ["bienveillance", "éveil", "confiance", "épanouissement"],
+    promise: "Un lieu d'accueil chaleureux où chaque enfant grandit à son rythme, entouré d'une équipe professionnelle et passionnée qui accompagne avec douceur les premiers pas vers l'autonomie et la socialisation."
   },
 
+  // HERO (première section)
   hero: {
-    title: "Bienvenue au Lokal",
-    subtitle: "Complexe Libertin à Pau",
-    tagline: "\"3 en 1 : Sex-shop • Cinéma • Sauna de 250 m²\"",
-    description: "Le seul complexe complet de Pau alliant shopping coquin, cinéma pour adultes et espace balnéo",
-    cta: "Découvrir Le Lokal"
+    title: "Le Jardin des Trésors",
+    subtitle: "Maison d'Assistants Maternels à Sainte-Hélène",
+    tagline: "Où chaque enfant est un trésor précieux",
+    description: "Un cocon bienveillant pour l'éveil et l'épanouissement de vos tout-petits de 10 semaines à 3 ans",
+    cta: "Découvrir notre projet"
   },
 
+  // PUBLIC
   audience: {
-    primary: "Toutes tendances",
-    secondary: "Couples et hommes seuls",
-    tertiary: "Clientèle masculine les mercredi et dimanche",
-    philosophy: "Au Lokal, toutes les sexualités se croisent dans le respect et la tolérance. Que vous soyez en couple, homme seul, gay, bi, hétéro ou curious, vous êtes les bienvenus dans notre espace convivial et propre. Une atmosphère chaleureuse où chacun peut s'exprimer librement."
+    primary: "Enfants de 10 semaines à l'entrée à l'école maternelle",
+    secondary: "Parents recherchant un accueil familial et professionnel",
+    tertiary: "Familles de Sainte-Hélène et communes environnantes (Merlevenez, Nostang, Plouhinec)",
+    philosophy: "Notre MAM offre un accueil à mi-chemin entre la garde individuelle et la crèche collective. Nous proposons un environnement sécurisant et stimulant où chaque enfant est respecté dans son individualité, son rythme et ses besoins, tout en bénéficiant de la richesse de la vie en petit groupe."
   },
 
+  // ESPACES
   spaces: [
     {
-      title: "Grand Hammam",
-      emoji: "💨",
-      description: "Capacité 25 personnes à 43°C",
-      details: "Hammam spacieux avec diffuseur d'huiles essentielles aromatiques pour une expérience luxueuse et relaxante"
+      title: "Salle de jeux et d'éveil",
+      emoji: "🎨",
+      description: "Espace principal d'activités",
+      details: "Grande pièce lumineuse aménagée avec différents coins thématiques : coin lecture, espace motricité, jeux symboliques (dinette, poupées), construction. Un environnement pensé pour stimuler la curiosité et l'imagination des enfants."
     },
     {
-      title: "Sauna Sec",
-      emoji: "🔥",
-      description: "Accueille jusqu'à 10 personnes",
-      details: "Sauna traditionnel à chaleur sèche pour des moments de détente intense entre amis"
+      title: "Chambre et espace repos",
+      emoji: "😴",
+      description: "Zone calme pour les siestes",
+      details: "Espace dédié au sommeil avec des lits adaptés à chaque âge. Ambiance apaisante et sécurisante où chaque enfant peut se reposer selon son rythme individuel. Chaque enfant a son propre linge de lit personnalisé."
     },
     {
-      title: "Piscine à Bulles & Jacuzzi",
-      emoji: "🌊",
-      description: "10 000 litres d'eau",
-      details: "Grande piscine avec jacuzzi intégré et pédiluve pour une hygiène optimale"
+      title: "Coin repas",
+      emoji: "🍽️",
+      description: "Espace convivial pour les repas",
+      details: "Table et chaises adaptées aux tout-petits pour partager les repas dans une ambiance chaleureuse. Moment privilégié d'échange et de découverte gustative, dans le respect du rythme alimentaire de chacun."
     },
     {
-      title: "10 Cabines Climatisées",
-      emoji: "🚪",
-      description: "Confortablement équipées",
-      details: "Cabines privées climatisées pour plus d'intimité avec gel et préservatifs à disposition"
+      title: "Espace change et soins",
+      emoji: "🧸",
+      description: "Zone hygiène et bien-être",
+      details: "Espace dédié aux changes et aux soins quotidiens, aménagé pour garantir confort et sécurité. Produits d'hygiène adaptés aux peaux sensibles des bébés."
     },
     {
-      title: "Zone Cruising",
-      emoji: "🔒",
-      description: "Espace de rencontres",
-      details: "Zone dédiée aux rencontres spontanées dans un environnement propre et respectueux"
-    },
-    {
-      title: "Sex-shop",
-      emoji: "🛍️",
-      description: "Shopping coquin",
-      details: "Boutique glamour et ludique avec produits sexy dans une atmosphère de confiance"
-    },
-    {
-      title: "Cinéma Permanent",
-      emoji: "🎬",
-      description: "Films pour adultes",
-      details: "Salle de projection permanente pour des moments de détente visuelle"
-    },
-    {
-      title: "Bar",
-      emoji: "🥤",
-      description: "Boissons sans alcool",
-      details: "Espace convivial pour se rafraîchir et faire connaissance"
-    },
-    {
-      title: "Fumoir",
-      emoji: "💨",
-      description: "Espace fumeurs",
-      details: "Zone dédiée aux amateurs de tabac"
+      title: "Jardin extérieur",
+      emoji: "🌳",
+      description: "Espace de découverte en plein air",
+      details: "Jardin clos et sécurisé pour profiter des beaux jours. Jeux d'extérieur, bac à sable, potager pédagogique. Les enfants découvrent la nature, les saisons et développent leur motricité en plein air."
     }
   ],
 
+  // VALEURS
   values: [
-    { text: "Complexe 3 en 1", icon: "🏪" },
-    { text: "250 m² balnéo", icon: "🏢" },
-    { text: "Propreté reconnue", icon: "✨" },
-    { text: "Toutes tendances", icon: "🌈" },
-    { text: "Tarif unique 18€", icon: "💰" }
+    { text: "Bienveillance", icon: "💖" },
+    { text: "Respect du rythme", icon: "⏰" },
+    { text: "Éveil sensoriel", icon: "🎨" },
+    { text: "Sécurité affective", icon: "🛡️" },
+    { text: "Autonomie progressive", icon: "🌱" },
+    { text: "Travail en équipe", icon: "👥" }
   ],
 
-  dressCode: {
-    ladies: "Tenue libre - Serviette fournie à l'entrée",
-    gentlemen: "Tenue libre - Serviette fournie à l'entrée",
-    spirit: "Au Lokal, l'ambiance est décontractée et tolérante. Venez comme vous êtes, une serviette vous sera fournie. L'essentiel est le respect mutuel."
-  },
-
-  weeklySchedule: [
-    {
-      day: "Lundi",
-      hours: "13h - 20h",
-      orientation: "Toutes tendances",
-      theme: "Mixte et convivial",
-      description: "Ouvert à tous dans une ambiance chaleureuse"
-    },
-    {
-      day: "Mardi",
-      hours: "13h - 20h",
-      orientation: "Toutes tendances",
-      theme: "Mixte et convivial",
-      description: "Accueil de toutes les sexualités"
-    },
-    {
-      day: "Mercredi",
-      hours: "13h - 20h",
-      orientation: "100% Masculin",
-      theme: "Journée gay",
-      description: "Réservé à la clientèle masculine"
-    },
-    {
-      day: "Jeudi",
-      hours: "13h - 00h",
-      orientation: "Toutes tendances",
-      theme: "Soirée prolongée mixte",
-      description: "Ouverture jusqu'à minuit pour profiter plus longtemps"
-    },
-    {
-      day: "Vendredi",
-      hours: "13h - 02h",
-      orientation: "Toutes tendances",
-      theme: "Week-end commence !",
-      description: "Ouverture jusqu'à 2h du matin pour lancer le week-end"
-    },
-    {
-      day: "Samedi",
-      hours: "13h - 02h",
-      orientation: "Toutes tendances",
-      theme: "Grande soirée mixte",
-      description: "La soirée phare de la semaine jusqu'à 2h"
-    },
-    {
-      day: "Dimanche",
-      hours: "13h - 20h",
-      orientation: "100% Masculin",
-      theme: "Après-midi gay",
-      description: "Réservé à la clientèle masculine"
-    }
-  ],
-
-  events: [
-    {
-      title: "Soirées Toutes Tendances",
-      schedule: "Lundi, Mardi, Jeudi, Vendredi, Samedi",
-      description: "Ouvert à tous : couples, hommes, femmes, toutes orientations",
-      atmosphere: "Ambiance mixte où toutes les sexualités se croisent dans le respect et la tolérance"
-    },
-    {
-      title: "Journées 100% Masculines",
-      schedule: "Mercredi & Dimanche 13h-20h",
-      description: "Réservé à la clientèle masculine gay et bi",
-      atmosphere: "Espace dédié aux hommes dans une ambiance conviviale et respectueuse"
-    },
-    {
-      title: "Week-ends Prolongés",
-      schedule: "Vendredi & Samedi jusqu'à 2h",
-      description: "Ouverture étendue pour profiter pleinement",
-      atmosphere: "Les grandes soirées du Lokal avec ambiance festive jusqu'au bout de la nuit"
-    },
-    {
-      title: "Complexe Complet",
-      schedule: "Tous les jours d'ouverture",
-      description: "Accès au sex-shop, cinéma et sauna",
-      atmosphere: "Trois expériences en un seul lieu pour une visite complète"
-    }
-  ],
-
-  pricing: {
-    standard: [
-      { label: "Homme seul", price: "18€", note: "Tarif unique" },
-      { label: "Couple", price: "18€", note: "Pour deux personnes" }
-    ],
-    includes: "Accès complet au sauna-balnéo 250 m² • Serviette fournie • Gel et préservatifs • Vestiaires sécurisés • Bar (boissons sans alcool)"
-  },
-
-  contact: {
-    address: {
-      street: "3 rue Duboué",
-      city: "64000 Pau",
-      region: "Pyrénées-Atlantiques",
-      access: "Centre-ville de Pau"
-    },
-    phone: "05 59 84 69 85",
-    email: "contact@le-lokal.fr",
-    website: "www.le-lokal.fr",
-    hours: [
-      { day: "Lundi - Mardi", time: "13h - 20h (Toutes tendances)" },
-      { day: "Mercredi", time: "13h - 20h (100% Masculin)" },
-      { day: "Jeudi", time: "13h - 00h (Toutes tendances)" },
-      { day: "Vendredi - Samedi", time: "13h - 02h (Toutes tendances)" },
-      { day: "Dimanche", time: "13h - 20h (100% Masculin)" }
-    ],
-    parking: "Centre-ville de Pau"
-  },
-
-  highlights: [
-    "Complexe unique 3 en 1 à Pau",
-    "Sex-shop glamour et ludique",
-    "Cinéma permanent pour adultes",
-    "Sauna-balnéo de 250 m²",
-    "Grand hammam 25 personnes avec huiles essentielles",
-    "Sauna sec capacité 10 personnes",
-    "Piscine à bulles 10 000 litres + jacuzzi",
-    "Pédiluve pour hygiène optimale",
-    "10 cabines climatisées confortables",
-    "Zone cruising dédiée",
-    "Vestiaires séparés (idéal couples)",
-    "Pierre apparente mise en valeur",
-    "Propreté irréprochable reconnue",
-    "Accueil chaleureux du patron",
-    "Tolérance envers toutes sexualités",
-    "Tarif unique 18€ sans discrimination",
-    "Bar avec boissons sans alcool",
-    "Fumoir à disposition",
-    "Gel et préservatifs partout",
-    "Ambiance conviviale et respectueuse"
-  ],
-
-  features: [
-    "Hammam 43°C (25 pers.)",
-    "Sauna sec (10 pers.)",
-    "Piscine 10 000L + jacuzzi",
-    "Pédiluve",
-    "10 cabines climatisées",
-    "Zone cruising",
-    "Sex-shop",
-    "Cinéma permanent",
-    "Bar (sans alcool)",
-    "Fumoir",
-    "Vestiaires séparés",
-    "Pierre apparente"
-  ],
-
-  complex3in1: {
-    title: "Un complexe unique à Pau",
-    description: "Le Lokal est le seul établissement de Pau à proposer trois expériences en un seul lieu : un sex-shop glamour pour vos achats coquins, un cinéma permanent pour adultes, et un sauna-balnéo de 250 m² superbement aménagé. Une révolution dans le shopping et le divertissement coquin palois !",
-    spaces: [
+  // PROJET PÉDAGOGIQUE
+  pedagogicalProject: {
+    title: "Notre Projet Pédagogique",
+    introduction: "Notre projet éducatif s'articule autour de valeurs fortes et d'une approche respectueuse de chaque enfant.",
+    principles: [
       {
-        name: "Sex-shop",
-        icon: "🛍️",
-        description: "Boutique sexy, glamour et ludique dans une atmosphère de confiance"
+        title: "Respect du rythme individuel",
+        description: "Chaque enfant est unique. Nous respectons son rythme de développement, ses besoins de sommeil, d'alimentation et d'activités. Pas de pression, mais un accompagnement bienveillant vers l'autonomie."
       },
       {
-        name: "Cinéma",
-        icon: "🎬",
-        description: "Projection permanente de films pour adultes"
+        title: "Sécurité affective",
+        description: "L'assistant maternel référent crée un lien privilégié avec l'enfant et sa famille. Ce repère stable permet à l'enfant de développer sa confiance en lui et envers les adultes qui l'entourent."
       },
       {
-        name: "Sauna-Balnéo",
-        icon: "💦",
-        description: "250 m² d'espaces bien-être et de rencontres"
+        title: "Éveil et découvertes",
+        description: "Des activités variées et adaptées : peinture, pâte à modeler, comptines, musique, lecture, jeux d'eau, manipulation d'objets sensoriels. Chaque jour est une nouvelle découverte !"
+      },
+      {
+        title: "Socialisation en douceur",
+        description: "Le petit groupe permet aux enfants d'apprendre à vivre ensemble : partage, respect des autres, gestion des émotions, tout en conservant une approche individualisée."
+      },
+      {
+        title: "Communication gestuelle associée à la parole",
+        description: "Nous utilisons les signes (langue des signes française adaptée) pour faciliter la communication avec les tout-petits. Cela réduit les frustrations et permet aux enfants de s'exprimer avant même de parler."
+      },
+      {
+        title: "Partenariat avec les parents",
+        description: "Vous êtes les premiers éducateurs de votre enfant. Nous travaillons main dans la main avec vous, dans le respect de vos choix éducatifs et avec des échanges quotidiens sur le vécu de votre enfant."
       }
     ]
   },
 
-  strategy: {
-    goal:
-      "Mettre en avant le concept unique du complexe 3 en 1 (sex-shop + cinéma + sauna), les 250 m² de balnéo avec grand hammam et piscine, la programmation mixte/masculine, la propreté reconnue et le tarif unique égalitaire de 18€.",
-    explanation:
-      "Une présentation qui valorise l'unicité du concept tout-en-un, la tolérance envers toutes les sexualités, la qualité des installations (hammam 25 pers., piscine 10 000L) et l'accueil chaleureux dans un cadre authentique avec pierres apparentes.",
+  // JOURNÉE TYPE
+  typicalDay: {
+    title: "Une journée à la MAM",
+    schedule: [
+      {
+        time: "7h30 - 9h00",
+        activity: "Accueil échelonné",
+        description: "Arrivée progressive des enfants. Temps d'échange avec les parents. Jeux libres et calmes pour démarrer la journée en douceur."
+      },
+      {
+        time: "9h00 - 9h30",
+        activity: "Temps de regroupement",
+        description: "Chanson de bienvenue, comptines, rituels du matin. Observation de la météo, du calendrier. Moment de partage pour commencer la journée ensemble."
+      },
+      {
+        time: "9h30 - 11h30",
+        activity: "Activités dirigées ou sorties",
+        description: "Ateliers créatifs (peinture, collage, pâte à modeler), motricité, lecture, musique. Sorties au RAM (Relais Assistants Maternels), au parc, promenades en forêt selon la météo."
+      },
+      {
+        time: "11h30 - 12h30",
+        activity: "Repas",
+        description: "Moment convivial et éducatif. Menu équilibré adapté à l'âge de chaque enfant. Apprentissage de l'autonomie (manger seul, utiliser les couverts)."
+      },
+      {
+        time: "12h30 - 15h00",
+        activity: "Temps calme et sieste",
+        description: "Chaque enfant se repose selon ses besoins. Musique douce, doudous et sucettes disponibles. Respect du sommeil de chacun."
+      },
+      {
+        time: "15h00 - 16h00",
+        activity: "Réveil échelonné et goûter",
+        description: "Les enfants se réveillent à leur rythme. Goûter sain et équilibré. Moment de câlin et de transition vers les activités de fin de journée."
+      },
+      {
+        time: "16h00 - 18h00",
+        activity: "Jeux libres et départs",
+        description: "Activités calmes, jeux libres dans le jardin si le temps le permet. Départs progressifs avec transmission quotidienne aux parents."
+      },
+      {
+        time: "18h00 - 18h30",
+        activity: "Fin de journée",
+        description: "Derniers départs. Rangement et préparation du lendemain."
+      }
+    ]
   },
 
-  disclaimer:
-    "Maquette illustrative non contractuelle, destinée à présenter une version moderne du site du Lokal.",
+  // ÉQUIPE
+  team: {
+    title: "Notre Équipe",
+    description: "Trois assistantes maternelles diplômées et expérimentées, passionnées par leur métier",
+    members: [
+      {
+        name: "À compléter",
+        role: "Assistante maternelle agréée",
+        description: "Diplômée du CAP Petite Enfance. Expérience en crèche et auprès des familles. Formée aux premiers secours et à la communication gestuelle."
+      },
+      {
+        name: "À compléter",
+        role: "Assistante maternelle agréée",
+        description: "Formation continue en pédagogies alternatives (Montessori, Pikler). Spécialisée dans l'accompagnement des tout-petits de 2 mois à 1 an."
+      },
+      {
+        name: "À compléter",
+        role: "Assistante maternelle agréée",
+        description: "Expérience de 15 ans dans l'accueil à domicile. Formée à la langue des signes et à la diversification alimentaire menée par l'enfant (DME)."
+      }
+    ],
+    note: "Chaque assistante maternelle reste le référent privilégié des enfants dont elle a la charge, tout en travaillant en collaboration avec ses collègues pour offrir un accueil de qualité."
+  },
+
+  // TARIFS
+  pricing: {
+    title: "Tarifs et Aides",
+    introduction: "Le tarif horaire est défini selon la convention collective nationale des assistants maternels.",
+    hourlyRate: {
+      label: "Salaire horaire brut de base",
+      amount: "Entre 3,50€ et 5,00€ de l'heure",
+      note: "À négocier avec l'assistante maternelle référente selon le nombre d'heures et les horaires"
+    },
+    additionalCosts: [
+      {
+        label: "Indemnités d'entretien",
+        amount: "Selon barème légal",
+        description: "Achat de matériel, linge, vaisselle, jeux, charges du local"
+      },
+      {
+        label: "Indemnités de repas",
+        amount: "Si fournis par la MAM",
+        description: "Coût des repas équilibrés préparés ou livrés"
+      },
+      {
+        label: "Frais d'inscription",
+        amount: "À définir",
+        description: "Participation aux frais de fonctionnement de la structure"
+      }
+    ],
+    financialAid: {
+      title: "Aides financières (CAF)",
+      items: [
+        "CMG (Complément de libre choix du Mode de Garde) : prise en charge d'une partie du salaire et des cotisations sociales",
+        "Montant variable selon vos revenus et le nombre d'enfants",
+        "Crédit d'impôt : 50% des sommes versées (dans la limite d'un plafond)",
+        "Aide de votre employeur (selon votre convention collective)"
+      ]
+    },
+    includes: "L'accueil inclut : les activités quotidiennes, le matériel pédagogique, les produits d'hygiène, l'accès au jardin, les sorties culturelles et au RAM (Relais Assistants Maternels)."
+  },
+
+  // HORAIRES ET FONCTIONNEMENT
+  contact: {
+    address: {
+      street: "Adresse à préciser",
+      city: "56700 Sainte-Hélène",
+      region: "Morbihan, Bretagne",
+      access: "Proche du bourg, accessible depuis Merlevenez, Nostang et Plouhinec. Parking possible à proximité."
+    },
+    phone: "À compléter",
+    email: "lejardindestresors.mam@gmail.com",
+    website: "À créer",
+    hours: [
+      { day: "Lundi au Vendredi", time: "7h30 - 18h30" },
+      { day: "Week-end et jours fériés", time: "Fermé" }
+    ],
+    closures: "La MAM est fermée 5 semaines par an : 3 semaines en été, 1 semaine pendant les fêtes de fin d'année, 1 semaine au printemps. Le calendrier des fermetures est communiqué aux familles en début d'année."
+  },
+
+  // INSCRIPTION
+  enrollment: {
+    title: "Inscription et Adaptation",
+    steps: [
+      {
+        step: "1. Premier contact",
+        description: "Contactez-nous par téléphone ou email pour échanger sur vos besoins d'accueil et nos disponibilités."
+      },
+      {
+        step: "2. Visite de la MAM",
+        description: "Venez découvrir les lieux avec votre enfant. Rencontre avec l'équipe et présentation du projet pédagogique."
+      },
+      {
+        step: "3. Pré-inscription",
+        description: "Si notre projet vous correspond, remplissez la fiche de pré-inscription. Nous étudierons votre demande en fonction de nos places disponibles."
+      },
+      {
+        step: "4. Signature du contrat",
+        description: "Contrat de travail entre vous (parents employeurs) et l'assistante maternelle référente. Règlement de fonctionnement de la MAM."
+      },
+      {
+        step: "5. Période d'adaptation",
+        description: "Essentielle ! 1 à 2 semaines progressives pour que votre enfant s'habitue en douceur aux lieux, aux adultes et aux autres enfants."
+      }
+    ],
+    requirements: [
+      "Carnet de santé à jour (vaccinations obligatoires)",
+      "Attestation d'assurance responsabilité civile",
+      "Autorisation de sortie et de soins",
+      "PAI (Projet d'Accueil Individualisé) si allergie ou traitement médical"
+    ]
+  },
+
+  // HIGHLIGHTS
+  highlights: [
+    "Agrément PMI (Protection Maternelle et Infantile)",
+    "Assistantes maternelles diplômées et expérimentées",
+    "Effectif limité pour un accueil personnalisé (maximum 12 enfants)",
+    "Jardin extérieur sécurisé",
+    "Utilisation de la communication gestuelle",
+    "Activités d'éveil variées et adaptées",
+    "Sorties régulières au RAM et dans la nature",
+    "Partenariat avec les parents",
+    "Local aux normes ERP (Établissement Recevant du Public)",
+    "Proche de Lorient, Étel et Plouhinec"
+  ],
+
+  // ÉQUIPEMENTS
+  features: [
+    "Matériel pédagogique adapté à chaque âge",
+    "Jeux d'éveil et matériel sensoriel",
+    "Bibliothèque enfantine fournie",
+    "Matériel de motricité (parcours, tapis)",
+    "Instruments de musique pour enfants",
+    "Matériel d'arts plastiques (peinture, pâte à modeler)",
+    "Lits et matériel de change",
+    "Jardin avec bac à sable et jeux d'extérieur",
+    "Potager pédagogique",
+    "Cuisine équipée pour préparer les repas",
+    "Salle de bain adaptée aux enfants",
+    "Produits d'hygiène bio et respectueux",
+    "Linge de lit personnel pour chaque enfant"
+  ],
+
+  // PARTICULARITÉ : LOCALISATION
+  location: {
+    title: "Sainte-Hélène, un cadre de vie idéal",
+    description: "Située dans le Sud Morbihan, Sainte-Hélène est une commune paisible au bord de la ria d'Étel, offrant un cadre naturel exceptionnel pour l'épanouissement des enfants.",
+    advantages: [
+      "Environnement calme et verdoyant",
+      "Proximité de la nature (rivière d'Étel, sentiers de promenade)",
+      "À 12 km de Lorient",
+      "Communes voisines : Merlevenez, Nostang, Plouhinec, Kervignac",
+      "Accès facile depuis la D158"
+    ]
+  },
+
+  // MÉTA
+  strategy: {
+    goal: "Présenter la MAM Le Jardin des Trésors comme un lieu d'accueil bienveillant, professionnel et rassurant pour les familles de Sainte-Hélène et environs",
+    explanation: "Le site met en avant la qualité de l'accueil, le professionnalisme de l'équipe, le projet pédagogique centré sur le respect de l'enfant, et l'environnement chaleureux de la MAM. L'objectif est de créer un climat de confiance avec les parents."
+  },
+  disclaimer: "La MAM Le Jardin des Trésors est composée d'assistantes maternelles agréées par le Conseil Départemental du Morbihan (PMI). Les parents sont employeurs directs de l'assistante maternelle référente de leur enfant. Les informations présentées sur ce site sont données à titre indicatif et peuvent être modifiées. Pour toute information complémentaire, n'hésitez pas à nous contacter."
 };
