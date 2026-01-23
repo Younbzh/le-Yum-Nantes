@@ -1,38 +1,39 @@
 export const siteConfig = {
   // IDENTITÉ
-  companyName: "MBM Urban Evolution",
-  tagline: "Réparation de motos et scooters à domicile",
-  slogan: "Votre mécanicien vient à vous",
-  city: "Plouisy",
-  region: "Côtes-d'Armor, Bretagne",
+  companyName: "Jez Moto",
+  tagline: "Atelier de réparation de motos",
+  slogan: "Votre spécialiste moto à Pluvigner",
+  city: "Pluvigner",
+  region: "Morbihan, Bretagne",
+  owner: "Thibault Danguin",
   
   // HERO
   hero: {
-    title: "MBM Urban Evolution",
-    subtitle: "Réparation de motos et scooters à domicile",
-    tagline: "Dans un rayon de 100 km autour de Plouisy",
-    description: "Spécialiste de l'entretien et de la réparation de motos et scooters, j'interviens directement chez vous ou sur votre lieu de travail avec mon camion-atelier entièrement équipé. Toutes marques, tous modèles, tous âges.",
+    title: "Jez Moto",
+    subtitle: "Atelier de réparation de motos à Pluvigner",
+    tagline: "Mécanicien passionné à votre service",
+    description: "Spécialisé dans la réparation et l'entretien de motos, Jez Moto vous accueille dans son atelier à Pluvigner. Toutes marques, tous modèles. Travail soigné et tarifs transparents.",
     cta: "Prendre rendez-vous"
   },
 
   // À PROPOS
   about: {
-    title: "Un mécanicien mobile à votre service",
-    story: "MBM Urban Evolution (anciennement MBM Moto) est une activité mobile d'entretien et de réparation de motos et scooters basée à Plouisy, près de Guingamp. Avec mon camion-atelier entièrement équipé, je me déplace directement chez vous pour intervenir sur votre deux ou trois roues.",
-    mission: "Ma mission : vous faire gagner du temps et vous offrir un service de qualité sans que vous ayez à vous déplacer. Plus besoin de transporter votre moto au garage, c'est le garage qui vient à vous !",
-    expertise: "Je répare et entretiens toutes les marques de motos et scooters, quel que soit leur âge. Des révisions d'entretien courant aux réparations plus complexes, j'assure un travail professionnel avec des pièces de qualité.",
-    mobility: "En cas d'intervention plus importante ou de deux roues accidenté, je peux emporter votre moto dans mon camion-atelier pour une réparation en atelier."
+    title: "Un passionné au service de votre moto",
+    story: "Jez Moto est un atelier de réparation de motos créé par Thibault Danguin, mécanicien passionné et expérimenté. Installé à Pluvigner dans le Morbihan, l'atelier propose des services de qualité pour l'entretien et la réparation de votre moto.",
+    mission: "Ma mission : vous offrir un service professionnel, des conseils avisés et un travail de qualité pour que votre moto reste en parfait état. Je mets mon expertise et ma passion au service de tous les motards.",
+    expertise: "Que ce soit pour un entretien courant, une réparation mécanique ou la remise en état d'une moto accidentée, je prends en charge votre deux-roues avec le plus grand soin.",
+    values: "Chez Jez Moto, je privilégie la qualité du travail, la transparence des tarifs et une relation de confiance avec mes clients."
   },
 
   // SERVICES
   services: {
     title: "Mes services",
-    subtitle: "Une gamme complète d'interventions pour votre deux-roues",
+    subtitle: "Une gamme complète pour l'entretien de votre moto",
     items: [
       {
         title: "Entretien courant",
         icon: "🔧",
-        description: "Révisions périodiques selon les préconisations constructeur",
+        description: "Révisions périodiques et entretien régulier",
         details: [
           "Vidange moteur et filtre à huile",
           "Contrôle et réglage de la chaîne",
@@ -41,7 +42,9 @@ export const siteConfig = {
           "Vérification de l'éclairage et de la signalisation",
           "Contrôle de la batterie",
           "Nettoyage du filtre à air",
-          "Révision complète selon le kilométrage"
+          "Révision complète selon le kilométrage",
+          "Préparation hivernale",
+          "Remise en route après hivernage"
         ]
       },
       {
@@ -54,7 +57,9 @@ export const siteConfig = {
           "Réparation de crevaison",
           "Contrôle de la pression",
           "Changement de valves",
-          "Conseil sur le choix des pneumatiques"
+          "Conseil sur le choix des pneumatiques adaptés",
+          "Vérification de l'usure des pneus",
+          "Remplacement des chambres à air si nécessaire"
         ]
       },
       {
@@ -67,7 +72,9 @@ export const siteConfig = {
           "Purge du circuit de freinage",
           "Remplacement du liquide de frein",
           "Contrôle des étriers et pistons",
-          "Réparation des maîtres-cylindres"
+          "Réparation des maîtres-cylindres",
+          "Vérification des durites de frein",
+          "Réglage du frein arrière"
         ]
       },
       {
@@ -80,35 +87,26 @@ export const siteConfig = {
           "Problèmes électriques",
           "Embrayage",
           "Transmission",
-          "Suspension",
+          "Suspension et amortisseurs",
           "Carburateurs et injection",
-          "Démarrage et alternateur"
+          "Démarrage et alternateur",
+          "Réparation de la fourche",
+          "Réglage et synchronisation"
         ]
       },
       {
         title: "Motos accidentées",
         icon: "🚨",
-        description: "Prise en charge des véhicules accidentés",
+        description: "Remise en état de motos accidentées",
         details: [
-          "Enlèvement de la moto accidentée",
-          "Transport en atelier",
           "Expertise des dégâts",
-          "Devis de réparation",
-          "Remise en état",
-          "Restitution après réparation"
-        ]
-      },
-      {
-        title: "Interventions à domicile",
-        icon: "🏠",
-        description: "Service mobile dans un rayon de 100 km",
-        details: [
-          "Intervention à votre domicile",
-          "Intervention sur votre lieu de travail",
-          "Déplacement dans un rayon de 100 km autour de Plouisy",
-          "Camion-atelier entièrement équipé",
-          "Pas besoin de transporter votre moto",
-          "Gain de temps et confort"
+          "Devis détaillé de réparation",
+          "Redressement du cadre si nécessaire",
+          "Remplacement des pièces endommagées",
+          "Remise en état complète",
+          "Contrôle final de sécurité",
+          "Conseils pour l'assurance",
+          "Travail soigné pour une remise à neuf"
         ]
       }
     ]
@@ -116,104 +114,94 @@ export const siteConfig = {
 
   // AVANTAGES
   advantages: {
-    title: "Pourquoi choisir MBM Urban Evolution ?",
+    title: "Pourquoi choisir Jez Moto ?",
     items: [
       {
-        icon: "🚚",
-        title: "Service mobile",
-        description: "Je viens directement chez vous avec mon camion-atelier"
-      },
-      {
-        icon: "⏰",
-        title: "Gain de temps",
-        description: "Plus besoin de vous déplacer au garage"
-      },
-      {
-        icon: "🔧",
-        title: "Atelier complet",
-        description: "Camion équipé avec tous les outils professionnels"
+        icon: "👨‍🔧",
+        title: "Mécanicien passionné",
+        description: "Un professionnel qui aime son métier et vos motos"
       },
       {
         icon: "✅",
         title: "Toutes marques",
-        description: "J'interviens sur toutes les marques et tous les âges"
+        description: "J'interviens sur toutes les marques et tous les modèles"
       },
       {
-        icon: "👨‍🔧",
-        title: "Expertise",
-        description: "Mécanicien professionnel expérimenté"
+        icon: "🔧",
+        title: "Travail soigné",
+        description: "Attention aux détails et finitions de qualité"
       },
       {
         icon: "💰",
         title: "Tarifs transparents",
-        description: "Devis clair avant toute intervention"
+        description: "Devis clair et détaillé avant toute intervention"
+      },
+      {
+        icon: "⏰",
+        title: "Disponibilité",
+        description: "Prise de rendez-vous rapide et flexible"
+      },
+      {
+        icon: "💡",
+        title: "Conseils",
+        description: "Écoute et conseils personnalisés"
+      },
+      {
+        icon: "🛠️",
+        title: "Atelier équipé",
+        description: "Outillage professionnel et pièces de qualité"
       },
       {
         icon: "📍",
-        title: "Rayon de 100 km",
-        description: "Large zone d'intervention autour de Plouisy"
-      },
-      {
-        icon: "🏍️",
-        title: "Tous véhicules",
-        description: "Motos, scooters, 3 roues"
+        title: "Proximité",
+        description: "Atelier situé à Pluvigner, Morbihan"
       }
     ]
   },
 
-  // ZONE D'INTERVENTION
-  zone: {
-    title: "Zone d'intervention",
-    description: "J'interviens dans un rayon de 100 km autour de Plouisy",
-    center: "Plouisy (22200)",
-    radius: "100 km",
-    mainCities: [
-      "Saint-Brieuc",
-      "Guingamp",
-      "Lannion",
-      "Paimpol",
-      "Loudéac",
-      "Lamballe",
-      "Dinan",
-      "Pontivy",
-      "Morlaix",
-      "Tréguier",
-      "Quintin",
-      "Callac",
-      "Rostrenen",
-      "Corlay",
-      "Plouha",
-      "Perros-Guirec",
-      "Plérin",
-      "Pordic",
-      "Langueux",
-      "Trégueux"
-    ],
-    note: "N'hésitez pas à me contacter pour vérifier si votre localisation est dans ma zone d'intervention"
-  },
-
-  // TYPES DE VÉHICULES
-  vehicles: {
-    title: "Véhicules pris en charge",
-    description: "J'interviens sur tous types de deux et trois roues",
+  // TYPES DE MOTOS
+  motorcycles: {
+    title: "Toutes les motos sont les bienvenues",
+    description: "J'interviens sur tous types de motos, quelle que soit la marque",
     types: [
       {
-        name: "Motos",
+        name: "Sportives",
         icon: "🏍️",
-        examples: ["Sportives", "Roadsters", "Trails", "Customs", "GT", "Routières"]
+        examples: ["Supersport", "Superbike", "Sport-GT"]
       },
       {
-        name: "Scooters",
-        icon: "🛵",
-        examples: ["50cc", "125cc", "Maxi-scooters", "Scooters 3 roues"]
+        name: "Roadsters",
+        icon: "🏍️",
+        examples: ["Naked", "Street", "Muscle bike"]
       },
       {
-        name: "Toutes marques",
-        icon: "🔧",
-        examples: ["Yamaha", "Honda", "Kawasaki", "Suzuki", "BMW", "Harley-Davidson", "Triumph", "Ducati", "KTM", "Piaggio", "Peugeot", "et toutes autres marques"]
+        name: "Trails & Adventure",
+        icon: "🏍️",
+        examples: ["Trail", "Adventure", "Enduro"]
+      },
+      {
+        name: "Customs & Cruisers",
+        icon: "🏍️",
+        examples: ["Custom", "Cruiser", "Bobber", "Chopper"]
+      },
+      {
+        name: "GT & Tourisme",
+        icon: "🏍️",
+        examples: ["GT", "Sport-tourisme", "Routière"]
+      },
+      {
+        name: "Classiques & Vintage",
+        icon: "🏍️",
+        examples: ["Café racer", "Scrambler", "Anciennes"]
       }
     ],
-    allAges: "Quel que soit l'âge de votre véhicule, je peux intervenir"
+    brands: [
+      "Yamaha", "Honda", "Kawasaki", "Suzuki", 
+      "BMW", "Ducati", "Triumph", "KTM",
+      "Harley-Davidson", "Indian", "Royal Enfield",
+      "Aprilia", "MV Agusta", "Moto Guzzi",
+      "et toutes autres marques"
+    ]
   },
 
   // PROCESSUS
@@ -223,44 +211,56 @@ export const siteConfig = {
       {
         number: "01",
         title: "Contactez-moi",
-        description: "Appelez-moi ou envoyez un message pour décrire votre besoin"
+        description: "Par téléphone ou message pour décrire votre besoin"
       },
       {
         number: "02",
-        title: "Prise de rendez-vous",
-        description: "Nous convenons ensemble d'un créneau qui vous convient"
+        title: "Rendez-vous",
+        description: "Nous fixons un créneau qui vous convient"
       },
       {
         number: "03",
-        title: "Intervention à domicile",
-        description: "J'arrive chez vous avec mon camion-atelier équipé"
+        title: "Diagnostic",
+        description: "J'examine votre moto et établis un diagnostic précis"
       },
       {
         number: "04",
-        title: "Diagnostic & Devis",
-        description: "J'établis un diagnostic et vous propose un devis clair"
+        title: "Devis",
+        description: "Je vous propose un devis détaillé et transparent"
       },
       {
         number: "05",
         title: "Réparation",
-        description: "J'effectue l'intervention sur place ou j'emporte la moto si nécessaire"
+        description: "J'effectue les travaux avec soin et professionnalisme"
       }
     ]
   },
 
-  // CAMION-ATELIER
-  workshop: {
-    title: "Mon camion-atelier",
-    description: "Un atelier mobile entièrement équipé pour toutes les interventions",
-    features: [
-      "Outillage professionnel complet",
-      "Pont élévateur mobile",
-      "Compresseur",
-      "Machine à pneus",
-      "Équilibreuse",
-      "Valise de diagnostic",
-      "Pièces de rechange courantes",
-      "Espace de travail protégé"
+  // ZONE D'INTERVENTION
+  zone: {
+    title: "Secteur d'intervention",
+    center: "Pluvigner (56330)",
+    mainCities: [
+      "Pluvigner",
+      "Auray",
+      "Carnac",
+      "Vannes",
+      "Lorient",
+      "Ploemeur",
+      "Lanester",
+      "Hennebont",
+      "Quiberon",
+      "Étel",
+      "Erdeven",
+      "Plouharnel",
+      "Locmariaquer",
+      "Baden",
+      "Pluneret",
+      "Sainte-Anne-d'Auray",
+      "Brech",
+      "Landaul",
+      "Landévant",
+      "Baud"
     ]
   },
 
@@ -268,77 +268,72 @@ export const siteConfig = {
   contact: {
     title: "Me contacter",
     address: {
-      street: "3 Kerglas",
-      city: "22200 Plouisy",
-      region: "Côtes-d'Armor, Bretagne"
+      city: "56330 Pluvigner",
+      region: "Morbihan, Bretagne"
     },
-    phone: "06 36 19 10 30",
-    email: "contact@mbmurbanevolution.fr",
+    phone: "À compléter",
+    email: "contact@jezmoto.fr",
     schedule: {
-      title: "Disponibilités",
-      note: "Interventions sur rendez-vous du lundi au samedi",
+      title: "Horaires",
+      note: "Atelier sur rendez-vous",
       details: [
-        "Interventions du lundi au vendredi",
-        "Possibilité le samedi selon disponibilités",
+        "Du lundi au vendredi",
+        "Horaires flexibles",
         "Prise de rendez-vous par téléphone",
-        "Intervention à domicile ou sur lieu de travail"
+        "Atelier situé à Pluvigner"
       ]
     }
   },
 
   // VALEURS
   values: [
-    { text: "Proximité", icon: "🤝" },
-    { text: "Professionnalisme", icon: "⭐" },
-    { text: "Mobilité", icon: "🚚" },
+    { text: "Passion", icon: "❤️" },
+    { text: "Qualité", icon: "⭐" },
     { text: "Expertise", icon: "🔧" },
-    { text: "Rapidité", icon: "⚡" },
-    { text: "Qualité", icon: "✅" }
+    { text: "Transparence", icon: "💎" },
+    { text: "Écoute", icon: "👂" },
+    { text: "Proximité", icon: "🤝" }
   ],
 
   // POINTS FORTS
   highlights: [
-    "Service de réparation mobile à domicile",
-    "Camion-atelier entièrement équipé",
-    "Intervention dans un rayon de 100 km",
-    "Toutes marques, tous âges de véhicules",
-    "Motos et scooters (2 et 3 roues)",
-    "Entretien, révision, réparation",
+    "Atelier de réparation de motos à Pluvigner",
+    "Mécanicien passionné et expérimenté",
+    "Toutes marques, tous modèles",
+    "Entretien courant et révisions",
     "Changement de pneumatiques",
-    "Prise en charge des motos accidentées",
-    "Devis transparent avant intervention",
-    "Mécanicien professionnel expérimenté"
+    "Système de freinage",
+    "Réparations mécaniques",
+    "Remise en état de motos accidentées",
+    "Devis transparent",
+    "Travail soigné et professionnel"
   ],
 
   // FAQ
   faq: [
     {
-      question: "Quels types de véhicules réparez-vous ?",
-      answer: "J'interviens sur toutes les marques de motos et scooters, qu'ils soient à 2 ou 3 roues, et quel que soit leur âge."
+      question: "Quelles marques de motos réparez-vous ?",
+      answer: "Je travaille sur toutes les marques de motos : Yamaha, Honda, Kawasaki, Suzuki, BMW, Ducati, Triumph, Harley-Davidson, KTM et bien d'autres."
     },
     {
-      question: "Dans quelle zone intervenez-vous ?",
-      answer: "Je me déplace dans un rayon de 100 km autour de Plouisy (22200), ce qui couvre les secteurs de Saint-Brieuc, Guingamp, Lannion, Paimpol, Loudéac et leurs environs."
+      question: "Faut-il prendre rendez-vous ?",
+      answer: "Oui, l'atelier fonctionne sur rendez-vous. Contactez-moi par téléphone pour convenir d'un créneau."
     },
     {
-      question: "Que faire si ma moto est en panne et ne démarre pas ?",
-      answer: "Pas de problème ! Je peux venir faire un diagnostic à domicile, et si l'intervention nécessite un transport, j'emporte votre moto dans mon camion-atelier."
+      question: "Faites-vous des devis ?",
+      answer: "Oui, j'établis systématiquement un devis détaillé et transparent avant toute intervention."
     },
     {
-      question: "Pouvez-vous intervenir sur mon lieu de travail ?",
-      answer: "Oui, absolument ! J'interviens à votre domicile ou sur votre lieu de travail, selon votre convenance."
+      question: "Pouvez-vous réparer une moto accidentée ?",
+      answer: "Oui, je prends en charge la remise en état de motos accidentées, de l'expertise à la réparation complète."
     },
     {
-      question: "Comment prendre rendez-vous ?",
-      answer: "Appelez-moi au 06 36 19 10 30 pour convenir d'un rendez-vous qui vous arrange."
+      question: "Intervenez-vous sur les motos anciennes ?",
+      answer: "Oui, je peux travailler sur des motos classiques et vintage."
     },
     {
-      question: "Que se passe-t-il pour les grosses réparations ?",
-      answer: "Pour les interventions plus importantes ou les véhicules accidentés, j'emporte la moto dans mon camion-atelier pour effectuer la réparation, puis je vous la restitue une fois les travaux terminés."
-    },
-    {
-      question: "Avez-vous tout l'équipement nécessaire ?",
-      answer: "Oui, mon camion-atelier est entièrement équipé avec tous les outils professionnels nécessaires pour la plupart des interventions."
+      question: "Où se trouve l'atelier ?",
+      answer: "L'atelier Jez Moto est situé à Pluvigner (56330) dans le Morbihan."
     }
   ],
 
@@ -353,21 +348,22 @@ export const siteConfig = {
     "Diagnostic de panne",
     "Réparations mécaniques",
     "Embrayage",
-    "Suspension",
-    "Motos accidentées"
+    "Suspension et fourche",
+    "Carburateurs et injection",
+    "Remise en état de motos accidentées"
   ],
 
   // SEO
   seo: {
-    title: "MBM Urban Evolution - Réparation Motos & Scooters à Domicile Plouisy (22)",
-    description: "MBM Urban Evolution : mécanicien mobile pour motos et scooters. Intervention à domicile dans un rayon de 100 km autour de Plouisy. Entretien, révision, réparation. Toutes marques.",
-    keywords: "réparation moto domicile, mécanicien moto mobile, entretien scooter Plouisy, garage moto Guingamp, révision moto Saint-Brieuc, camion atelier moto, dépannage moto 22, MBM Urban Evolution, mécanicien deux roues Côtes d'Armor"
+    title: "Jez Moto - Atelier Réparation Motos Pluvigner (56)",
+    description: "Jez Moto : atelier de réparation de motos à Pluvigner. Entretien, révision, réparation mécanique, pneumatiques, freinage. Toutes marques. Mécanicien passionné.",
+    keywords: "réparation moto Pluvigner, garage moto 56, entretien moto Auray, mécanicien moto Vannes, révision moto Carnac, atelier moto Morbihan, Jez Moto, réparation moto Lorient, garage moto Pluvigner"
   },
 
   // THÈME
   theme: {
-    primary: "blue", // Professionnel et fiable
-    accent: "orange", // Dynamique et mobile
-    mode: "light"
+    primary: "red", // Rouge passion moto
+    accent: "slate", // Gris mécanique
+    mode: "dark" // Mode sombre pour ambiance atelier
   }
 };
