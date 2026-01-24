@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Mail, Phone, MapPin, ChevronRight, Wrench, CheckCircle, Award, Zap, AlertCircle } from 'lucide-react';
+import { Menu, X, Mail, Phone, MapPin, ChevronRight, Sparkles, CheckCircle, Clock, Award, Zap } from 'lucide-react';
 import { siteConfig } from './config/siteConfig';
 
 export default function App() {
@@ -20,24 +20,23 @@ export default function App() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-900 via-slate-900 to-gray-800">
       {/* Navigation */}
-      <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-gray-900/95 backdrop-blur-md shadow-lg' : 'bg-transparent'}`}>
+      <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-gray-900/95 backdrop-blur-md shadow-lg shadow-orange-500/10' : 'bg-transparent'}`}>
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-3">
-              <div className="w-12 h-12 bg-gradient-to-br from-red-600 to-red-700 rounded-lg flex items-center justify-center shadow-lg">
-                <Wrench className="text-white" size={28} />
+              <div className="w-12 h-12 bg-gradient-to-br from-orange-600 to-orange-700 rounded-lg flex items-center justify-center shadow-lg shadow-orange-500/30">
+                <Sparkles className="text-white" size={28} />
               </div>
               <div>
                 <h1 className="text-xl font-bold text-white">{siteConfig.companyName}</h1>
-                <p className="text-sm text-red-400">{siteConfig.city}</p>
+                <p className="text-sm text-orange-400">{siteConfig.city}</p>
               </div>
             </div>
 
             <div className="hidden md:flex items-center gap-6">
-              <button onClick={() => scrollToSection('accueil')} className="text-gray-300 hover:text-red-400 transition-colors">Accueil</button>
-              <button onClick={() => scrollToSection('services')} className="text-gray-300 hover:text-red-400 transition-colors">Services</button>
-              <button onClick={() => scrollToSection('motos')} className="text-gray-300 hover:text-red-400 transition-colors">Motos</button>
-              <button onClick={() => scrollToSection('contact')} className="bg-gradient-to-r from-red-600 to-red-700 text-white px-6 py-2 rounded-lg hover:from-red-700 hover:to-red-800 transition-all shadow-lg">
+              <button onClick={() => scrollToSection('accueil')} className="text-gray-300 hover:text-orange-400 transition-colors">Accueil</button>
+              <button onClick={() => scrollToSection('services')} className="text-gray-300 hover:text-orange-400 transition-colors">Services</button>
+              <button onClick={() => scrollToSection('contact')} className="bg-gradient-to-r from-orange-600 to-orange-700 text-white px-6 py-2 rounded-lg hover:from-orange-700 hover:to-orange-800 transition-all shadow-lg shadow-orange-500/30">
                 Contact
               </button>
             </div>
@@ -48,9 +47,9 @@ export default function App() {
           </div>
 
           {isMenuOpen && (
-            <div className="md:hidden absolute top-full left-0 w-full bg-gray-900 shadow-xl py-4">
-              {['accueil', 'services', 'motos', 'contact'].map(section => (
-                <button key={section} onClick={() => scrollToSection(section)} className="block w-full text-left px-4 py-3 text-gray-300 hover:bg-red-900/20 capitalize">
+            <div className="md:hidden absolute top-full left-0 w-full bg-gray-900 shadow-xl py-4 border-t border-orange-500/20">
+              {['accueil', 'services', 'contact'].map(section => (
+                <button key={section} onClick={() => scrollToSection(section)} className="block w-full text-left px-4 py-3 text-gray-300 hover:bg-gray-800 hover:text-orange-400 capitalize">
                   {section}
                 </button>
               ))}
@@ -63,34 +62,34 @@ export default function App() {
       <section id="accueil" className="pt-32 pb-20 px-4">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center">
-            <div className="inline-flex items-center gap-2 bg-red-900/30 px-4 py-2 rounded-full mb-6 shadow-md border border-red-700/50">
-              <Wrench className="text-red-400" size={20} />
-              <span className="text-sm font-medium text-gray-200">Atelier professionnel</span>
+            <div className="inline-flex items-center gap-2 bg-gray-800/50 px-4 py-2 rounded-full mb-6 shadow-md border border-orange-500/30">
+              <Zap className="text-orange-500" size={20} />
+              <span className="text-sm font-medium text-gray-300">Nettoyage & Detailing Professionnel</span>
             </div>
             
-            <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-red-500 via-red-400 to-red-500 bg-clip-text text-transparent">
-              {siteConfig.hero.title}
+            <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-orange-500 via-orange-400 to-blue-500 bg-clip-text text-transparent">
+              {siteConfig.companyName}
             </h1>
             
-            <p className="text-xl md:text-2xl text-red-400 mb-4 font-semibold">
+            <p className="text-xl md:text-2xl text-orange-400 mb-4 font-semibold">
               {siteConfig.hero.subtitle}
             </p>
             
-            <p className="text-lg text-gray-300 mb-6 font-medium">
-              {siteConfig.hero.tagline}
+            <p className="text-lg text-blue-400 mb-6 font-medium">
+              ⚡ {siteConfig.hero.tagline}
             </p>
             
-            <p className="text-lg text-gray-400 mb-8 max-w-3xl mx-auto">
+            <p className="text-lg text-gray-300 mb-8 max-w-3xl mx-auto">
               {siteConfig.hero.description}
             </p>
 
             <div className="flex flex-wrap justify-center gap-4">
-              <a href={`tel:${siteConfig.contact.phone.replace(/\s/g, '')}`} className="bg-gradient-to-r from-red-600 to-red-700 text-white px-8 py-4 rounded-lg font-semibold hover:from-red-700 hover:to-red-800 transition-all shadow-xl flex items-center gap-2">
+              <a href={`tel:${siteConfig.contact.phone.replace(/\s/g, '')}`} className="bg-gradient-to-r from-orange-600 to-orange-700 text-white px-8 py-4 rounded-lg font-semibold hover:from-orange-700 hover:to-orange-800 transition-all shadow-lg shadow-orange-500/30 flex items-center gap-2">
                 <Phone size={20} />
-                Prendre rendez-vous
+                {siteConfig.contact.phone}
               </a>
-              <button onClick={() => scrollToSection('services')} className="bg-gray-800 text-gray-200 px-8 py-4 rounded-lg font-semibold hover:bg-gray-700 transition-all shadow-lg border-2 border-red-700/50">
-                Découvrir mes services
+              <button onClick={() => scrollToSection('services')} className="bg-gray-800 text-gray-300 px-8 py-4 rounded-lg font-semibold hover:bg-gray-700 transition-all shadow-lg border border-orange-500/30">
+                Découvrir nos services
               </button>
             </div>
           </div>
@@ -98,13 +97,13 @@ export default function App() {
       </section>
 
       {/* Values */}
-      <section className="py-12 px-4 bg-gray-800/50">
+      <section className="py-12 px-4 bg-gray-800/30 border-y border-orange-500/10">
         <div className="container mx-auto max-w-6xl">
           <div className="flex flex-wrap justify-center gap-4">
             {siteConfig.values.map((value, index) => (
-              <div key={index} className="bg-gray-800 px-6 py-3 rounded-full shadow-md flex items-center gap-2 hover:shadow-lg transition-shadow border border-red-700/30">
+              <div key={index} className="bg-gray-800/50 px-6 py-3 rounded-full shadow-md flex items-center gap-2 hover:shadow-lg hover:shadow-orange-500/20 transition-all border border-gray-700">
                 <span className="text-2xl">{value.icon}</span>
-                <span className="font-medium text-gray-200">{value.text}</span>
+                <span className="font-medium text-gray-300">{value.text}</span>
               </div>
             ))}
           </div>
@@ -119,20 +118,20 @@ export default function App() {
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-gray-800/50 rounded-2xl p-8 shadow-lg border border-red-700/30">
-              <div className="w-16 h-16 bg-gradient-to-br from-red-600 to-red-700 rounded-full flex items-center justify-center mb-4 shadow-lg">
-                <Wrench className="text-white" size={32} />
+            <div className="bg-gray-800/50 rounded-2xl p-8 shadow-lg border border-orange-500/20">
+              <div className="w-16 h-16 bg-gradient-to-br from-orange-600 to-orange-700 rounded-full flex items-center justify-center mb-4 shadow-lg shadow-orange-500/30">
+                <Sparkles className="text-white" size={32} />
               </div>
-              <h3 className="text-xl font-bold text-white mb-4">Mon atelier</h3>
+              <h3 className="text-xl font-bold text-white mb-4">Notre spécialité</h3>
               <p className="text-gray-300 leading-relaxed mb-4">{siteConfig.about.story}</p>
               <p className="text-gray-300 leading-relaxed">{siteConfig.about.mission}</p>
             </div>
 
-            <div className="bg-gray-800/50 rounded-2xl p-8 shadow-lg border border-red-700/30">
-              <div className="w-16 h-16 bg-gradient-to-br from-red-600 to-red-700 rounded-full flex items-center justify-center mb-4 shadow-lg">
+            <div className="bg-gray-800/50 rounded-2xl p-8 shadow-lg border border-blue-500/20">
+              <div className="w-16 h-16 bg-gradient-to-br from-blue-600 to-blue-700 rounded-full flex items-center justify-center mb-4 shadow-lg shadow-blue-500/30">
                 <Award className="text-white" size={32} />
               </div>
-              <h3 className="text-xl font-bold text-white mb-4">Mon expertise</h3>
+              <h3 className="text-xl font-bold text-white mb-4">Notre expertise</h3>
               <p className="text-gray-300 leading-relaxed mb-4">{siteConfig.about.expertise}</p>
               <p className="text-gray-300 leading-relaxed">{siteConfig.about.values}</p>
             </div>
@@ -148,22 +147,26 @@ export default function App() {
             <p className="text-xl text-gray-400">{siteConfig.services.subtitle}</p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-8 mb-8">
             {siteConfig.services.items.map((service, index) => (
-              <div key={index} className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all hover:-translate-y-2 border border-red-700/30">
+              <div key={index} className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-8 shadow-lg hover:shadow-2xl hover:shadow-orange-500/10 transition-all border border-orange-500/20">
                 <div className="text-5xl mb-4">{service.icon}</div>
-                <h3 className="text-xl font-bold text-white mb-3">{service.title}</h3>
-                <p className="text-red-400 font-semibold mb-4 text-sm">{service.description}</p>
+                <h3 className="text-2xl font-bold text-white mb-3">{service.title}</h3>
+                <p className="text-orange-400 mb-6 font-medium">{service.description}</p>
                 <ul className="space-y-2">
-                  {service.details.slice(0, 6).map((detail, idx) => (
-                    <li key={idx} className="flex items-start gap-2 text-sm text-gray-300">
-                      <CheckCircle className="text-red-500 flex-shrink-0 mt-0.5" size={16} />
-                      <span>{detail}</span>
+                  {service.details.map((detail, idx) => (
+                    <li key={idx} className="flex items-start gap-2">
+                      <CheckCircle className="text-orange-500 flex-shrink-0 mt-0.5" size={18} />
+                      <span className="text-sm text-gray-300">{detail}</span>
                     </li>
                   ))}
                 </ul>
               </div>
             ))}
+          </div>
+
+          <div className="bg-orange-900/20 rounded-2xl p-6 text-center border border-orange-500/30">
+            <p className="text-gray-300 italic">{siteConfig.detailedServices.note}</p>
           </div>
         </div>
       </section>
@@ -177,7 +180,7 @@ export default function App() {
 
           <div className="grid md:grid-cols-4 gap-6">
             {siteConfig.advantages.items.map((advantage, index) => (
-              <div key={index} className="bg-gray-800/50 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 border border-red-700/30 text-center">
+              <div key={index} className="bg-gray-800/50 rounded-xl p-6 shadow-lg hover:shadow-xl hover:shadow-orange-500/10 transition-all hover:-translate-y-1 border border-gray-700 text-center">
                 <div className="text-4xl mb-3">{advantage.icon}</div>
                 <h3 className="font-bold text-white mb-2">{advantage.title}</h3>
                 <p className="text-sm text-gray-400">{advantage.description}</p>
@@ -187,39 +190,21 @@ export default function App() {
         </div>
       </section>
 
-      {/* Motos */}
-      <section id="motos" className="py-20 px-4 bg-gray-800/30">
+      {/* Véhicules */}
+      <section className="py-20 px-4 bg-gray-800/30">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-white mb-4">{siteConfig.motorcycles.title}</h2>
-            <p className="text-xl text-gray-400">{siteConfig.motorcycles.description}</p>
+            <h2 className="text-4xl font-bold text-white mb-4">{siteConfig.vehicles.title}</h2>
+            <p className="text-xl text-gray-400">{siteConfig.vehicles.description}</p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
-            {siteConfig.motorcycles.types.map((type, index) => (
-              <div key={index} className="bg-gray-800/50 rounded-2xl p-6 shadow-lg border border-red-700/30">
-                <div className="text-5xl mb-4 text-center">{type.icon}</div>
-                <h3 className="text-lg font-bold text-white mb-3 text-center">{type.name}</h3>
-                <div className="flex flex-wrap gap-2 justify-center">
-                  {type.examples.map((example, idx) => (
-                    <span key={idx} className="bg-red-900/30 text-red-300 px-3 py-1 rounded-full text-xs border border-red-700/50">
-                      {example}
-                    </span>
-                  ))}
-                </div>
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
+            {siteConfig.vehicles.types.map((type, index) => (
+              <div key={index} className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-6 shadow-lg hover:shadow-xl hover:shadow-orange-500/10 transition-all text-center border border-gray-700">
+                <div className="text-5xl mb-3">{type.icon}</div>
+                <h3 className="font-bold text-white">{type.name}</h3>
               </div>
             ))}
-          </div>
-
-          <div className="bg-gradient-to-r from-red-600 to-red-700 rounded-2xl p-8 shadow-xl">
-            <h3 className="text-2xl font-bold text-white mb-6 text-center">Marques acceptées</h3>
-            <div className="flex flex-wrap gap-3 justify-center">
-              {siteConfig.motorcycles.brands.map((brand, index) => (
-                <span key={index} className="bg-white/20 text-white px-4 py-2 rounded-lg text-sm font-medium">
-                  {brand}
-                </span>
-              ))}
-            </div>
           </div>
         </div>
       </section>
@@ -234,15 +219,15 @@ export default function App() {
           <div className="grid md:grid-cols-5 gap-6">
             {siteConfig.process.steps.map((step, index) => (
               <div key={index} className="relative">
-                <div className="bg-gray-800/50 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all border border-red-700/30 text-center">
-                  <div className="w-16 h-16 bg-gradient-to-br from-red-600 to-red-700 rounded-full flex items-center justify-center mx-auto mb-4 text-white font-bold text-2xl shadow-lg">
+                <div className="bg-gray-800/50 rounded-2xl p-6 shadow-lg hover:shadow-xl hover:shadow-orange-500/10 transition-all border border-gray-700 text-center">
+                  <div className="w-16 h-16 bg-gradient-to-br from-orange-600 to-orange-700 rounded-full flex items-center justify-center mx-auto mb-4 text-white font-bold text-2xl shadow-lg shadow-orange-500/30">
                     {step.number}
                   </div>
                   <h3 className="font-bold text-white mb-2 text-sm">{step.title}</h3>
                   <p className="text-xs text-gray-400 leading-relaxed">{step.description}</p>
                 </div>
                 {index < siteConfig.process.steps.length - 1 && (
-                  <ChevronRight className="hidden md:block absolute top-1/2 -right-3 transform -translate-y-1/2 text-red-600" size={24} />
+                  <ChevronRight className="hidden md:block absolute top-1/2 -right-3 transform -translate-y-1/2 text-orange-500/50" size={24} />
                 )}
               </div>
             ))}
@@ -255,18 +240,18 @@ export default function App() {
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-white mb-4">{siteConfig.zone.title}</h2>
-            <p className="text-2xl font-bold text-red-400 mb-8">📍 {siteConfig.zone.center}</p>
+            <p className="text-lg text-gray-400">{siteConfig.zone.center}</p>
           </div>
 
-          <div className="bg-gray-800/50 rounded-2xl p-8 shadow-xl border border-red-700/30">
-            <h3 className="text-2xl font-bold text-white mb-6 text-center">Villes principales</h3>
-            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4">
+          <div className="bg-gray-800/50 rounded-2xl p-8 shadow-lg border border-orange-500/20">
+            <div className="flex flex-wrap justify-center gap-3 mb-6">
               {siteConfig.zone.mainCities.map((city, index) => (
-                <div key={index} className="bg-red-900/20 px-4 py-3 rounded-lg shadow-md text-center hover:shadow-lg transition-shadow border border-red-700/30">
-                  <span className="font-medium text-gray-200">{city}</span>
-                </div>
+                <span key={index} className="bg-gray-700 px-4 py-2 rounded-full text-sm font-medium text-gray-300 shadow-md border border-gray-600">
+                  {city}
+                </span>
               ))}
             </div>
+            <p className="text-center text-sm text-gray-400 italic">{siteConfig.zone.note}</p>
           </div>
         </div>
       </section>
@@ -280,13 +265,13 @@ export default function App() {
 
           <div className="space-y-6">
             {siteConfig.faq.map((item, index) => (
-              <div key={index} className="bg-gray-800/50 rounded-2xl p-6 shadow-lg border border-red-700/30">
+              <div key={index} className="bg-gray-800/50 rounded-2xl p-6 shadow-lg border border-gray-700">
                 <h3 className="text-lg font-bold text-white mb-3 flex items-start gap-3">
-                  <span className="text-red-400 flex-shrink-0">Q:</span>
+                  <span className="text-orange-500 flex-shrink-0">Q:</span>
                   {item.question}
                 </h3>
                 <p className="text-gray-300 leading-relaxed pl-8">
-                  <span className="text-red-400 font-bold">R:</span> {item.answer}
+                  <span className="text-blue-400 font-bold">R:</span> {item.answer}
                 </p>
               </div>
             ))}
@@ -303,35 +288,38 @@ export default function App() {
 
           <div className="grid md:grid-cols-2 gap-8">
             <div className="space-y-6">
-              <div className="bg-gray-800/50 rounded-2xl p-8 shadow-lg border border-red-700/30">
+              <div className="bg-gray-800/50 rounded-2xl p-8 shadow-lg border border-gray-700">
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-gradient-to-br from-red-600 to-red-700 rounded-full flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 bg-gradient-to-br from-orange-600 to-orange-700 rounded-full flex items-center justify-center flex-shrink-0 shadow-lg shadow-orange-500/30">
                     <MapPin className="text-white" size={20} />
                   </div>
                   <div>
-                    <h3 className="font-bold text-white mb-2">Localisation</h3>
+                    <h3 className="font-bold text-white mb-2">Adresse</h3>
+                    <p className="text-gray-300">{siteConfig.contact.address.street}</p>
                     <p className="text-gray-300">{siteConfig.contact.address.city}</p>
                     <p className="text-gray-400 text-sm mt-2">{siteConfig.contact.address.region}</p>
                   </div>
                 </div>
               </div>
 
-              <div className="bg-gradient-to-br from-red-600 to-red-700 rounded-2xl p-8 shadow-lg">
+              <div className="bg-gradient-to-br from-orange-600 to-orange-700 rounded-2xl p-8 shadow-lg shadow-orange-500/30 text-white">
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center flex-shrink-0">
                     <Phone className="text-white" size={20} />
                   </div>
                   <div>
-                    <h3 className="font-bold text-white mb-2">Téléphone</h3>
-                    <p className="text-white text-lg font-semibold">{siteConfig.contact.phone}</p>
-                    <p className="text-sm text-red-100 mt-2">Appelez pour prendre rendez-vous</p>
+                    <h3 className="font-bold mb-2">Téléphone</h3>
+                    <a href={`tel:${siteConfig.contact.phone.replace(/\s/g, '')}`} className="text-2xl font-bold hover:text-orange-100 transition-colors">
+                      {siteConfig.contact.phone}
+                    </a>
+                    <p className="text-sm text-orange-100 mt-4 font-semibold">💬 {siteConfig.contact.cta}</p>
                   </div>
                 </div>
               </div>
 
-              <div className="bg-gray-800/50 rounded-2xl p-8 shadow-lg border border-red-700/30">
+              <div className="bg-gray-800/50 rounded-2xl p-8 shadow-lg border border-gray-700">
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-gradient-to-br from-red-600 to-red-700 rounded-full flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 bg-gradient-to-br from-blue-600 to-blue-700 rounded-full flex items-center justify-center flex-shrink-0 shadow-lg shadow-blue-500/30">
                     <Mail className="text-white" size={20} />
                   </div>
                   <div>
@@ -343,20 +331,26 @@ export default function App() {
             </div>
 
             <div>
-              <div className="bg-gradient-to-br from-red-600 to-red-700 rounded-2xl p-8 shadow-xl mb-6">
-                <h3 className="text-2xl font-bold text-white mb-6">{siteConfig.contact.schedule.title}</h3>
-                {siteConfig.contact.schedule.details.map((detail, index) => (
-                  <p key={index} className="mb-2 text-white text-lg">{detail}</p>
+              <div className="bg-gradient-to-br from-blue-600 to-blue-700 rounded-2xl p-8 shadow-xl shadow-blue-500/30 text-white mb-6">
+                <div className="flex items-center gap-3 mb-6">
+                  <Clock className="flex-shrink-0" size={32} />
+                  <h3 className="text-2xl font-bold">{siteConfig.contact.schedule.title}</h3>
+                </div>
+                {siteConfig.contact.schedule.hours.map((item, index) => (
+                  <div key={index} className="flex justify-between mb-2 text-lg">
+                    <span className="font-medium">{item.day}</span>
+                    <span>{item.hours}</span>
+                  </div>
                 ))}
-                <p className="mt-6 text-red-100 italic text-sm">{siteConfig.contact.schedule.note}</p>
+                <p className="mt-6 text-blue-100 italic text-sm">{siteConfig.contact.schedule.note}</p>
               </div>
 
-              <div className="bg-gray-800/50 rounded-2xl p-8 shadow-lg border border-red-700/30">
-                <h3 className="text-2xl font-bold text-white mb-4">Pourquoi me choisir ?</h3>
+              <div className="bg-gray-800/50 rounded-2xl p-8 shadow-lg border border-gray-700">
+                <h3 className="text-2xl font-bold text-white mb-4">Nos atouts</h3>
                 <ul className="space-y-3">
                   {siteConfig.highlights.slice(0, 6).map((highlight, index) => (
                     <li key={index} className="flex items-start gap-2 text-gray-300">
-                      <CheckCircle className="text-red-500 flex-shrink-0 mt-0.5" size={20} />
+                      <CheckCircle className="text-orange-500 flex-shrink-0 mt-0.5" size={20} />
                       <span>{highlight}</span>
                     </li>
                   ))}
@@ -368,20 +362,20 @@ export default function App() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-black text-white py-12 px-4">
+      <footer className="bg-gradient-to-br from-black to-gray-900 text-white py-12 px-4 border-t border-orange-500/20">
         <div className="container mx-auto max-w-6xl">
           <div className="grid md:grid-cols-3 gap-8 mb-8">
             <div>
-              <h3 className="text-xl font-bold mb-4 text-red-400">{siteConfig.companyName}</h3>
-              <p className="text-gray-300 mb-4">{siteConfig.tagline}</p>
-              <p className="text-gray-400">{siteConfig.contact.address.city}</p>
+              <h3 className="text-xl font-bold mb-4 text-orange-400">{siteConfig.companyName}</h3>
+              <p className="text-gray-400 mb-4">{siteConfig.tagline}</p>
+              <p className="text-gray-500">{siteConfig.contact.address.city}</p>
             </div>
 
             <div>
-              <h3 className="text-xl font-bold mb-4 text-red-400">Navigation</h3>
+              <h3 className="text-xl font-bold mb-4 text-orange-400">Navigation</h3>
               <div className="space-y-2">
-                {['accueil', 'services', 'motos', 'contact'].map(section => (
-                  <button key={section} onClick={() => scrollToSection(section)} className="block text-gray-300 hover:text-red-400 transition-colors capitalize">
+                {['accueil', 'services', 'contact'].map(section => (
+                  <button key={section} onClick={() => scrollToSection(section)} className="block text-gray-400 hover:text-orange-400 transition-colors capitalize">
                     {section}
                   </button>
                 ))}
@@ -389,18 +383,19 @@ export default function App() {
             </div>
 
             <div>
-              <h3 className="text-xl font-bold mb-4 text-red-400">Contact</h3>
-              <div className="space-y-2 text-gray-300">
-                <p className="font-bold text-lg">{siteConfig.contact.phone}</p>
+              <h3 className="text-xl font-bold mb-4 text-orange-400">Contact</h3>
+              <div className="space-y-2 text-gray-400">
+                <p className="font-bold text-lg text-white">{siteConfig.contact.phone}</p>
                 <p>{siteConfig.contact.email}</p>
-                <p className="text-sm mt-4">{siteConfig.contact.address.city}</p>
+                <p className="text-sm mt-4">{siteConfig.contact.address.street}</p>
+                <p className="text-sm">{siteConfig.contact.address.city}</p>
               </div>
             </div>
           </div>
 
           <div className="border-t border-gray-800 pt-8 text-center">
-            <p className="text-gray-400 text-sm">
-              © 2026 {siteConfig.companyName} - {siteConfig.owner} - Tous droits réservés
+            <p className="text-gray-500 text-sm">
+              © 2026 {siteConfig.companyName} - Tous droits réservés
             </p>
           </div>
         </div>
