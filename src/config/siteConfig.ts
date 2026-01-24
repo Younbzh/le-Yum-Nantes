@@ -1,199 +1,207 @@
 export const siteConfig = {
   // IDENTITÉ
-  companyName: "Brillance Auto 22",
-  tagline: "Nettoyage et detailing automobile",
-  slogan: "Redonnez de l'éclat à votre véhicule",
-  city: "Trévé",
+  companyName: "Multimedia Services",
+  tagline: "Réparation express de téléphones et vente multimédia",
+  slogan: "Votre expert tech à Loudéac",
+  city: "Loudéac",
   region: "Côtes-d'Armor, Bretagne",
+  owner: "Ivan",
   
   // HERO
   hero: {
-    title: "Brillance Auto 22",
-    subtitle: "Nettoyage et detailing automobile à Trévé",
-    tagline: "Votre spécialiste du nettoyage auto professionnel",
-    description: "Brillance Auto 22 vous propose des services de nettoyage intérieur et extérieur, ainsi que du detailing haut de gamme pour redonner tout son éclat à votre véhicule. Particuliers et professionnels.",
-    cta: "Prendre rendez-vous"
+    title: "Multimedia Services",
+    subtitle: "Réparation Express & Vente Multimédia",
+    tagline: "iPhone réparé en 1h dans 80% des cas",
+    description: "Spécialiste de la réparation de téléphones toutes marques, achat-revente et vente de produits multimédia. Service rapide, professionnel et de confiance à Loudéac.",
+    cta: "Prendre rendez-vous",
+    urgentRepair: "Réparation express possible le lendemain"
   },
 
   // À PROPOS
   about: {
-    title: "L'excellence du nettoyage automobile",
-    story: "Brillance Auto 22 est votre spécialiste du nettoyage et du detailing automobile à Trévé. Nous mettons notre expertise et notre passion au service de votre véhicule pour lui redonner tout son éclat.",
-    mission: "Notre mission : offrir des prestations de nettoyage automobile de haute qualité, en utilisant des produits professionnels et des techniques adaptées à chaque type de véhicule.",
-    values: "Chez Brillance Auto 22, nous privilégions la qualité du travail, l'attention aux détails et la satisfaction de nos clients, qu'ils soient particuliers ou professionnels.",
-    expertise: "Du simple nettoyage extérieur au detailing complet avec protection céramique, nous proposons une gamme complète de services adaptés à tous vos besoins."
+    title: "Votre expert tech de confiance",
+    story: "Multimedia Services, dirigé par Ivan, est votre boutique de référence pour la réparation de smartphones et la vente de produits multimédia à Loudéac. Avec une excellente réputation locale et des centaines d'avis 5 étoiles, nous sommes reconnus pour notre professionnalisme et notre rapidité.",
+    mission: "Notre mission : vous offrir un service de qualité, rapide et fiable. Que ce soit pour une réparation express, l'achat d'un nouveau téléphone ou la revente de votre ancien appareil, nous mettons notre expertise à votre service.",
+    expertise: "De l'iPhone 8 jusqu'à l'iPhone 15 Pro Max, en passant par Samsung, Huawei, Xiaomi et toutes les autres marques, nous maîtrisons la réparation de tous les smartphones du marché.",
+    values: "Rapidité, professionnalisme, transparence et service client exceptionnel sont au cœur de notre activité."
+  },
+
+  // RÉPARATION EXPRESS
+  expressRepair: {
+    title: "iPhone : réparé dans l'heure",
+    subtitle: "Dans 80% des cas",
+    description: "De l'iPhone 8 jusqu'à l'iPhone 15",
+    services: [
+      "Écran",
+      "Batterie", 
+      "Vitre arrière",
+      "Caméra",
+      "Connecteur de charge"
+    ],
+    note: "Autres réparations sur demande"
   },
 
   // SERVICES
   services: {
     title: "Nos services",
-    subtitle: "Une gamme complète pour l'entretien esthétique de votre véhicule",
-    items: [
+    subtitle: "Solutions complètes pour tous vos besoins tech",
+    categories: [
       {
-        title: "Nettoyage Intérieur",
-        icon: "🧹",
-        description: "Remise à neuf complète de l'habitacle",
-        details: [
-          "Aspiration complète",
-          "Dépoussiérage des surfaces",
-          "Nettoyage des vitres intérieures",
-          "Shampouinage des sièges et moquettes",
-          "Traitement antibactérien",
-          "Soins cuir*",
-          "Désodorisation de l'habitacle",
-          "Nettoyage du tableau de bord",
-          "Nettoyage des portières et garnitures",
-          "Aspiration du coffre"
+        title: "Réparation Express",
+        icon: "⚡",
+        color: "from-cyan-500 to-blue-600",
+        description: "Réparation rapide toutes marques",
+        items: [
+          "iPhone réparé en 1h (80% des cas)",
+          "Réparation express le lendemain",
+          "Écran cassé",
+          "Batterie défectueuse",
+          "Vitre arrière",
+          "Caméra",
+          "Connecteur de charge",
+          "Haut-parleur",
+          "Boutons",
+          "Désoxydation"
         ]
       },
       {
-        title: "Nettoyage Extérieur",
-        icon: "💧",
-        description: "Lavage et remise en état de la carrosserie",
-        details: [
-          "Prélavage haute pression",
-          "Lavage manuel avec produits adaptés",
-          "Nettoyage des jantes",
-          "Décontamination de la carrosserie",
-          "Nettoyage de la cire",
-          "Lustrage du moteur*",
-          "Nettoyage du pare-brise*",
-          "Séchage soigné",
-          "Nettoyage des joints et bas de caisse",
-          "Finitions impeccables"
+        title: "Toutes Marques",
+        icon: "📱",
+        color: "from-orange-500 to-red-600",
+        description: "iPhone, Samsung, Huawei, Xiaomi...",
+        items: [
+          "Apple (iPhone, iPad)",
+          "Samsung Galaxy",
+          "Huawei",
+          "Xiaomi",
+          "Oppo",
+          "OnePlus",
+          "Google Pixel",
+          "Sony",
+          "Wiko",
+          "Et bien d'autres..."
         ]
       },
       {
-        title: "Detailing Extérieur",
-        icon: "✨",
-        description: "Rénovation esthétique haut de gamme",
-        details: [
-          "Décontamination complète",
-          "Polissage professionnel",
-          "Correction des micro-rayures",
-          "Application de cire haute qualité",
-          "Protection carrosserie céramique",
-          "Finitions premium*",
-          "Rénovation des optiques",
-          "Traitement des plastiques extérieurs",
-          "Brillance longue durée",
-          "Protection contre les UV"
+        title: "Achat & Revente",
+        icon: "💰",
+        color: "from-green-500 to-emerald-600",
+        description: "Reprise et vente de téléphones",
+        items: [
+          "Reprise de votre ancien téléphone",
+          "Évaluation honnête et rapide",
+          "Tarifs compétitifs",
+          "Téléphones reconditionnés",
+          "Téléphones neufs",
+          "Garantie sur tous nos appareils",
+          "Conseil personnalisé",
+          "Large choix en stock"
+        ]
+      },
+      {
+        title: "Produits Multimédia",
+        icon: "💻",
+        color: "from-purple-500 to-indigo-600",
+        description: "Vente d'ordinateurs et accessoires",
+        items: [
+          "Ordinateurs portables",
+          "Tablettes",
+          "Accessoires téléphonie",
+          "Coques et protections",
+          "Chargeurs et câbles",
+          "Écouteurs et casques",
+          "Produits en stock",
+          "Commande sur mesure"
         ]
       }
     ]
-  },
-
-  // PRESTATIONS DÉTAILLÉES
-  detailedServices: {
-    interior: {
-      title: "Nettoyage Intérieur",
-      items: [
-        "Aspiration",
-        "Dépoussiérage",
-        "Vitres",
-        "Shampouinage antibactérien",
-        "Soins cuir*"
-      ]
-    },
-    exterior: {
-      title: "Nettoyage Extérieur",
-      items: [
-        "Prélavage",
-        "Lavage manuel",
-        "Jantes",
-        "Décontamination",
-        "Cire",
-        "Moteur",
-        "Pare-brise*"
-      ]
-    },
-    detailing: {
-      title: "Detailing Extérieur",
-      items: [
-        "Décontamination",
-        "Polissage",
-        "Cire",
-        "Protection carrosserie céramique",
-        "Finitions*"
-      ]
-    },
-    note: "*selon services et options sélectionnés"
   },
 
   // AVANTAGES
   advantages: {
-    title: "Pourquoi choisir Brillance Auto 22 ?",
+    title: "Pourquoi choisir Multimedia Services ?",
     items: [
       {
+        icon: "⚡",
+        title: "Rapidité",
+        description: "iPhone réparé en 1h dans la majorité des cas"
+      },
+      {
         icon: "⭐",
-        title: "Qualité professionnelle",
-        description: "Produits et techniques de qualité supérieure"
+        title: "Excellente réputation",
+        description: "Des centaines d'avis 5 étoiles"
       },
       {
         icon: "👨‍🔧",
         title: "Expertise",
-        description: "Savoir-faire et attention aux détails"
+        description: "Maîtrise de toutes les marques"
       },
       {
-        icon: "🏢",
-        title: "Particuliers & Pros",
-        description: "Services adaptés à tous types de clients"
+        icon: "💰",
+        title: "Prix compétitifs",
+        description: "Tarifs transparents et abordables"
       },
       {
-        icon: "💎",
-        title: "Finitions impeccables",
-        description: "Résultat professionnel garanti"
-      },
-      {
-        icon: "🧴",
-        title: "Produits premium",
-        description: "Utilisation de produits professionnels"
-      },
-      {
-        icon: "🚗",
-        title: "Tous véhicules",
-        description: "Voitures, SUV, utilitaires"
+        icon: "🛡️",
+        title: "Garantie",
+        description: "Pièces garanties"
       },
       {
         icon: "📍",
-        title: "Emplacement à Trévé",
-        description: "Facile d'accès dans les Côtes-d'Armor"
+        title: "Boutique à Loudéac",
+        description: "Centre-ville, facile d'accès"
       },
       {
-        icon: "⏰",
-        title: "Horaires pratiques",
-        description: "Ouvert du lundi au vendredi"
+        icon: "🔄",
+        title: "Reprise",
+        description: "Rachat de votre ancien téléphone"
+      },
+      {
+        icon: "😊",
+        title: "Accueil chaleureux",
+        description: "Service client exceptionnel"
       }
     ]
   },
 
-  // TYPES DE VÉHICULES
-  vehicles: {
-    title: "Tous types de véhicules acceptés",
-    types: [
-      { name: "Citadines", icon: "🚗" },
-      { name: "Berlines", icon: "🚙" },
-      { name: "SUV", icon: "🚙" },
-      { name: "4x4", icon: "🚙" },
-      { name: "Utilitaires", icon: "🚐" },
-      { name: "Monospaces", icon: "🚐" }
+  // AVIS CLIENTS
+  testimonials: {
+    title: "Ce que disent nos clients",
+    subtitle: "Des centaines d'avis 5 étoiles",
+    reviews: [
+      {
+        name: "Client satisfait",
+        rating: 5,
+        text: "Le changement de batterie a été effectué rapidement et avec professionnalisme. Merci !"
+      },
+      {
+        name: "Client fidèle",
+        rating: 5,
+        text: "Ivan est une personne très professionnelle et à l'écoute du client. Service rapide et à prix très abordable. Je recommande +++"
+      },
+      {
+        name: "Excellente expérience",
+        rating: 5,
+        text: "Réparation d'iPhone 12 parfaite, bonne relation client, professionnel qui connaît bien son sujet. Prix défiant toute concurrence !"
+      },
+      {
+        name: "Je recommande",
+        rating: 5,
+        text: "Pour commencer le magasin est très propre. Service rapide et à prix très abordable. Je recommande cette boutique +++"
+      }
     ]
   },
 
-  // CLIENTÈLE
-  clientele: {
-    title: "Nous intervenons pour",
+  // TYPES DE RÉPARATIONS
+  repairTypes: {
+    title: "Réparations les plus courantes",
     types: [
-      {
-        name: "Particuliers",
-        icon: "👤",
-        description: "Nettoyage et entretien de votre véhicule personnel"
-      },
-      {
-        name: "Professionnels",
-        icon: "🏢",
-        description: "Flottes d'entreprise, véhicules de société, location"
-      }
+      { name: "Écran cassé", icon: "📱", time: "1h" },
+      { name: "Batterie", icon: "🔋", time: "1h" },
+      { name: "Vitre arrière", icon: "🔨", time: "Variable" },
+      { name: "Caméra", icon: "📷", time: "1h" },
+      { name: "Connecteur charge", icon: "🔌", time: "1-2h" },
+      { name: "Désoxydation", icon: "💧", time: "24-48h" }
     ]
   },
 
@@ -203,148 +211,122 @@ export const siteConfig = {
     steps: [
       {
         number: "01",
-        title: "Contact",
-        description: "Contactez-moi par message privé pour un devis"
+        title: "Contactez-nous",
+        description: "Par téléphone ou en boutique"
       },
       {
         number: "02",
-        title: "Devis personnalisé",
-        description: "Je vous propose un devis adapté à vos besoins"
+        title: "Diagnostic gratuit",
+        description: "Évaluation rapide du problème"
       },
       {
         number: "03",
-        title: "Prise de rendez-vous",
-        description: "Nous fixons un créneau qui vous convient"
+        title: "Devis transparent",
+        description: "Prix clair avant intervention"
       },
       {
         number: "04",
-        title: "Prestation",
-        description: "Je m'occupe de votre véhicule avec le plus grand soin"
+        title: "Réparation express",
+        description: "Souvent en 1h pour iPhone"
       },
       {
         number: "05",
-        title: "Résultat",
-        description: "Votre véhicule retrouve tout son éclat !"
+        title: "Récupérez votre tel",
+        description: "Comme neuf et garanti"
       }
     ]
   },
 
-  // ZONE D'INTERVENTION
-  zone: {
-    title: "Zone d'intervention",
-    center: "Trévé (22600)",
-    mainCities: [
-      "Trévé",
-      "Loudéac",
-      "Saint-Caradec",
-      "La Motte",
-      "Plémet",
-      "Saint-Barnabé",
-      "Grâce-Uzel",
-      "Le Quillio",
-      "Uzel",
-      "Saint-Thélo",
-      "Merléac",
-      "Corlay",
-      "Caurel",
-      "Hémonstoir",
-      "Saint-Guen"
+  // HORAIRES
+  schedule: {
+    title: "Horaires d'ouverture",
+    hours: [
+      { day: "Lundi", hours: "10:00 - 18:00" },
+      { day: "Mardi", hours: "10:00 - 18:00" },
+      { day: "Mercredi", hours: "10:00 - 18:00" },
+      { day: "Jeudi", hours: "10:00 - 18:00" },
+      { day: "Vendredi", hours: "10:00 - 18:00" },
+      { day: "Samedi", hours: "10:00 - 18:00" },
+      { day: "Dimanche", hours: "Fermé" }
     ]
   },
 
   // CONTACT
   contact: {
-    title: "Me contacter",
+    title: "Nous contacter",
     address: {
-      street: "51 Le Cosquer",
-      city: "22600 Trévé",
+      street: "7 Boulevard de la Gare",
+      city: "22600 Loudéac",
       region: "Côtes-d'Armor, Bretagne"
     },
-    phone: "06 28 78 79 37",
-    email: "contact@brillanceauto22.fr",
-    schedule: {
-      title: "Horaires d'ouverture",
-      hours: [
-        { day: "Lundi", hours: "09:00 - 17:30" },
-        { day: "Mardi", hours: "09:00 - 17:30" },
-        { day: "Mercredi", hours: "09:00 - 17:30" },
-        { day: "Jeudi", hours: "09:00 - 17:30" },
-        { day: "Vendredi", hours: "09:00 - 17:30" },
-        { day: "Samedi", hours: "Fermé" },
-        { day: "Dimanche", hours: "Fermé" }
-      ],
-      note: "Sur rendez-vous uniquement"
-    },
-    cta: "Contactez-moi par message privé !"
+    phone: "07 45 51 08 16",
+    email: "contact@multimedia-services.fr",
+    cta: "Appelez-nous maintenant !"
   },
 
   // VALEURS
   values: [
+    { text: "Rapidité", icon: "⚡" },
     { text: "Qualité", icon: "⭐" },
     { text: "Expertise", icon: "🎯" },
-    { text: "Finitions", icon: "✨" },
-    { text: "Professionnalisme", icon: "👔" },
-    { text: "Passion", icon: "❤️" },
-    { text: "Satisfaction", icon: "😊" }
+    { text: "Confiance", icon: "🤝" },
+    { text: "Service", icon: "😊" },
+    { text: "Innovation", icon: "🚀" }
   ],
 
   // POINTS FORTS
   highlights: [
-    "Nettoyage intérieur complet",
-    "Nettoyage extérieur professionnel",
-    "Detailing haut de gamme",
-    "Protection céramique",
-    "Traitement antibactérien",
-    "Rénovation des optiques",
-    "Polissage et lustrage",
-    "Particuliers et professionnels",
-    "Produits professionnels",
-    "Finitions impeccables"
+    "iPhone réparé en 1h (80% des cas)",
+    "Réparation toutes marques",
+    "Achat et revente de téléphones",
+    "Vente de produits multimédia",
+    "Des centaines d'avis 5 étoiles",
+    "Service rapide et professionnel",
+    "Prix compétitifs",
+    "Boutique au centre de Loudéac",
+    "Diagnostic gratuit",
+    "Point relais Colissimo"
   ],
 
   // FAQ
   faq: [
     {
-      question: "Quels services proposez-vous ?",
-      answer: "Nous proposons trois catégories de services : le nettoyage intérieur (aspiration, dépoussiérage, shampouinage, etc.), le nettoyage extérieur (lavage manuel, jantes, décontamination, etc.) et le detailing extérieur (polissage, protection céramique, finitions premium)."
+      question: "Combien de temps prend une réparation d'iPhone ?",
+      answer: "Dans 80% des cas, votre iPhone est réparé en 1 heure ! Pour les réparations plus complexes, nous proposons un service express avec restitution le lendemain."
     },
     {
-      question: "Intervenez-vous à domicile ?",
-      answer: "Non, nos prestations sont réalisées sur place à notre atelier situé au 51 Le Cosquer à Trévé."
+      question: "Réparez-vous toutes les marques ?",
+      answer: "Oui ! Nous réparons toutes les marques de smartphones : Apple, Samsung, Huawei, Xiaomi, Oppo, OnePlus, Google Pixel, Sony, Wiko et bien d'autres."
     },
     {
-      question: "Travaillez-vous avec des professionnels ?",
-      answer: "Oui, nous intervenons aussi bien pour les particuliers que pour les professionnels (flottes d'entreprise, véhicules de société, location)."
+      question: "Proposez-vous un diagnostic gratuit ?",
+      answer: "Oui, le diagnostic est toujours gratuit et nous vous fournissons un devis transparent avant toute intervention."
     },
     {
-      question: "Comment obtenir un devis ?",
-      answer: "Contactez-moi par message privé en précisant le type de véhicule et les services souhaités, je vous enverrai un devis personnalisé."
+      question: "Reprenez-vous les anciens téléphones ?",
+      answer: "Absolument ! Nous rachetons votre ancien téléphone à un prix honnête et compétitif. Évaluation rapide en boutique."
     },
     {
-      question: "Quels types de véhicules acceptez-vous ?",
-      answer: "Nous acceptons tous types de véhicules : citadines, berlines, SUV, 4x4, utilitaires et monospaces."
+      question: "Les réparations sont-elles garanties ?",
+      answer: "Oui, toutes nos réparations sont garanties. Nous utilisons des pièces de qualité pour assurer la durabilité."
     },
     {
-      question: "Quels sont vos horaires ?",
-      answer: "Nous sommes ouverts du lundi au vendredi de 9h00 à 17h30. Fermé le samedi et le dimanche."
-    },
-    {
-      question: "Utilisez-vous des produits professionnels ?",
-      answer: "Oui, nous utilisons exclusivement des produits professionnels de qualité supérieure pour garantir les meilleurs résultats."
+      question: "Vendez-vous des téléphones reconditionnés ?",
+      answer: "Oui, nous proposons une sélection de téléphones reconditionnés de qualité avec garantie, ainsi que des téléphones neufs."
     }
   ],
 
   // SEO
   seo: {
-    title: "Brillance Auto 22 - Nettoyage & Detailing Auto Trévé (22)",
-    description: "Brillance Auto 22 : nettoyage intérieur/extérieur et detailing automobile à Trévé. Protection céramique, polissage, traitement antibactérien. Particuliers & professionnels.",
-    keywords: "nettoyage auto Trévé, detailing automobile 22, lavage auto Loudéac, polissage voiture, protection céramique, nettoyage intérieur auto, Brillance Auto 22, esthétique auto Côtes d'Armor, shampouinage voiture"
+    title: "Multimedia Services Loudéac - Réparation Express iPhone & Téléphones",
+    description: "Réparation express de téléphones toutes marques à Loudéac. iPhone réparé en 1h (80% des cas). Achat-revente, vente multimédia. Service rapide et professionnel. ☎️ 07 45 51 08 16",
+    keywords: "réparation téléphone Loudéac, réparation iPhone Loudéac, écran cassé, batterie téléphone, Multimedia Services, réparation express, achat revente téléphone, Ivan Loudéac, 22600"
   },
 
   // THÈME
   theme: {
-    primary: "red", // Rouge du logo
-    accent: "gray", // Gris élégant
-    mode: "dark" // Mode sombre pour mettre en valeur les véhicules
+    primary: "cyan", // Bleu électrique tech
+    secondary: "orange", // Dynamisme, jeunesse
+    mode: "dark" // Mode sombre moderne
   }
 };
