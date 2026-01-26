@@ -1,322 +1,341 @@
 export const siteConfig = {
   // IDENTITÉ
-  companyName: "Barb&Kut",
-  tagline: "Barbier & Salon de coiffure pour hommes",
-  slogan: "L'art du rasage traditionnel rencontre le style moderne",
-  founders: "Frères Moussaoui",
+  companyName: "Elixir au Féminin",
+  tagline: "Institut de beauté & Onglerie",
+  slogan: "Sublimez vos mains et vos pieds",
+  city: "Uzel",
+  region: "Côtes-d'Armor, Bretagne",
   
   // HERO
   hero: {
-    title: "Barb&Kut",
-    subtitle: "Barbier & Coiffure Homme",
-    tagline: "Design rétro • Équipe dynamique • Ambiance conviviale",
-    description: "Bienvenue chez Barb&Kut, votre barbier au design rétro chaleureux. Fauteuils vintage, ambiance conviviale et équipe passionnée pour prendre soin de votre style.",
+    title: "Elixir au Féminin",
+    subtitle: "Institut de beauté & Onglerie",
+    tagline: "Votre moment de beauté à Uzel",
+    description: "Spécialisée en onglerie et soins des mains et pieds, je vous accueille dans mon institut chaleureux pour un moment de détente et de beauté. Pose de vernis semi-permanent, nail art, soins complets... Prenez soin de vous !",
     cta: "Prendre rendez-vous"
-  },
-
-  // SALONS
-  locations: {
-    title: "Nos salons",
-    subtitle: "Deux adresses pour vous servir",
-    salons: [
-      {
-        name: "Loudéac",
-        address: {
-          street: "9 rue de Moncontour",
-          city: "22600 Loudéac",
-          region: "Côtes-d'Armor"
-        },
-        phone: "06 77 58 85 29",
-        email: "loudeac@barbkut.fr",
-        team: "Moussaoui et son équipe",
-        schedule: [
-          { day: "Lundi", hours: "Fermé" },
-          { day: "Mardi", hours: "10:00 - 19:00" },
-          { day: "Mercredi", hours: "10:00 - 19:00" },
-          { day: "Jeudi", hours: "10:00 - 19:00" },
-          { day: "Vendredi", hours: "10:00 - 19:00" },
-          { day: "Samedi", hours: "09:00 - 19:00" },
-          { day: "Dimanche", hours: "Fermé" }
-        ],
-        booking: "https://www.planity.com/barb-kut-22600-loudeac"
-      },
-      {
-        name: "Pontivy",
-        address: {
-          street: "12 Place du Martray",
-          city: "56300 Pontivy",
-          region: "Morbihan"
-        },
-        phone: "À venir",
-        email: "pontivy@barbkut.fr",
-        team: "Équipe Pontivy",
-        schedule: [
-          { day: "Lundi", hours: "Fermé" },
-          { day: "Mardi", hours: "10:00 - 19:00" },
-          { day: "Mercredi", hours: "10:00 - 19:00" },
-          { day: "Jeudi", hours: "10:00 - 19:00" },
-          { day: "Vendredi", hours: "10:00 - 19:00" },
-          { day: "Samedi", hours: "09:00 - 19:00" },
-          { day: "Dimanche", hours: "Fermé" }
-        ],
-        booking: "https://www.treatwell.fr/salon/barb-kut/"
-      }
-    ]
   },
 
   // À PROPOS
   about: {
-    title: "L'histoire Barb&Kut",
-    story: "Fondé par les frères Moussaoui, Barb&Kut est né d'une passion pour l'art du barbier traditionnel allié au style moderne. Après le succès de notre premier salon à Pontivy, nous avons ouvert une seconde adresse à Loudéac pour répondre à la demande croissante.",
-    vision: "Nous avons créé bien plus qu'un simple salon de coiffure : un véritable lieu de vie où les hommes peuvent prendre soin d'eux dans une ambiance conviviale et décontractée.",
-    atmosphere: "Design rétro chaleureux avec fauteuils de barbier vintage, murs de briques apparentes, boiseries et moulures. Un coin détente avec TV et console vous attend pendant votre rdv.",
-    team: "Notre équipe jeune et dynamique est composée de barbiers passionnés et expérimentés, formés aux techniques traditionnelles comme aux tendances actuelles."
+    title: "Bienvenue chez Elixir au Féminin",
+    story: "Elixir au Féminin est votre institut de beauté spécialisé en onglerie à Uzel. Passionnée par l'art de l'ongle et le bien-être, je vous accueille dans un cadre chaleureux et féminin pour prendre soin de vos mains et de vos pieds.",
+    mission: "Ma mission : vous offrir un moment de détente privilégié tout en sublimant vos ongles avec des techniques professionnelles et des produits de qualité.",
+    expertise: "Formée aux dernières techniques de l'onglerie, je maîtrise la pose de vernis semi-permanent, le nail art, la pose complète et tous les soins pour des mains et pieds parfaits.",
+    values: "Qualité, écoute et bienveillance sont au cœur de mon approche. Chaque cliente bénéficie d'un service personnalisé et de conseils adaptés."
   },
 
   // SERVICES
   services: {
-    title: "Nos services",
-    subtitle: "De la coupe classique au style moderne",
+    title: "Mes prestations",
+    subtitle: "Des mains et des pieds sublimes",
     categories: [
       {
-        title: "Coupes",
-        icon: "✂️",
-        color: "from-amber-600 to-orange-700",
+        title: "Manucure",
+        icon: "💅",
+        color: "from-pink-500 to-rose-600",
         items: [
-          "Coupe classique",
-          "Coupe moderne",
-          "Dégradé",
-          "Taper fade",
-          "Coupe aux ciseaux",
-          "Coupe tondeuse",
-          "Coiffage et styling"
+          {
+            name: "Pose complète AVEC NAIL ART",
+            duration: "2h",
+            price: "55 €",
+            description: "Pose complète de vernis semi-permanent avec nail art personnalisé"
+          },
+          {
+            name: "Pose complète SANS Nail Art",
+            duration: "2h",
+            price: "55 €",
+            description: "Pose complète de vernis semi-permanent"
+          },
+          {
+            name: "Remplissage AVEC NAIL ART",
+            duration: "2h",
+            price: "50 €",
+            description: "Remplissage et nail art"
+          },
+          {
+            name: "Remplissage SANS NAIL ART",
+            duration: "2h",
+            price: "50 €",
+            description: "Remplissage simple"
+          },
+          {
+            name: "Gainage AVEC NAIL ART",
+            duration: "1h 55min",
+            price: "45 €",
+            description: "Gainage et nail art"
+          }
         ]
       },
       {
-        title: "Barbe",
-        icon: "🪒",
-        color: "from-red-600 to-rose-700",
+        title: "Beauté des pieds",
+        icon: "🦶",
+        color: "from-purple-500 to-pink-600",
         items: [
-          "Taille de barbe",
-          "Rasage traditionnel",
-          "Contour de barbe",
-          "Création de moustache",
-          "Entretien barbe",
-          "Soins de la barbe"
-        ]
-      },
-      {
-        title: "Soins",
-        icon: "💆",
-        color: "from-slate-600 to-gray-700",
-        items: [
-          "Shampoing",
-          "Masque capillaire",
-          "Soin du cuir chevelu",
-          "Coloration barbe",
-          "Décoloration",
-          "Traitement cheveux"
-        ]
-      },
-      {
-        title: "Forfaits",
-        icon: "⭐",
-        color: "from-emerald-600 to-teal-700",
-        items: [
-          "Coupe + Barbe",
-          "Coupe + Shampoing",
-          "Barbe + Rasage",
-          "Forfait complet",
-          "Package premium"
+          {
+            name: "Pose complète AVEC NAIL ART",
+            duration: "1h 30min",
+            price: "55 €",
+            description: "À partir de 6 capsules - Pose complète avec nail art"
+          },
+          {
+            name: "Pose complète SANS NAIL ART",
+            duration: "1h 30min",
+            price: "55 €",
+            description: "À partir de 6 capsules - Pose complète"
+          },
+          {
+            name: "Pose semi-complète AVEC NAIL ART",
+            duration: "1h",
+            price: "45 €",
+            description: "À partir de 2 capsules - Pose semi-complète avec nail art"
+          },
+          {
+            name: "Pose semi-complète SANS NAIL ART",
+            duration: "1h",
+            price: "45 €",
+            description: "À partir de 2 capsules - Pose semi-complète"
+          },
+          {
+            name: "Semi-permanent AVEC NAIL ART",
+            duration: "1h",
+            price: "40 €",
+            description: "Vernis semi-permanent avec nail art"
+          }
         ]
       }
-    ]
-  },
-
-  // AMBIANCE
-  atmosphere: {
-    title: "L'ambiance Barb&Kut",
-    subtitle: "Un lieu unique où tradition et modernité se rencontrent",
-    features: [
-      {
-        icon: "🪑",
-        title: "Fauteuils vintage",
-        description: "Authentiques fauteuils de barbier d'époque"
-      },
-      {
-        icon: "🧱",
-        title: "Murs de briques",
-        description: "Briques apparentes pour un style industriel"
-      },
-      {
-        icon: "🪵",
-        title: "Boiseries & moulures",
-        description: "Décoration rétro avec finitions soignées"
-      },
-      {
-        icon: "📺",
-        title: "Coin détente",
-        description: "TV et console pour patienter confortablement"
-      },
-      {
-        icon: "🎵",
-        title: "Ambiance musicale",
-        description: "Playlist soigneusement sélectionnée"
-      },
-      {
-        icon: "☕",
-        title: "Boissons offertes",
-        description: "Café, thé ou soft pendant votre visite"
-      }
-    ]
-  },
-
-  // ÉQUIPE
-  team: {
-    title: "L'équipe",
-    subtitle: "Des barbiers passionnés à votre service",
-    description: "Notre équipe jeune et dynamique est formée aux techniques traditionnelles du barbier tout en maîtrisant les tendances actuelles. Professionnels, à l'écoute et talentueux, nos barbiers mettent tout en œuvre pour votre satisfaction.",
-    values: [
-      { text: "Professionnalisme", icon: "👔" },
-      { text: "Passion", icon: "❤️" },
-      { text: "Écoute", icon: "👂" },
-      { text: "Talent", icon: "✨" },
-      { text: "Convivialité", icon: "🤝" },
-      { text: "Dynamisme", icon: "⚡" }
     ]
   },
 
   // AVANTAGES
   advantages: {
-    title: "Pourquoi choisir Barb&Kut ?",
+    title: "Pourquoi choisir Elixir au Féminin ?",
     items: [
       {
         icon: "⭐",
         title: "Excellente réputation",
-        description: "Plus de 100 avis 5 étoiles"
+        description: "Note de 5/5 sur 12 avis clients"
+      },
+      {
+        icon: "💅",
+        title: "Spécialiste onglerie",
+        description: "Expertise en nail art et soins des ongles"
       },
       {
         icon: "🎨",
-        title: "Design rétro unique",
-        description: "Ambiance chaleureuse et authentique"
+        title: "Nail art personnalisé",
+        description: "Créations uniques selon vos envies"
       },
       {
-        icon: "👨‍🔧",
-        title: "Barbiers expérimentés",
-        description: "Équipe jeune et talentueuse"
+        icon: "✨",
+        title: "Produits de qualité",
+        description: "Marques professionnelles reconnues"
       },
       {
-        icon: "📍",
-        title: "2 salons",
-        description: "Loudéac et Pontivy"
-      },
-      {
-        icon: "💰",
-        title: "Tarifs corrects",
-        description: "Rapport qualité/prix excellent"
+        icon: "🏠",
+        title: "Cadre chaleureux",
+        description: "Ambiance cosy et féminine"
       },
       {
         icon: "📅",
         title: "Réservation en ligne",
         description: "RDV 24/7 sur Planity"
-      },
-      {
-        icon: "🎮",
-        title: "Coin détente",
-        description: "TV et console pour patienter"
-      },
-      {
-        icon: "🤝",
-        title: "Ambiance conviviale",
-        description: "Lieu d'échange et de rencontre"
       }
     ]
   },
 
   // AVIS CLIENTS
   testimonials: {
-    title: "Ce que disent nos clients",
-    subtitle: "Plus de 100 avis 5 étoiles",
-    reviews: [
+    title: "Vos avis",
+    subtitle: "Note globale : 5,0/5 ⭐",
+    rating: {
+      global: 5.0,
+      accueil: 4.9,
+      proprete: 5.0,
+      cadre: 5.0,
+      qualite: 5.0,
+      reviewCount: 12
+    }
+  },
+
+  // HORAIRES
+  schedule: {
+    title: "Horaires d'ouverture",
+    hours: [
       {
-        name: "Client satisfait",
-        rating: 5,
-        text: "Super prestation! Je suis venu pour la première fois sans attente particulière et suis reparti extrêmement satisfait. Un bon accueil, une super ambiance et un dégradé parfaitement exécuté 👌"
+        day: "Lundi",
+        slots: ["09:30 - 13:45", "14:30 - 18:30", "18:30 - 18:50"]
       },
       {
-        name: "Client régulier",
-        rating: 5,
-        text: "Toujours impeccable, Anatole me coiffe régulièrement, toujours ponctuel aux rendez-vous et coupe soignée, très sympa, efficace, que dire de plus, je recommande!!!"
+        day: "Mardi",
+        slots: ["09:30 - 13:45", "14:30 - 18:30", "18:30 - 18:50"]
       },
       {
-        name: "Excellent accueil",
-        rating: 5,
-        text: "Une expérience au top dans ce salon de coiffure ! L'accueil est chaleureux et professionnel, et l'ambiance est à la fois conviviale et stylée."
+        day: "Mercredi",
+        slots: ["14:15 - 18:15"]
       },
       {
-        name: "Très satisfait",
-        rating: 5,
-        text: "Très satisfaite du coiffeur qui a coupé les cheveux de mon fils de 5 ans! Très pro, à l'écoute, de bons conseils et très patient. J'ai trouvé le salon de coiffure pour mon fils !"
+        day: "Jeudi",
+        slots: ["09:30 - 13:45", "14:30 - 18:30", "18:30 - 18:50"]
+      },
+      {
+        day: "Vendredi",
+        slots: ["09:30 - 13:45", "14:30 - 18:30"]
+      },
+      {
+        day: "Samedi",
+        slots: ["09:00 - 13:00"]
+      },
+      {
+        day: "Dimanche",
+        slots: ["Fermé"]
       }
     ]
   },
 
-  // RÉSERVATION
-  booking: {
-    title: "Réservez votre rendez-vous",
-    subtitle: "Prise de RDV en ligne 24/7",
-    description: "Réservez votre créneau en quelques clics sur Planity. Les places se remplissent vite, n'attendez plus !",
-    cta: "Réserver maintenant",
-    note: "Vous pouvez également nous appeler directement"
+  // CONTACT
+  contact: {
+    title: "Me contacter",
+    address: {
+      street: "5 Place du Martray",
+      city: "22460 Uzel",
+      region: "Côtes-d'Armor, Bretagne"
+    },
+    phone: "À venir",
+    email: "contact@elixiraufeminin.fr",
+    booking: "https://www.planity.com/elixir-au-feminin-22460-uzel",
+    cta: "Réserver sur Planity"
+  },
+
+  // SPÉCIALITÉS
+  specialties: {
+    title: "Mes spécialités",
+    items: [
+      {
+        name: "Nail Art",
+        icon: "🎨",
+        description: "Créations artistiques personnalisées"
+      },
+      {
+        name: "Semi-permanent",
+        icon: "💅",
+        description: "Tenue longue durée garantie"
+      },
+      {
+        name: "Pose complète",
+        icon: "✨",
+        description: "Extensions d'ongles professionnelles"
+      },
+      {
+        name: "Beauté des pieds",
+        icon: "🦶",
+        description: "Soins complets et pose"
+      },
+      {
+        name: "Gainage",
+        icon: "💎",
+        description: "Renforcement des ongles naturels"
+      },
+      {
+        name: "Remplissage",
+        icon: "🔄",
+        description: "Entretien régulier de vos ongles"
+      }
+    ]
+  },
+
+  // PROCESSUS
+  process: {
+    title: "Comment ça se passe ?",
+    steps: [
+      {
+        number: "01",
+        title: "Réservation",
+        description: "Prenez RDV en ligne sur Planity 24/7"
+      },
+      {
+        number: "02",
+        title: "Accueil",
+        description: "Je vous accueille dans mon institut chaleureux"
+      },
+      {
+        number: "03",
+        title: "Conseil",
+        description: "Nous discutons de vos envies et besoins"
+      },
+      {
+        number: "04",
+        title: "Soin",
+        description: "Je réalise votre prestation avec soin"
+      },
+      {
+        number: "05",
+        title: "Résultat",
+        description: "Vous repartez avec des ongles sublimes !"
+      }
+    ]
   },
 
   // FAQ
   faq: [
     {
+      question: "Combien de temps dure le vernis semi-permanent ?",
+      answer: "Le vernis semi-permanent tient en moyenne 3 à 4 semaines selon la pousse de vos ongles et leur entretien."
+    },
+    {
+      question: "Le nail art est-il inclus dans tous les tarifs ?",
+      answer: "Non, le nail art est proposé en option. Vous pouvez choisir une pose avec ou sans nail art selon vos préférences et votre budget."
+    },
+    {
       question: "Faut-il prendre rendez-vous ?",
-      answer: "Oui, nous recommandons fortement de prendre rendez-vous car les places se remplissent rapidement. Vous pouvez réserver en ligne 24/7 sur Planity ou nous appeler."
+      answer: "Oui, je travaille uniquement sur rendez-vous. Vous pouvez réserver facilement en ligne sur Planity 24h/24 et 7j/7."
     },
     {
-      question: "Quels sont vos tarifs ?",
-      answer: "Nos tarifs sont très corrects et varient selon les prestations. Contactez-nous ou consultez notre page de réservation pour plus de détails."
+      question: "Utilisez-vous des produits de qualité ?",
+      answer: "Oui, je travaille exclusivement avec des marques professionnelles reconnues pour garantir la qualité et la tenue de vos ongles."
     },
     {
-      question: "Acceptez-vous les enfants ?",
-      answer: "Absolument ! Nous avons l'habitude de couper les cheveux des enfants. Nos barbiers sont patients et professionnels avec les plus jeunes."
+      question: "Proposez-vous des soins pour hommes ?",
+      answer: "Je suis spécialisée dans les soins féminins, mais n'hésitez pas à me contacter pour discuter de vos besoins."
     },
     {
-      question: "Puis-je patienter confortablement ?",
-      answer: "Oui, nous avons un coin détente avec TV et console de jeux. Vous pouvez aussi profiter d'un café ou d'un soft offert."
-    },
-    {
-      question: "Faites-vous le rasage traditionnel ?",
-      answer: "Oui, nous proposons le rasage traditionnel au rasoir avec serviette chaude, dans la pure tradition du barbier."
-    },
-    {
-      question: "Êtes-vous accessibles aux PMR ?",
-      answer: "Oui, notre salon de Loudéac dispose d'un parking PMR et d'une entrée accessible."
+      question: "Où vous situez-vous exactement ?",
+      answer: "Je suis située au cœur d'Uzel, 5 Place du Martray (22460). Un parking est disponible à proximité."
     }
   ],
 
-  // RÉSEAUX SOCIAUX
-  social: {
-    instagram: "@barb_kut",
-    facebook: "Barb&Kut",
-    followers: "3 500+"
-  },
+  // VALEURS
+  values: [
+    { text: "Qualité", icon: "✨" },
+    { text: "Écoute", icon: "👂" },
+    { text: "Bienveillance", icon: "💖" },
+    { text: "Créativité", icon: "🎨" },
+    { text: "Professionnalisme", icon: "⭐" }
+  ],
+
+  // POINTS FORTS
+  highlights: [
+    "Institut spécialisé en onglerie",
+    "Note de 5/5 sur Planity",
+    "Nail art personnalisé",
+    "Produits professionnels",
+    "Cadre chaleureux et féminin",
+    "Horaires flexibles",
+    "Réservation en ligne facile",
+    "Au cœur d'Uzel"
+  ],
 
   // SEO
   seo: {
-    title: "Barb&Kut - Barbier Rétro | Loudéac & Pontivy",
-    description: "Barbier & salon de coiffure pour hommes à Loudéac et Pontivy. Design rétro chaleureux, équipe jeune et dynamique. Coupe, barbe, rasage traditionnel. RDV en ligne.",
-    keywords: "barbier Loudéac, barbier Pontivy, coiffeur homme, rasage traditionnel, Barb&Kut, salon rétro, taille barbe, dégradé, fade, 22600, 56300"
+    title: "Elixir au Féminin - Onglerie & Institut de beauté Uzel (22460)",
+    description: "Institut de beauté et onglerie à Uzel. Spécialiste nail art, semi-permanent, pose complète. Note 5/5. RDV en ligne sur Planity. 5 Place du Martray, 22460 Uzel.",
+    keywords: "onglerie Uzel, nail art, manucure Uzel, beauté des pieds, vernis semi-permanent, pose d'ongles, Elixir au Féminin, institut beauté 22460"
   },
 
   // THÈME
   theme: {
-    primary: "amber", // Cuivre/Or rétro
-    secondary: "slate", // Gris ardoise industriel
-    accent: "red", // Rouge barbier classique
-    mode: "dark" // Mode sombre pour ambiance rétro
+    primary: "pink", // Rose féminin
+    secondary: "purple", // Violet élégant
+    accent: "rose", // Rose doux
+    mode: "light" // Mode clair pour un aspect frais et lumineux
   }
 };
