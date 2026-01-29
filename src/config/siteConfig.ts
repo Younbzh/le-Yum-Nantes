@@ -1,268 +1,310 @@
 export const siteConfig = {
   // IDENTITÉ
-  teamName: "WRC Trévé RX",
-  fullName: "Team WRC Trévé RX",
-  tagline: "Team de Rallycross",
-  slogan: "La passion du rallycross en Bretagne",
-  city: "Trévé",
-  region: "Côtes-d'Armor, Bretagne",
-  founded: "2009",
+  companyName: "Avalon Stratège",
+  tagline: "Votre présence en ligne, enfin accessible",
+  slogan: "Des sites web professionnels à prix honnête pour TPE et auto-entrepreneurs",
   
   // HERO
   hero: {
-    title: "Team WRC Trévé RX",
-    subtitle: "Double Champion de France de Rallycross",
-    tagline: "Division 4 • 2024 & 2025",
-    description: "Team de rallycross bretonne menée par Luc Derrien, double champion de France consécutif en Division 4. Performance, passion et dépassement de soi sur tous les circuits français.",
-    cta: "Suivez-nous"
+    title: "Votre Site Web Professionnel",
+    subtitle: "Livré en 48h, sans vous ruiner",
+    price: "190€",
+    highlight: "Installation complète",
+    description: "Vous êtes artisan, commerçant ou auto-entrepreneur ? Obtenez enfin votre site web professionnel sans exploser votre budget. Installation complète à 190€ + gestion totale à 39€/mois.",
+    cta: "Obtenir mon devis gratuit",
+    promise: "✓ Devis gratuit ✓ Livré en 48h ✓ Pas de surprise"
   },
 
-  // LE PILOTE
-  pilot: {
-    name: "Luc DERRIEN",
-    number: "#35",
-    title: "Pilote & Double Champion de France",
-    bio: "Pilote passionné et déterminé, Luc Derrien incarne l'excellence du rallycross français. Avec un talent indéniable et une régularité impressionnante, il a su s'imposer comme une référence en Division 4.",
-    achievements: "Double champion de France consécutif (2024-2025), Luc a démontré sa maîtrise technique et sa combativité lors de la finale 2025 à Dreux, remontant un retard de 15 points pour décrocher le titre.",
-    style: "Pilotage agressif mais précis, excellente gestion de course, spécialiste des départs canon",
-    quote: "Le rallycross, c'est ma passion. Chaque course est un nouveau défi, chaque victoire est le fruit d'un travail d'équipe acharné."
-  },
-
-  // LA VOITURE
-  car: {
-    model: "Honda Civic Type R",
-    category: "Division 4",
-    number: "#35",
-    specs: {
-      motorisation: "2.0L i-VTEC",
-      puissance: "~280 ch",
-      transmission: "6 rapports",
-      poids: "~1150 kg",
-      entrainement: "Traction avant"
-    },
-    colors: ["Noir", "Vert fluo", "Jaune"],
-    features: [
-      "Châssis renforcé rallycross",
-      "Suspension ajustable",
-      "Freinage haute performance",
-      "Arceau de sécurité FIA",
-      "Pneumatiques mixtes terre/asphalte"
-    ]
-  },
-
-  // PALMARÈS
-  achievements: {
-    title: "Palmarès",
-    titles: [
+  // OFFRE PRINCIPALE
+  mainOffer: {
+    title: "190€ – Installation Complète",
+    subtitle: "Paiement unique • Déductible d'impôts",
+    description: "Tout ce qu'il faut pour être en ligne, prêt à accueillir vos clients.",
+    includes: [
       {
-        year: "2025",
-        title: "Champion de France Rallycross Division 4",
-        points: "304 points",
-        highlight: "Victoire finale à Dreux après une remontée spectaculaire de 15 points",
-        details: [
-          "2 victoires en qualifications (Q2 et Q3)",
-          "1ère place en demi-finale",
-          "Victoire en finale",
-          "Domination du championnat"
+        icon: "⚙️",
+        title: "Installation & Configuration",
+        items: [
+          "Installation du site personnalisé",
+          "Adaptation du design (couleurs, logo)",
+          "Intégration de vos textes et photos",
+          "Mise en ligne sur votre hébergeur"
         ]
       },
       {
-        year: "2024",
-        title: "Champion de France Rallycross Division 4",
-        points: "304 points",
-        highlight: "Premier titre national avec une régularité impressionnante",
-        details: [
-          "Domination de la saison",
-          "Multiples podiums",
-          "Constance exceptionnelle",
-          "Titre mérité"
+        icon: "🔒",
+        title: "Sécurité & Performance",
+        items: [
+          "Certificat SSL (HTTPS) activé",
+          "Optimisation vitesse de chargement",
+          "Configuration du nom de domaine",
+          "Adresse mail professionnelle (optionnel)"
+        ]
+      },
+      {
+        icon: "📱",
+        title: "Livraison Clé-en-main",
+        items: [
+          "Site responsive (mobile + tablette + PC)",
+          "Page d'accueil + pages essentielles",
+          "Prêt à être indexé sur Google",
+          "Livré en 24 à 48h"
         ]
       }
     ],
-    stats: {
-      titres: 2,
-      victoires: "15+",
-      podiums: "25+",
-      annees: "2024-2025"
-    }
+    taxDeductible: true,
+    taxNote: "Les 190€ sont une charge professionnelle déductible d'impôts"
   },
 
-  // LE RALLYCROSS
-  rallycross: {
-    title: "Le Rallycross",
-    subtitle: "Sport automobile spectaculaire",
-    description: "Le rallycross est une discipline de sport automobile se déroulant sur circuit fermé alternant surface en terre et surface en asphalte. Des courses intenses de 4 à 6 tours avec départs groupés, dérapages spectaculaires et dépassements audacieux.",
-    characteristics: [
+  // PACK SÉRÉNITÉ
+  serenityPack: {
+    title: "39€/mois – Pack Sérénité",
+    subtitle: "Sans engagement • Résiliable à tout moment",
+    description: "Votre site 100% géré. Vous n'avez rien à faire, on s'occupe de tout.",
+    includes: [
       {
-        icon: "🏁",
-        title: "Circuit mixte",
-        description: "60% terre / 40% asphalte"
+        icon: "🚀",
+        title: "Hébergement Premium",
+        items: [
+          "Serveurs rapides et sécurisés",
+          "Renouvellement annuel du domaine",
+          "Sauvegardes automatiques quotidiennes",
+          "Surveillance 24/7"
+        ]
+      },
+      {
+        icon: "🛠️",
+        title: "Maintenance & Support",
+        items: [
+          "Mises à jour régulières du site",
+          "1 modification par mois incluse",
+          "Support par email ou message",
+          "Réponse rapide garantie"
+        ]
+      },
+      {
+        icon: "🔧",
+        title: "Tranquillité d'esprit",
+        items: [
+          "Maintenance technique continue",
+          "Correction des bugs éventuels",
+          "Monitoring des performances",
+          "Vous n'avez rien à gérer"
+        ]
+      }
+    ],
+    noCommitment: true,
+    commitment: "Résiliable à tout moment, sans frais",
+    benefit: "Votre site reste en ligne et performant, sans effort de votre part"
+  },
+
+  // POURQUOI NOUS
+  whyUs: {
+    title: "Pourquoi Avalon Stratège ?",
+    subtitle: "Une solution pensée pour les petits budgets",
+    reasons: [
+      {
+        icon: "💰",
+        title: "Prix honnête",
+        description: "190€ pour démarrer, c'est tout. Pas de frais cachés, pas de mauvaise surprise."
       },
       {
         icon: "⚡",
-        title: "Courses courtes",
-        description: "4-6 tours ultra-intensifs"
-      },
-      {
-        icon: "🚗",
-        title: "Départs groupés",
-        description: "6 voitures simultanément"
+        title: "Rapide",
+        description: "Votre site en ligne en 24 à 48h. Vous êtes pressé ? Nous aussi."
       },
       {
         icon: "🎯",
-        title: "Joker Lap",
-        description: "Variante tactique obligatoire"
+        title: "Simple",
+        description: "Pas de jargon technique. On s'occupe de tout, vous gérez votre activité."
       },
       {
-        icon: "💨",
-        title: "Spectacle garanti",
-        description: "Dérapages et dépassements"
+        icon: "🤝",
+        title: "À l'écoute",
+        description: "Support réactif par email ou téléphone. Une vraie personne vous répond."
       },
       {
-        icon: "🏆",
-        title: "Compétition",
-        description: "Qualifs, demi-finales, finale"
+        icon: "📈",
+        title: "Professionnel",
+        description: "Un site qui inspire confiance à vos clients et valorise votre activité."
+      },
+      {
+        icon: "✅",
+        title: "Sans risque",
+        description: "Pack mensuel sans engagement. Vous arrêtez quand vous voulez."
       }
     ]
   },
 
-  // PARTENAIRES
-  partners: {
-    title: "Nos partenaires",
-    subtitle: "Ils nous font confiance",
-    main: [
+  // POUR QUI
+  target: {
+    title: "Cette offre est faite pour vous si...",
+    profiles: [
       {
-        name: "SARL Glais et Fils",
-        type: "Partenaire principal",
-        location: "Plémet",
-        description: "Partenaire historique apportant un soutien logistique et financier essentiel"
+        icon: "🔨",
+        title: "Artisan",
+        description: "Plombier, électricien, menuisier... Vous avez besoin d'être trouvé localement."
+      },
+      {
+        icon: "🏪",
+        title: "Commerçant",
+        description: "Boutique, restaurant, salon... Vos clients doivent pouvoir vous trouver en ligne."
+      },
+      {
+        icon: "💼",
+        title: "Auto-entrepreneur",
+        description: "Coach, consultant, freelance... Vous voulez crédibiliser votre activité."
+      },
+      {
+        icon: "🏡",
+        title: "TPE / PME",
+        description: "Petite entreprise qui veut une présence web sans se ruiner."
+      },
+      {
+        icon: "🚀",
+        title: "Lancement",
+        description: "Vous démarrez et avez besoin d'un site vite, bien et pas cher."
+      },
+      {
+        icon: "🔄",
+        title: "Refonte",
+        description: "Votre site actuel est obsolète, trop cher ou ne vous convient plus."
       }
-    ],
-    sponsors: [
-      { name: "YACCO", type: "Lubrifiants" },
-      { name: "Nova Forklift", type: "Matériel" },
-      { name: "MCP", type: "Pièces auto" },
-      { name: "Graphiee", type: "Communication" },
-      { name: "Balticross", type: "Équipement" },
-      { name: "Cooper Tires", type: "Pneumatiques" }
     ]
   },
 
-  // LA TEAM
-  team: {
-    title: "L'équipe",
-    description: "Une équipe soudée et passionnée au service de la performance. Pilote, mécaniciens, préparateurs et partenaires travaillent ensemble pour viser l'excellence à chaque course.",
-    values: [
-      { icon: "🏁", text: "Performance", description: "Toujours viser le podium" },
-      { icon: "🤝", text: "Esprit d'équipe", description: "La force du collectif" },
-      { icon: "🔧", text: "Préparation", description: "Rigueur et professionnalisme" },
-      { icon: "💪", text: "Combativité", description: "Ne jamais abandonner" },
-      { icon: "❤️", text: "Passion", description: "L'amour du rallycross" }
-    ]
-  },
-
-  // CHAMPIONNAT
-  championship: {
-    title: "Championnat de France Rallycross",
-    description: "Le championnat de France de rallycross est l'une des compétitions nationales les plus relevées au monde. Avec 8 manches sur les meilleurs circuits français, il attire les meilleurs pilotes et offre un spectacle exceptionnel.",
-    divisions: [
+  // PROCESSUS
+  process: {
+    title: "Comment ça marche ?",
+    subtitle: "4 étapes simples pour être en ligne",
+    steps: [
       {
-        name: "Supercar",
-        description: "Catégorie reine (~600ch, 4x4)"
+        number: "01",
+        title: "Vous me contactez",
+        description: "Email ou téléphone, comme vous préférez. On discute de votre projet gratuitement."
       },
       {
-        name: "Super 1600",
-        description: "Future élite (~280ch)"
+        number: "02",
+        title: "Je vous envoie un devis",
+        description: "Clair, détaillé, sans surprise. Vous validez si ça vous convient."
       },
       {
-        name: "Division 3",
-        description: "Propulsion (~250ch)"
+        number: "03",
+        title: "Je crée votre site",
+        description: "Vous me donnez vos infos (textes, photos, logo). Je m'occupe du reste."
       },
       {
-        name: "Division 4",
-        description: "Notre catégorie (~280ch, traction)"
+        number: "04",
+        title: "Votre site est en ligne",
+        description: "En 24-48h, vous avez un site professionnel et vous pouvez accueillir vos clients !"
       }
-    ],
-    circuits: [
-      "Lessay", "Faleyras", "Châteauroux", "Pont-de-Rouan",
-      "Kerlabo", "Lohéac", "Mayenne", "Dreux"
     ]
   },
 
-  // SAISON
-  season: {
-    title: "Saison 2025 - Bilan",
-    subtitle: "Une saison de folie !",
-    highlight: "8ème et dernière manche à Dreux : week-end d'exception avec 2 victoires en qualifications, victoire en demi-finale et victoire en finale pour décrocher le titre de champion !",
-    finalRace: {
-      circuit: "Dreux",
-      date: "Octobre 2025",
-      position: "1er",
-      points: "304 points au total",
-      context: "15 points de retard avant la manche"
+  // CE QU'ILS DISENT (exemples fictifs mais réalistes)
+  testimonials: {
+    title: "Ce qu'ils en disent",
+    reviews: [
+      {
+        name: "Sophie M.",
+        business: "Salon de coiffure",
+        text: "J'avais besoin d'un site rapidement et sans me ruiner. Avalon Stratège m'a livré un site nickel en 48h. Mes clients me trouvent enfin sur Google !",
+        rating: 5
+      },
+      {
+        name: "Thomas L.",
+        business: "Plombier auto-entrepreneur",
+        text: "Le pack à 39€/mois est parfait. Je ne m'occupe de rien, mon site est toujours à jour et si j'ai une question, j'ai une réponse rapide.",
+        rating: 5
+      },
+      {
+        name: "Marie D.",
+        business: "Coach bien-être",
+        text: "Enfin un tarif honnête ! J'ai eu peur de me faire arnaquer avec d'autres agences qui demandaient 10 fois plus. Merci pour ce service accessible.",
+        rating: 5
+      }
+    ]
+  },
+
+  // FAQ
+  faq: [
+    {
+      question: "Pourquoi si peu cher ?",
+      answer: "Je travaille avec des templates professionnels que je personnalise à vos couleurs. Pas de développement sur-mesure coûteux, mais un résultat pro et efficace. Et je ne facture pas 5000€ pour faire croire que c'est du luxe."
+    },
+    {
+      question: "Y a-t-il des frais cachés ?",
+      answer: "Non. 190€ pour l'installation, puis 39€/mois si vous voulez le pack sérénité. C'est tout. Pas de surprise, pas de frais annexes."
+    },
+    {
+      question: "Le pack à 39€/mois est-il obligatoire ?",
+      answer: "Non, mais fortement recommandé. Sans lui, vous devrez gérer vous-même l'hébergement, les mises à jour, la maintenance... Le pack vous libère de tout ça."
+    },
+    {
+      question: "Puis-je résilier le pack mensuel quand je veux ?",
+      answer: "Oui, sans engagement. Vous arrêtez quand vous voulez, sans frais de résiliation."
+    },
+    {
+      question: "Qu'est-ce qu'une 'petite modification' incluse par mois ?",
+      answer: "Changer un texte, mettre à jour des horaires, ajouter une photo, modifier un tarif... Des petites choses qui prennent 10-15 minutes. Si c'est plus gros, on en discute."
+    },
+    {
+      question: "Est-ce que mon site sera bien référencé sur Google ?",
+      answer: "Votre site sera optimisé techniquement pour le référencement (structure, vitesse, mobile). Mais être en 1ère page demande du temps et du contenu. Je peux vous conseiller gratuitement."
+    },
+    {
+      question: "Je n'ai pas de logo, pas de photos. Vous pouvez m'aider ?",
+      answer: "Oui. Je peux vous orienter vers des solutions gratuites ou peu chères pour le logo. Pour les photos, on peut utiliser des images libres de droits en attendant que vous ayez les vôtres."
+    },
+    {
+      question: "Est-ce que les 190€ sont vraiment déductibles ?",
+      answer: "Oui, si vous êtes professionnel (auto-entrepreneur, entreprise...). C'est une charge professionnelle comme vos autres dépenses. Parlez-en à votre comptable pour confirmation."
     }
+  ],
+
+  // GARANTIES
+  guarantees: {
+    title: "Mes engagements",
+    items: [
+      "✓ Devis gratuit et transparent",
+      "✓ Livraison en 24 à 48h",
+      "✓ Site responsive (mobile/tablette/PC)",
+      "✓ Support réactif",
+      "✓ Pas de frais cachés",
+      "✓ Résiliation libre du pack mensuel"
+    ]
   },
 
-  // CONTACT & RÉSEAUX
+  // CONTACT
   contact: {
-    title: "Nous contacter",
-    address: {
-      street: "15 rue de Beauséjour",
-      city: "22600 Trévé",
-      region: "Côtes-d'Armor, Bretagne"
-    },
-    social: {
-      facebook: "https://www.facebook.com/p/Team-WRC-Trévé-RX-100063737791619/",
-      instagram: "https://www.instagram.com/wrc_treve_rx/",
-      followers: "1000+"
-    },
-    cta: "Suivez nos aventures sur les réseaux sociaux !"
+    title: "Prêt à lancer votre site ?",
+    subtitle: "Contactez-moi pour un devis gratuit",
+    email: "avalonstratege@gmail.com",
+    phone: "06 58 96 89 59",
+    cta: "Demander un devis gratuit",
+    availability: "Réponse sous 24h maximum"
   },
 
-  // GALERIE
-  gallery: {
-    title: "Galerie",
-    categories: ["Victoires", "Course", "Team", "Voiture"]
-  },
-
-  // ACTUALITÉS
-  news: {
-    title: "Actualités",
-    latest: {
-      title: "Luc Derrien sacré champion de France pour la 2ème fois !",
-      date: "Octobre 2025",
-      excerpt: "Week-end exceptionnel à Dreux avec une finale mémorable qui offre le titre à Luc Derrien devant Arthur Barbault Forget.",
-      content: "La Team WRC de Trévé avec son pilote Luc DERRIEN a passé un week-end d'exception lors de la 8ème et dernière manche du championnat de France de Rallycross à Dreux avec 2 victoires en Q2 et Q3, une première place en demi finale et bien sûr la victoire en finale devant son concurrent direct Arthur Barbault Forget qui comptait 15 points d'avance avant le week-end. Luc Derrien devient donc champion de France de Rallycross de la Division 4 pour la seconde fois consécutive."
-    }
-  },
-
-  // DEVENIR PARTENAIRE
-  partnership: {
-    title: "Devenir partenaire",
-    subtitle: "Associez votre marque à la performance",
-    benefits: [
-      "Visibilité sur la voiture et les équipements",
-      "Logo sur tous nos supports de communication",
-      "Présence sur nos réseaux sociaux",
-      "Invitations VIP aux courses",
-      "Retombées médiatiques nationales",
-      "Association à une équipe gagnante"
-    ],
-    cta: "Contactez-nous pour un partenariat"
+  // INFOS PRATIQUES
+  legalInfo: {
+    companyName: "Avalon Stratège",
+    email: "avalonstratege@gmail.com",
+    phone: "06 58 96 89 59",
+    siret: "À compléter si nécessaire"
   },
 
   // SEO
   seo: {
-    title: "Team WRC Trévé RX - Double Champion de France Rallycross",
-    description: "Team WRC Trévé RX : Luc Derrien, double champion de France de rallycross 2024-2025 en Division 4. Honda Civic #35. Suivez nos courses sur tous les circuits français !",
-    keywords: "WRC Trévé, rallycross, Luc Derrien, champion France, Division 4, Honda Civic, sport automobile, Bretagne, Côtes-d'Armor, rallycross France, team rallycross"
+    title: "Avalon Stratège - Sites Web Pros pour TPE à 190€",
+    description: "Création de sites web professionnels pour artisans, commerçants et auto-entrepreneurs. Installation complète 190€ + gestion 39€/mois sans engagement. Livraison en 48h.",
+    keywords: "création site web, site pas cher, site TPE, site artisan, site auto-entrepreneur, site internet professionnel, 190 euros, hébergement web, maintenance site"
   },
 
   // THÈME
   theme: {
-    primary: "green", // Vert fluo de la voiture
-    secondary: "yellow", // Jaune des sponsors
-    accent: "black", // Noir de la voiture
-    mode: "dark" // Mode sombre pour ambiance racing
+    primary: "blue", // Bleu confiance
+    secondary: "indigo", // Indigo professionnel
+    accent: "green", // Vert validation/succès
+    mode: "light" // Mode clair pour inspirer confiance
   }
 };
