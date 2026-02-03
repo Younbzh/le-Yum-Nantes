@@ -1,310 +1,286 @@
 export const siteConfig = {
-  // IDENTITÉ
-  companyName: "Avalon Stratège",
-  tagline: "Votre présence en ligne, enfin accessible",
-  slogan: "Des sites web professionnels à prix honnête pour TPE et auto-entrepreneurs",
+  // Informations générales
+  name: "Les Huîtres RICOU",
+  tagline: "Ostréiculteurs de père en fils depuis 5 générations",
+  slogan: "La tradition au cœur de l'océan",
+  description: "Ostréiculteurs familiaux sur l'île d'Oléron depuis 5 générations. Huîtres nées en mer, élevées et affinées dans nos claires du bassin Marennes-Oléron. Vente en gros, semi-gros et au détail sur nos marchés.",
   
-  // HERO
-  hero: {
-    title: "Votre Site Web Professionnel",
-    subtitle: "Livré en 48h, sans vous ruiner",
-    price: "190€",
-    highlight: "Installation complète",
-    description: "Vous êtes artisan, commerçant ou auto-entrepreneur ? Obtenez enfin votre site web professionnel sans exploser votre budget. Installation complète à 190€ + gestion totale à 39€/mois.",
-    cta: "Obtenir mon devis gratuit",
-    promise: "✓ Devis gratuit ✓ Livré en 48h ✓ Pas de surprise"
+  // Entreprise
+  company: {
+    legalName: "EARL Huîtres RICOU",
+    responsable: "Jérémy RICOU",
+    generations: 5,
+    since: "Depuis plus d'un siècle",
+    speciality: "Ostréiculture traditionnelle"
   },
-
-  // OFFRE PRINCIPALE
-  mainOffer: {
-    title: "190€ – Installation Complète",
-    subtitle: "Paiement unique • Déductible d'impôts",
-    description: "Tout ce qu'il faut pour être en ligne, prêt à accueillir vos clients.",
-    includes: [
+  
+  // Contact
+  contact: {
+    email: "leshuitresricou@outlook.fr",
+    phone: "06 13 16 24 60",
+    client_email: "youenndarsel.oc@gmail.com" // Contact commercial
+  },
+  
+  // Adresses de production
+  production: {
+    main: {
+      name: "Exploitation ostréicole",
+      address: "La Fontaine - Chenal d'Ors",
+      city: "Le Château-d'Oléron",
+      postalCode: "17480",
+      region: "Île d'Oléron, Charente-Maritime",
+      coordinates: {
+        lat: 45.8833,
+        lng: -1.2000
+      }
+    },
+    secondary: {
+      name: "Site de production",
+      address: "Le Grésillon, 23 rue du Moulin",
+      city: "Le Château-d'Oléron",
+      postalCode: "17480"
+    }
+  },
+  
+  // Histoire & Savoir-faire
+  about: {
+    story: "La famille RICOU cultive les huîtres sur l'île d'Oléron depuis 5 générations. Ostréiculteurs de père en fils, nous perpétuons un savoir-faire ancestral transmis de génération en génération. Nos huîtres naissent en mer, grandissent dans les meilleurs parcs du prestigieux bassin Marennes-Oléron, puis sont affinées avec soin dans nos claires pour vous offrir des huîtres d'exception.",
+    values: [
+      "Tradition familiale de 5 générations",
+      "Savoir-faire artisanal",
+      "Respect du cycle naturel",
+      "Qualité premium garantie",
+      "Affinage en claires traditionnel",
+      "Traçabilité totale"
+    ],
+    heritage: "Plus d'un siècle d'expertise ostréicole transmise de père en fils sur les terres marines de l'île d'Oléron.",
+    commitment: "Nous sommes engagés dans une démarche de qualité respectueuse de l'environnement et des traditions ostréicoles du bassin Marennes-Oléron."
+  },
+  
+  // Bassin Marennes-Oléron
+  terroir: {
+    name: "Bassin Marennes-Oléron",
+    igp: "Indication Géographique Protégée depuis 2009",
+    description: "Le bassin de Marennes-Oléron est le premier centre européen d'affinage et de production d'huîtres. Nos huîtres bénéficient d'un terroir d'exception reconnu par une IGP.",
+    specificites: [
+      "Affinage en claires (anciens marais salants)",
+      "Eau riche en plancton et nutriments",
+      "Navicule bleue (algue donnant la couleur verte)",
+      "Savoir-faire unique reconnu",
+      "Qualité supérieure garantie"
+    ],
+    process: "Nos huîtres sont élevées en pleine mer dans les meilleurs parcs du bassin, puis affinées plusieurs semaines dans nos claires pour développer leur goût unique et leur qualité exceptionnelle."
+  },
+  
+  // Gamme de produits
+  products: {
+    categories: [
       {
-        icon: "⚙️",
-        title: "Installation & Configuration",
-        items: [
-          "Installation du site personnalisé",
-          "Adaptation du design (couleurs, logo)",
-          "Intégration de vos textes et photos",
-          "Mise en ligne sur votre hébergeur"
-        ]
+        name: "Fines de Claire",
+        igp: true,
+        description: "Huîtres peu charnues, riches en eau, au goût marin raffiné et équilibré. Affinées minimum 28 jours en claires.",
+        caracteristiques: [
+          "Peu charnues, riches en eau",
+          "Goût marin équilibré",
+          "Affinage minimum 28 jours",
+          "Coquille de qualité supérieure",
+          "Saveur de terroir subtile"
+        ],
+        icon: "🦪"
       },
       {
-        icon: "🔒",
-        title: "Sécurité & Performance",
-        items: [
-          "Certificat SSL (HTTPS) activé",
-          "Optimisation vitesse de chargement",
-          "Configuration du nom de domaine",
-          "Adresse mail professionnelle (optionnel)"
-        ]
+        name: "Fines de Claire Vertes",
+        labelRouge: true,
+        igp: true,
+        description: "Huîtres au goût raffiné avec une teinte verte caractéristique des branchies, témoignage de l'affinage en claire avec navicule bleue.",
+        caracteristiques: [
+          "Teinte verte caractéristique",
+          "Goût prolongé en bouche",
+          "Affinage en présence de navicule bleue",
+          "Label Rouge + IGP",
+          "Non laiteuses (octobre à mai)"
+        ],
+        icon: "🌿"
       },
       {
-        icon: "📱",
-        title: "Livraison Clé-en-main",
-        items: [
-          "Site responsive (mobile + tablette + PC)",
-          "Page d'accueil + pages essentielles",
-          "Prêt à être indexé sur Google",
-          "Livré en 24 à 48h"
-        ]
+        name: "Spéciales de Claire",
+        igp: true,
+        description: "Huîtres charnues et croquantes, sélectionnées pour leur forme. Chair plus abondante, équilibre parfait entre douceur et salinité.",
+        caracteristiques: [
+          "Chair affirmée et croquante",
+          "Sélection par forme",
+          "Volume en bouche remarquable",
+          "Équilibre douceur/salinité",
+          "Affinage prolongé"
+        ],
+        icon: "⭐"
       }
     ],
-    taxDeductible: true,
-    taxNote: "Les 190€ sont une charge professionnelle déductible d'impôts"
+    calibres: [
+      { numero: "N°0", poids: "150g et +", description: "Très grosse" },
+      { numero: "N°1", poids: "120-150g", description: "Grosse" },
+      { numero: "N°2", poids: "90-120g", description: "Moyenne" },
+      { numero: "N°3", poids: "70-90g", description: "Petite" },
+      { numero: "N°4", poids: "50-70g", description: "Très petite" }
+    ]
   },
-
-  // PACK SÉRÉNITÉ
-  serenityPack: {
-    title: "39€/mois – Pack Sérénité",
-    subtitle: "Sans engagement • Résiliable à tout moment",
-    description: "Votre site 100% géré. Vous n'avez rien à faire, on s'occupe de tout.",
-    includes: [
-      {
-        icon: "🚀",
-        title: "Hébergement Premium",
-        items: [
-          "Serveurs rapides et sécurisés",
-          "Renouvellement annuel du domaine",
-          "Sauvegardes automatiques quotidiennes",
-          "Surveillance 24/7"
-        ]
-      },
-      {
-        icon: "🛠️",
-        title: "Maintenance & Support",
-        items: [
-          "Mises à jour régulières du site",
-          "1 modification par mois incluse",
-          "Support par email ou message",
-          "Réponse rapide garantie"
-        ]
-      },
-      {
-        icon: "🔧",
-        title: "Tranquillité d'esprit",
-        items: [
-          "Maintenance technique continue",
-          "Correction des bugs éventuels",
-          "Monitoring des performances",
-          "Vous n'avez rien à gérer"
-        ]
-      }
+  
+  // Vente professionnelle
+  professional: {
+    title: "Vente en Gros & Semi-Gros",
+    description: "Nous proposons nos huîtres aux professionnels : restaurateurs, poissonniers, comités d'entreprise et collectivités.",
+    services: [
+      "Livraison possible selon quantités",
+      "Conditionnement adapté aux professionnels",
+      "Tarifs dégressifs",
+      "Disponibilité toute l'année",
+      "Conseils personnalisés"
     ],
-    noCommitment: true,
-    commitment: "Résiliable à tout moment, sans frais",
-    benefit: "Votre site reste en ligne et performant, sans effort de votre part"
+    clients: "Restaurateurs, Poissonniers, Comités d'entreprise, Traiteurs, Collectivités"
   },
-
-  // POURQUOI NOUS
-  whyUs: {
-    title: "Pourquoi Avalon Stratège ?",
-    subtitle: "Une solution pensée pour les petits budgets",
-    reasons: [
+  
+  // Points de vente (marchés)
+  markets: {
+    description: "Retrouvez nos huîtres fraîches sur nos points de vente hebdomadaires dans l'Indre",
+    period: "De septembre à mai",
+    locations: [
       {
-        icon: "💰",
-        title: "Prix honnête",
-        description: "190€ pour démarrer, c'est tout. Pas de frais cachés, pas de mauvaise surprise."
+        city: "La Châtre",
+        day: "Samedi",
+        hours: "8h00 - 13h00",
+        place: "Place du Marché",
+        frequency: "Hebdomadaire"
       },
       {
-        icon: "⚡",
-        title: "Rapide",
-        description: "Votre site en ligne en 24 à 48h. Vous êtes pressé ? Nous aussi."
+        city: "Issoudun",
+        day: "Vendredi & Samedi",
+        hours: "Matin",
+        place: "Place du 10 Juin 1944",
+        frequency: "Hebdomadaire"
       },
       {
-        icon: "🎯",
-        title: "Simple",
-        description: "Pas de jargon technique. On s'occupe de tout, vous gérez votre activité."
+        city: "Vatan",
+        day: "Samedi",
+        hours: "Matin",
+        place: "Centre-ville",
+        frequency: "Hebdomadaire"
       },
       {
-        icon: "🤝",
-        title: "À l'écoute",
-        description: "Support réactif par email ou téléphone. Une vraie personne vous répond."
+        city: "Ardentes",
+        day: "Samedi",
+        hours: "Matin",
+        place: "Marché",
+        frequency: "Hebdomadaire"
       },
       {
-        icon: "📈",
-        title: "Professionnel",
-        description: "Un site qui inspire confiance à vos clients et valorise votre activité."
+        city: "Neuvy-Saint-Sépulchre",
+        day: "Dimanche",
+        hours: "Matin",
+        place: "Marché",
+        frequency: "Semaines impaires"
       },
       {
-        icon: "✅",
-        title: "Sans risque",
-        description: "Pack mensuel sans engagement. Vous arrêtez quand vous voulez."
+        city: "Le Poinçonnet",
+        day: "Dimanche",
+        hours: "Matin",
+        place: "Marché",
+        frequency: "Semaines impaires"
       }
     ]
   },
-
-  // POUR QUI
-  target: {
-    title: "Cette offre est faite pour vous si...",
-    profiles: [
-      {
-        icon: "🔨",
-        title: "Artisan",
-        description: "Plombier, électricien, menuisier... Vous avez besoin d'être trouvé localement."
-      },
-      {
-        icon: "🏪",
-        title: "Commerçant",
-        description: "Boutique, restaurant, salon... Vos clients doivent pouvoir vous trouver en ligne."
-      },
-      {
-        icon: "💼",
-        title: "Auto-entrepreneur",
-        description: "Coach, consultant, freelance... Vous voulez crédibiliser votre activité."
-      },
-      {
-        icon: "🏡",
-        title: "TPE / PME",
-        description: "Petite entreprise qui veut une présence web sans se ruiner."
-      },
-      {
-        icon: "🚀",
-        title: "Lancement",
-        description: "Vous démarrez et avez besoin d'un site vite, bien et pas cher."
-      },
-      {
-        icon: "🔄",
-        title: "Refonte",
-        description: "Votre site actuel est obsolète, trop cher ou ne vous convient plus."
-      }
+  
+  // Conseils & Conservation
+  conseils: {
+    conservation: [
+      "Conserver au frais (5-15°C)",
+      "Stocker à plat, face bombée en bas",
+      "Consommer sous 8-10 jours",
+      "Ne jamais mettre dans l'eau",
+      "Sortir 30min avant dégustation"
+    ],
+    degustation: [
+      "Ouvrir juste avant de servir",
+      "Vérifier la fraîcheur (odeur marine agréable)",
+      "Jeter la première eau",
+      "Déguster avec du citron ou une sauce échalote",
+      "Accompagner de pain de seigle et beurre salé"
+    ],
+    ouverture: [
+      "Utiliser un couteau à huître",
+      "Tenir l'huître dans un torchon",
+      "Insérer la lame dans le talon",
+      "Faire levier pour ouvrir",
+      "Détacher le muscle"
     ]
   },
-
-  // PROCESSUS
-  process: {
-    title: "Comment ça marche ?",
-    subtitle: "4 étapes simples pour être en ligne",
-    steps: [
-      {
-        number: "01",
-        title: "Vous me contactez",
-        description: "Email ou téléphone, comme vous préférez. On discute de votre projet gratuitement."
-      },
-      {
-        number: "02",
-        title: "Je vous envoie un devis",
-        description: "Clair, détaillé, sans surprise. Vous validez si ça vous convient."
-      },
-      {
-        number: "03",
-        title: "Je crée votre site",
-        description: "Vous me donnez vos infos (textes, photos, logo). Je m'occupe du reste."
-      },
-      {
-        number: "04",
-        title: "Votre site est en ligne",
-        description: "En 24-48h, vous avez un site professionnel et vous pouvez accueillir vos clients !"
-      }
-    ]
-  },
-
-  // CE QU'ILS DISENT (exemples fictifs mais réalistes)
-  testimonials: {
-    title: "Ce qu'ils en disent",
-    reviews: [
-      {
-        name: "Sophie M.",
-        business: "Salon de coiffure",
-        text: "J'avais besoin d'un site rapidement et sans me ruiner. Avalon Stratège m'a livré un site nickel en 48h. Mes clients me trouvent enfin sur Google !",
-        rating: 5
-      },
-      {
-        name: "Thomas L.",
-        business: "Plombier auto-entrepreneur",
-        text: "Le pack à 39€/mois est parfait. Je ne m'occupe de rien, mon site est toujours à jour et si j'ai une question, j'ai une réponse rapide.",
-        rating: 5
-      },
-      {
-        name: "Marie D.",
-        business: "Coach bien-être",
-        text: "Enfin un tarif honnête ! J'ai eu peur de me faire arnaquer avec d'autres agences qui demandaient 10 fois plus. Merci pour ce service accessible.",
-        rating: 5
-      }
-    ]
-  },
-
-  // FAQ
-  faq: [
+  
+  // Certifications & Labels
+  certifications: [
     {
-      question: "Pourquoi si peu cher ?",
-      answer: "Je travaille avec des templates professionnels que je personnalise à vos couleurs. Pas de développement sur-mesure coûteux, mais un résultat pro et efficace. Et je ne facture pas 5000€ pour faire croire que c'est du luxe."
+      name: "IGP Marennes-Oléron",
+      description: "Indication Géographique Protégée garantissant l'origine et la qualité",
+      year: "2009"
     },
     {
-      question: "Y a-t-il des frais cachés ?",
-      answer: "Non. 190€ pour l'installation, puis 39€/mois si vous voulez le pack sérénité. C'est tout. Pas de surprise, pas de frais annexes."
+      name: "Label Rouge",
+      description: "Qualité supérieure pour nos Fines de Claire Vertes",
+      conditions: "Cahier des charges strict"
     },
     {
-      question: "Le pack à 39€/mois est-il obligatoire ?",
-      answer: "Non, mais fortement recommandé. Sans lui, vous devrez gérer vous-même l'hébergement, les mises à jour, la maintenance... Le pack vous libère de tout ça."
-    },
-    {
-      question: "Puis-je résilier le pack mensuel quand je veux ?",
-      answer: "Oui, sans engagement. Vous arrêtez quand vous voulez, sans frais de résiliation."
-    },
-    {
-      question: "Qu'est-ce qu'une 'petite modification' incluse par mois ?",
-      answer: "Changer un texte, mettre à jour des horaires, ajouter une photo, modifier un tarif... Des petites choses qui prennent 10-15 minutes. Si c'est plus gros, on en discute."
-    },
-    {
-      question: "Est-ce que mon site sera bien référencé sur Google ?",
-      answer: "Votre site sera optimisé techniquement pour le référencement (structure, vitesse, mobile). Mais être en 1ère page demande du temps et du contenu. Je peux vous conseiller gratuitement."
-    },
-    {
-      question: "Je n'ai pas de logo, pas de photos. Vous pouvez m'aider ?",
-      answer: "Oui. Je peux vous orienter vers des solutions gratuites ou peu chères pour le logo. Pour les photos, on peut utiliser des images libres de droits en attendant que vous ayez les vôtres."
-    },
-    {
-      question: "Est-ce que les 190€ sont vraiment déductibles ?",
-      answer: "Oui, si vous êtes professionnel (auto-entrepreneur, entreprise...). C'est une charge professionnelle comme vos autres dépenses. Parlez-en à votre comptable pour confirmation."
+      name: "Groupement Qualité HMO",
+      description: "Adhérent au Groupement Qualité Huîtres Marennes Oléron",
+      engagement: "Démarche qualité et traçabilité"
     }
   ],
-
-  // GARANTIES
-  guarantees: {
-    title: "Mes engagements",
-    items: [
-      "✓ Devis gratuit et transparent",
-      "✓ Livraison en 24 à 48h",
-      "✓ Site responsive (mobile/tablette/PC)",
-      "✓ Support réactif",
-      "✓ Pas de frais cachés",
-      "✓ Résiliation libre du pack mensuel"
-    ]
-  },
-
-  // CONTACT
-  contact: {
-    title: "Prêt à lancer votre site ?",
-    subtitle: "Contactez-moi pour un devis gratuit",
-    email: "avalonstratege@gmail.com",
-    phone: "06 58 96 89 59",
-    cta: "Demander un devis gratuit",
-    availability: "Réponse sous 24h maximum"
-  },
-
-  // INFOS PRATIQUES
-  legalInfo: {
-    companyName: "Avalon Stratège",
-    email: "avalonstratege@gmail.com",
-    phone: "06 58 96 89 59",
-    siret: "À compléter si nécessaire"
-  },
-
+  
+  // Recettes & Idées
+  recettes: [
+    {
+      name: "Huîtres nature",
+      description: "Dégustez-les nature pour apprécier toute la finesse de leur goût marin"
+    },
+    {
+      name: "Huîtres chaudes gratinées",
+      description: "Au four avec une persillade ou un sabayon"
+    },
+    {
+      name: "Huîtres à la plancha",
+      description: "Saisies avec une noix de beurre et un trait de jus de citron"
+    },
+    {
+      name: "Tartare d'huîtres",
+      description: "En tartare avec échalotes, citron et huile d'olive"
+    }
+  ],
+  
   // SEO
   seo: {
-    title: "Avalon Stratège - Sites Web Pros pour TPE à 190€",
-    description: "Création de sites web professionnels pour artisans, commerçants et auto-entrepreneurs. Installation complète 190€ + gestion 39€/mois sans engagement. Livraison en 48h.",
-    keywords: "création site web, site pas cher, site TPE, site artisan, site auto-entrepreneur, site internet professionnel, 190 euros, hébergement web, maintenance site"
+    keywords: [
+      "huîtres Marennes-Oléron",
+      "huîtres RICOU",
+      "ostréiculteur Oléron",
+      "fines de claire",
+      "spéciales de claire",
+      "huîtres IGP",
+      "huîtres La Châtre",
+      "huîtres Issoudun",
+      "huîtres Indre",
+      "achat huîtres gros",
+      "huîtres marchés Indre",
+      "huîtres Château-d'Oléron"
+    ],
+    og: {
+      title: "Les Huîtres RICOU - Ostréiculteurs depuis 5 générations | Marennes-Oléron IGP",
+      description: "Ostréiculteurs familiaux sur l'île d'Oléron depuis 5 générations. Fines et Spéciales de Claire IGP affinées dans nos claires. Vente professionnelle et sur marchés dans l'Indre."
+    }
   },
-
-  // THÈME
-  theme: {
-    primary: "blue", // Bleu confiance
-    secondary: "indigo", // Indigo professionnel
-    accent: "green", // Vert validation/succès
-    mode: "light" // Mode clair pour inspirer confiance
+  
+  // Informations pratiques
+  practical: {
+    saison: "Huîtres disponibles toute l'année",
+    meilleure_periode: "Septembre à mai (huîtres non laiteuses)",
+    commande: "Sur demande pour les professionnels",
+    minimum_commande: "À définir selon besoin",
+    expedition: "Possible selon quantités"
   }
 };
