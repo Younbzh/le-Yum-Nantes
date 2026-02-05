@@ -1,216 +1,210 @@
 export const siteConfig = {
-  name: "Wine Beer",
-  tagline: "Bar & Cave à Vins • Nozay",
-  slogan: "Nouvelle ère, nouvelle ambiance",
-  statusMessage: "Reprise et rénovation en cours • Nouvelle équipe • Réouverture prochaine",
-  description: "Bar à bières et cave à vins au cœur de Nozay. Large sélection de bières artisanales, rhums arrangés, retransmissions sportives et jeux conviviaux dans un espace de 375m² + terrasse de 200m².",
+  name: "Maison Bahia",
+  tagline: "Meubles & Décoration",
+  baseline: "L'art de vivre marocain au cœur du Mans",
+  description: "Boutique de décoration orientale au Mans. Mobilier original, artisanat marocain de qualité, céramiques, tapis berbères, luminaires. Un voyage inspiré par le Maroc pour sublimer votre intérieur.",
   
+  opening: {
+    date: "5 février 2026",
+    isNew: true,
+    announcement: "Ouverture officielle le jeudi 5 février 2026"
+  },
+
   contact: {
-    address: "12 Route de Nantes",
-    city: "Nozay",
-    postalCode: "44170",
-    fullAddress: "12 Route de Nantes, 44170 Nozay",
-    phone: "02 28 05 77 28",
-    email: null,
-    siret: "831-180-856-00013",
+    address: "8, rue du Cornet",
+    postalCode: "72000",
+    city: "Le Mans",
+    department: "Sarthe",
+    fullAddress: "8, rue du Cornet, 72000 Le Mans",
     coordinates: {
-      lat: 47.5683,
-      lng: -1.6189
+      lat: 47.9956,
+      lng: 0.1965
+    },
+    phone: null, // À compléter si disponible
+    email: null, // À compléter si disponible
+    website: null
+  },
+
+  access: {
+    tram: "Ligne T1 - Arrêt République (2 min à pied)",
+    bus: "Lignes multiples - Arrêt Éperon",
+    parking: [
+      "Parking République (couvert, payant)",
+      "Parking des Halles (couvert, payant)",
+      "Parking Filles-Dieu (couvert, payant)",
+      "Places de stationnement : Place de l'Éperon, Place de l'Hôpital"
+    ]
+  },
+
+  hours: {
+    monday: { open: false },
+    tuesday: { open: true, hours: "10h00 - 19h00" },
+    wednesday: { open: true, hours: "10h00 - 19h00" },
+    thursday: { open: true, hours: "10h00 - 19h00" },
+    friday: { open: true, hours: "10h00 - 19h00" },
+    saturday: { open: true, hours: "10h00 - 19h00" },
+    sunday: { open: false },
+    note: "Ouvert du mardi au samedi de 10h à 19h"
+  },
+
+  social: {
+    instagram: "https://www.instagram.com/maison.bahia72/",
+    instagramHandle: "@maison.bahia72",
+    facebook: "https://www.facebook.com/people/MAISON-BAHIA/61585205961546/",
+    pinterest: null
+  },
+
+  about: {
+    owner: "Laura Dauphin",
+    age: 27,
+    background: "Après avoir travaillé dans la restauration puis le commerce de prêt-à-porter, Laura a toujours rêvé d'ouvrir sa propre boutique de décoration.",
+    story: "Un voyage au Maroc avec son compagnon et la révélation d'une maladie ont été les déclencheurs qui ont poussé Laura à réaliser son rêve. Face au cancer, elle a pris conscience qu'il fallait profiter de chaque instant. Ouvrir ce magasin est devenu impérieux.",
+    inspiration: "Lors d'un séjour au Maroc, Laura a trouvé le fil conducteur qui l'anime depuis toujours : la décoration. De retour en France, elle a décidé de partager sa passion en créant Maison Bahia.",
+    philosophy: "Dans un petit espace très chaleureux, Laura présente des produits de qualité issus de l'artisanat et quelques pièces de marque de niche. Les collections évolueront sans cesse au gré de ses envies et de ses découvertes.",
+    values: [
+      "Artisanat de qualité",
+      "Authenticité marocaine",
+      "Collections évolutives",
+      "Sélection pointue",
+      "Prix accessibles",
+      "Ambiance chaleureuse"
+    ]
+  },
+
+  products: {
+    categories: [
+      {
+        name: "Luminaires",
+        description: "Lampes en raphia, luminaires en Doum, suspensions artisanales",
+        featured: true
+      },
+      {
+        name: "Tapis & Textiles",
+        description: "Tapis berbères authentiques, coussins, plaids",
+        featured: true
+      },
+      {
+        name: "Céramique",
+        description: "Céramiques faites à la main, vaisselle artisanale",
+        featured: true
+      },
+      {
+        name: "Mobilier",
+        description: "Meubles originaux aux accents orientaux",
+        featured: false
+      },
+      {
+        name: "Vannerie",
+        description: "Paniers Doum, accessoires en fibres naturelles",
+        featured: false
+      },
+      {
+        name: "Décoration",
+        description: "Objets déco, bougies, senteurs d'intérieur",
+        featured: false
+      }
+    ],
+    signature: {
+      color: "Bleu Majorelle",
+      description: "Verrerie cobalt, céramiques turquoise, textiles rayés bleu et blanc",
+      priceExample: "Fleurs de cire à partir de 7,50€"
+    },
+    evolution: "Les collections évoluent sans cesse au gré des envies et des découvertes"
+  },
+
+  occasions: {
+    current: {
+      name: "Saint-Valentin",
+      date: "Semaine prochaine",
+      suggestion: "Fleurs de cire, bougies parfumées, objets déco pour offrir"
     }
   },
 
-  venue: {
-    surfaceIndoor: "375 m²",
-    surfaceOutdoor: "200 m²",
-    totalSurface: "575 m²",
-    history: "Bâtiment historique : anciens salons de la maison Gergaud, lieu emblématique de Nozay connu de plusieurs générations pour ses mariages et fêtes de famille"
-  },
-
-  transition: {
-    status: "En cours de reprise",
-    newNameReveal: "Le nouveau nom sera révélé lors de la réouverture",
-    worksInProgress: true,
-    reopeningMessage: "Réouverture prévue dans quelques semaines"
-  },
-
-  previousOwner: {
-    name: "Rodolphe Gourdon",
-    duration: "9 ans de gestion",
-    opening: "2017",
-    legacy: "A fait du Wine Beer un lieu de référence à Nozay pour les soirées sportives et conviviales"
-  },
-
-  newOwners: [
+  features: [
     {
-      name: "Grégory Jubé",
-      age: 24,
-      role: "Co-gérant",
-      origin: "Nozéen d'origine",
-      background: "Diplômé barman, apprentissage au Barberousse (Nantes)",
-      vision: "Créer un lieu convivial pour tous, du mercredi au dimanche"
+      title: "Artisanat authentique",
+      description: "Produits de qualité issus de l'artisanat marocain"
     },
     {
-      name: "Guillermo Medina",
-      role: "Co-gérant & Associé",
-      background: "Ancien patron de Grégory au Barberousse",
-      expertise: "Expertise en gestion de bars et ambiance festive"
+      title: "Marques de niche",
+      description: "Sélection pointue de pièces uniques"
+    },
+    {
+      title: "Collections évolutives",
+      description: "Nouveautés régulières au gré des découvertes"
+    },
+    {
+      title: "Espace chaleureux",
+      description: "Petit cocon pour découvrir les produits dans une ambiance intimiste"
     }
   ],
 
-  hours: {
-    current: {
-      lundi: "Fermé",
-      mardi: { morning: "10h30 - 13h00", evening: "16h30 - 23h00" },
-      mercredi: { morning: "10h30 - 13h00", evening: "16h30 - 23h00" },
-      jeudi: { morning: "10h30 - 13h00", evening: "16h30 - 23h00" },
-      vendredi: { morning: "10h30 - 13h00", evening: "16h30 - 00h00" },
-      samedi: { morning: "10h30 - 13h00", evening: "16h30 - 00h00" },
-      dimanche: "17h00 - 23h00"
-    },
-    future: {
-      mercredi: "16h30 - 02h00",
-      jeudi: "16h30 - 02h00",
-      vendredi: "16h30 - 02h00",
-      samedi: "16h30 - 02h00",
-      dimanche: "16h30 - 02h00",
-      mardi: "Ouvertures exceptionnelles pour retransmissions sportives",
-      lundi: "Fermé"
+  press: [
+    {
+      title: "Laura ouvre un magasin de décoration au Mans",
+      quote: "Un voyage et ma maladie ont joué dans le fait de me lancer",
+      description: "À 27 ans, Laura Dauphin réalise son rêve en ouvrant Maison Bahia dans le centre-ville du Mans. Une boutique où elle propose objets de décoration et mobilier original aux accents exotiques."
     }
-  },
+  ],
 
-  offerings: {
-    beverages: [
-      {
-        category: "Bières",
-        description: "Large panel de bières artisanales et internationales",
-        icon: "beer"
-      },
-      {
-        category: "Vins",
-        description: "Sélection de vins de qualité, cave à vins",
-        icon: "wine"
-      },
-      {
-        category: "Rhums Arrangés",
-        description: "Spécialité maison : rhums arrangés aux saveurs variées",
-        icon: "flame"
-      },
-      {
-        category: "Spiritueux",
-        description: "Large choix de spiritueux et cocktails",
-        icon: "glass"
-      }
-    ],
-    food: [
-      {
-        title: "Planches Apéro",
-        description: "Charcuterie, fromages, accompagnements"
-      },
-      {
-        title: "Restauration Rapide",
-        description: "Croque-monsieur, snacking"
-      },
-      {
-        title: "Sushis",
-        description: "Disponibles sur place"
-      }
-    ],
-    activities: [
-      {
-        title: "Retransmissions Sportives",
-        description: "Grand écran pour tous les matchs importants",
-        icon: "tv"
-      },
-      {
-        title: "Jeux de Planches",
-        description: "Palet breton, Cornhole, Jeu de Tock",
-        icon: "target"
-      },
-      {
-        title: "Pétanque",
-        description: "Terrain disponible",
-        icon: "circle"
-      },
-      {
-        title: "Soirées à Thème",
-        description: "Concerts, karaoké, animations",
-        icon: "music"
-      }
+  location: {
+    region: "Pays de la Loire",
+    department: "Sarthe (72)",
+    city: "Le Mans",
+    district: "Centre-ville",
+    nearbyLandmarks: [
+      "Place de la République",
+      "Cathédrale Saint-Julien",
+      "Cité Plantagenêt"
     ]
-  },
-
-  ambiance: {
-    style: "Bar convivial et sportif",
-    capacity: "Grande capacité d'accueil",
-    atmosphere: "Ambiance chaleureuse et festive",
-    publicCible: "Tout public, du mercredi au dimanche",
-    strengths: [
-      "Espace spacieux (575m² au total)",
-      "Grande terrasse de 200m²",
-      "Lieu historique emblématique",
-      "Nouvelle équipe jeune et dynamique",
-      "Parfait pour les groupes"
-    ]
-  },
-
-  services: {
-    vente: "Vente à emporter disponible",
-    privatisation: "Possibilité de privatisation pour événements",
-    accessibilite: "Accès fauteuil roulant",
-    parking: "Parking à proximité"
   },
 
   seo: {
     keywords: [
-      "bar Nozay",
-      "Wine Beer Nozay",
-      "bar à bières Nozay 44170",
-      "cave à vins Nozay",
-      "retransmission matchs Nozay",
-      "bar sportif Loire-Atlantique",
-      "rhums arrangés Nozay",
-      "terrasse bar Nozay",
-      "soirée Nozay",
-      "bar convivial 44"
+      "décoration orientale Le Mans",
+      "boutique décoration marocaine Sarthe",
+      "artisanat marocain Le Mans",
+      "tapis berbère Le Mans",
+      "luminaire oriental Le Mans",
+      "céramique artisanale Le Mans",
+      "mobilier marocain",
+      "Maison Bahia",
+      "décoration ethnique Le Mans",
+      "bleu Majorelle",
+      "magasin décoration centre-ville Le Mans",
+      "artisanat authentique Sarthe"
     ],
-    metaDescription: "Wine Beer à Nozay : bar à bières et cave à vins. 575m² avec terrasse, retransmissions sportives, rhums arrangés, jeux conviviaux. Reprise par Grégory & Guillermo. Réouverture prochaine.",
+    title: "Maison Bahia - Décoration Orientale & Artisanat Marocain | Le Mans",
+    metaDescription: "Boutique de décoration orientale au centre du Mans. Mobilier original, céramiques, tapis berbères, luminaires. Artisanat marocain authentique. Ouverture 5 février 2026.",
     og: {
-      title: "Wine Beer - Bar & Cave à Vins Nozay",
-      description: "Nouvelle ère, nouvelle ambiance. Bar convivial au cœur de Nozay.",
-      type: "website",
-      locale: "fr_FR"
+      title: "Maison Bahia - L'art de vivre marocain au cœur du Mans",
+      description: "Découvrez notre sélection d'artisanat marocain : luminaires, tapis berbères, céramiques faites main. Ouverture le 5 février 2026 au 8 rue du Cornet.",
+      image: "/og-image-maison-bahia.jpg",
+      type: "website"
     }
   },
 
   branding: {
-    style: "Bar convivial moderne - Chaleureux, sportif, énergique",
-    colors: {
-      primary: "#2C5F2D", // Vert forêt
-      secondary: "#D4A574", // Ambre bière
-      accent: "#8B2E3F", // Bordeaux vin
-      dark: "#1A1A1A", // Noir profond
-      wood: "#8B6F47", // Bois chaleureux
-      light: "#F5F1E8" // Crème doux
-    },
-    vibe: "L'esprit d'un bar de quartier moderne avec l'âme d'un lieu historique"
+    primaryColor: "#A67B5B", // Terracotta (from logo)
+    secondaryColor: "#2B5F9E", // Bleu Majorelle
+    accentColor: "#5BA8A0", // Turquoise
+    neutralLight: "#F5EBE0", // Crème
+    neutralDark: "#3D3028", // Brun foncé
+    backgroundColor: "#FFFBF7", // Blanc cassé chaud
+    textColor: "#3D3028",
+    logoStyle: "Geometric Art Deco diamond pattern with nested shapes"
   },
 
-  testimonials: [
-    {
-      comment: "Super endroit très spacieux, les propriétaires sont très accueillants et très intéressants je recommande.",
-      author: "Client Google"
-    },
-    {
-      comment: "Établissement sympa avec une déco très cool niveau bière il y a du choix je recommande dans un petit village comme Nozay.",
-      author: "Client"
-    },
-    {
-      comment: "Le gérant est sympathique. Il conseille sur les boissons. En plus on peut venir avec notre sandwich le midi. Je recommande cet endroit les yeux fermés.",
-      author: "Habitué"
-    },
-    {
-      comment: "Très sympa, grand choix de bières et de vins. Belle terrasse. Nozay est un petit village très dynamique !",
-      author: "Visiteur"
-    }
-  ]
+  specialties: {
+    signature: "Bleu Majorelle",
+    materials: [
+      "Céramique faite main",
+      "Tapis berbères authentiques",
+      "Luminaires en Doum",
+      "Lampes en raphia",
+      "Vannerie naturelle"
+    ],
+    priceRange: "Accessible (ex: fleurs de cire à 7,50€)",
+    style: "Oriental contemporain, méditerranéen chic"
+  }
 };
