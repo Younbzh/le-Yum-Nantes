@@ -1,6 +1,6 @@
 import React from 'react';
 import { Phone, Instagram, Facebook, MapPin, Clock, Apple, Heart, Star, Smile, Check, TrendingUp, Zap } from 'lucide-react';
-import { siteConfig } from './config/siteConfig_LeYum';
+import { siteConfig } from './config/siteConfig';
 
 function App() {
   const SmoothieIcon = () => (
