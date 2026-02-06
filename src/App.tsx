@@ -1,6 +1,6 @@
 import React from 'react';
 import { Phone, Instagram, Facebook, MapPin, Clock, Apple, Heart, Star, Smile, Check, TrendingUp, Zap } from 'lucide-react';
-import { siteConfig } from './config/siteConfig';
+import { siteConfig } from './config/siteConfig_LeYum';
 
 function App() {
   const SmoothieIcon = () => (
@@ -38,7 +38,7 @@ function App() {
             <div className="flex justify-center mb-8 animate-bounce-slow">
               <div className="w-32 h-32 sm:w-40 sm:h-40 rounded-full bg-white p-4 shadow-2xl">
                 <img 
-                  src="/330931772_1729950474073708_5790428776233188790_n.jpg"
+                  src="/logo-leyum.jpg"
                   alt="Le Yum Logo"
                   className="w-full h-full object-contain"
                 />
@@ -187,7 +187,7 @@ function App() {
               <div className="relative">
                 <div className="aspect-square rounded-3xl overflow-hidden shadow-2xl border-8 border-white">
                   <img 
-                    src="/MjAyNjAyYThjNDYxOGMwYTdkYzdjZjliZDc1MzdiNzZhNzVhOWU.jpg"
+                    src="/elise-coach.jpg"
                     alt="Élise - Coach nutrition Le Yum"
                     className="w-full h-full object-cover"
                   />
