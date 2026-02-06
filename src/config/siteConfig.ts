@@ -1,210 +1,193 @@
 export const siteConfig = {
-  name: "Maison Bahia",
-  tagline: "Meubles & Décoration",
-  baseline: "L'art de vivre marocain au cœur du Mans",
-  description: "Boutique de décoration orientale au Mans. Mobilier original, artisanat marocain de qualité, céramiques, tapis berbères, luminaires. Un voyage inspiré par le Maroc pour sublimer votre intérieur.",
+  name: "Croûte",
+  fullName: "Fromagerie Croûte",
+  tagline: "Fromagerie engagée & décalée",
+  description: "Fromagerie artisanale à Nantes proposant des fromages locaux, bio et raisonnés. Restaurant le midi avec une offre fromagère sur place ou à emporter.",
   
-  opening: {
-    date: "5 février 2026",
-    isNew: true,
-    announcement: "Ouverture officielle le jeudi 5 février 2026"
-  },
-
   contact: {
-    address: "8, rue du Cornet",
-    postalCode: "72000",
-    city: "Le Mans",
-    department: "Sarthe",
-    fullAddress: "8, rue du Cornet, 72000 Le Mans",
-    coordinates: {
-      lat: 47.9956,
-      lng: 0.1965
-    },
-    phone: null, // À compléter si disponible
-    email: null, // À compléter si disponible
-    website: null
-  },
-
-  access: {
-    tram: "Ligne T1 - Arrêt République (2 min à pied)",
-    bus: "Lignes multiples - Arrêt Éperon",
-    parking: [
-      "Parking République (couvert, payant)",
-      "Parking des Halles (couvert, payant)",
-      "Parking Filles-Dieu (couvert, payant)",
-      "Places de stationnement : Place de l'Éperon, Place de l'Hôpital"
-    ]
+    address: "37 Rue Fouré, 44000 Nantes",
+    quartier: "Champ de Mars / Olivettes",
+    phone: "02 28 44 59 90",
+    instagram: "https://www.instagram.com/fromageriecroute/",
+    location: {
+      lat: 47.2184,
+      lng: -1.5536
+    }
   },
 
   hours: {
-    monday: { open: false },
-    tuesday: { open: true, hours: "10h00 - 19h00" },
-    wednesday: { open: true, hours: "10h00 - 19h00" },
-    thursday: { open: true, hours: "10h00 - 19h00" },
-    friday: { open: true, hours: "10h00 - 19h00" },
-    saturday: { open: true, hours: "10h00 - 19h00" },
-    sunday: { open: false },
-    note: "Ouvert du mardi au samedi de 10h à 19h"
+    schedule: {
+      lundi: "9h30 - 19h",
+      mardi: "9h30 - 19h",
+      mercredi: "9h30 - 19h",
+      jeudi: "9h30 - 19h",
+      vendredi: "9h30 - 19h",
+      samedi: "9h - 13h",
+      dimanche: "Fermé"
+    },
+    restaurant: "Service le midi du lundi au vendredi"
   },
 
-  social: {
-    instagram: "https://www.instagram.com/maison.bahia72/",
-    instagramHandle: "@maison.bahia72",
-    facebook: "https://www.facebook.com/people/MAISON-BAHIA/61585205961546/",
-    pinterest: null
+  founders: {
+    regis: {
+      name: "Régis Ferré",
+      origin: "Vendéen de Challans",
+      experience: "15 ans avec Pascal Bellevaire (Machecoul-Paris)",
+      expertise: "Expert fromager, formé sur les marchés de Vendée"
+    },
+    virginie: {
+      name: "Virginie Bercegeay",
+      background: "10 ans assistante du président de la CCI Nantes",
+      reconversion: "Passionnée de gastronomie, reconversion dans le fromage et la cuisine"
+    }
   },
 
-  about: {
-    owner: "Laura Dauphin",
-    age: 27,
-    background: "Après avoir travaillé dans la restauration puis le commerce de prêt-à-porter, Laura a toujours rêvé d'ouvrir sa propre boutique de décoration.",
-    story: "Un voyage au Maroc avec son compagnon et la révélation d'une maladie ont été les déclencheurs qui ont poussé Laura à réaliser son rêve. Face au cancer, elle a pris conscience qu'il fallait profiter de chaque instant. Ouvrir ce magasin est devenu impérieux.",
-    inspiration: "Lors d'un séjour au Maroc, Laura a trouvé le fil conducteur qui l'anime depuis toujours : la décoration. De retour en France, elle a décidé de partager sa passion en créant Maison Bahia.",
-    philosophy: "Dans un petit espace très chaleureux, Laura présente des produits de qualité issus de l'artisanat et quelques pièces de marque de niche. Les collections évolueront sans cesse au gré de ses envies et de ses découvertes.",
-    values: [
-      "Artisanat de qualité",
-      "Authenticité marocaine",
-      "Collections évolutives",
-      "Sélection pointue",
-      "Prix accessibles",
-      "Ambiance chaleureuse"
-    ]
+  story: {
+    meeting: "Janvier 2024",
+    opening: "Mai 2025",
+    concept: "Une fromagerie qui allie engagement local, produits raisonnés et une offre de restauration fromagère unique à Nantes. Les deux associés habitaient déjà le quartier et ont voulu créer un lieu qui manquait : une fromagerie avec restaurant.",
+    values: ["Local & Bio", "Bien-être animal", "Saisonnalité", "Prix accessibles"]
   },
 
-  products: {
-    categories: [
+  fromages: {
+    locaux: [
       {
-        name: "Luminaires",
-        description: "Lampes en raphia, luminaires en Doum, suspensions artisanales",
-        featured: true
+        name: "Tomme de Retz",
+        type: "Vache bio",
+        description: "Produite en bio dans la région"
       },
       {
-        name: "Tapis & Textiles",
-        description: "Tapis berbères authentiques, coussins, plaids",
-        featured: true
+        name: "Curé Nantais",
+        type: "Vache lait cru",
+        description: "Traditionnel fromage nantais, pâte tendre et croûte orange"
       },
       {
-        name: "Céramique",
-        description: "Céramiques faites à la main, vaisselle artisanale",
-        featured: true
+        name: "Pavé du Gois",
+        type: "Création Beillevaire",
+        description: "Hommage au célèbre passage de Noirmoutier"
       },
       {
-        name: "Mobilier",
-        description: "Meubles originaux aux accents orientaux",
-        featured: false
+        name: "Machecoulais",
+        type: "Vache lait cru",
+        description: "Petit pain de fromage à pâte molle en corbeille bois"
       },
       {
-        name: "Vannerie",
-        description: "Paniers Doum, accessoires en fibres naturelles",
-        featured: false
+        name: "Tomme au fenugrec",
+        type: "Vache bio",
+        description: "Cousin régional du Saint-Nectaire"
       },
       {
-        name: "Décoration",
-        description: "Objets déco, bougies, senteurs d'intérieur",
-        featured: false
+        name: "Chèvres du Hallay",
+        type: "Chèvre",
+        description: "Secs ou frais aux fleurs"
       }
     ],
-    signature: {
-      color: "Bleu Majorelle",
-      description: "Verrerie cobalt, céramiques turquoise, textiles rayés bleu et blanc",
-      priceExample: "Fleurs de cire à partir de 7,50€"
-    },
-    evolution: "Les collections évoluent sans cesse au gré des envies et des découvertes"
+    origine: ["France", "Espagne", "Italie"]
   },
 
-  occasions: {
-    current: {
-      name: "Saint-Valentin",
-      date: "Semaine prochaine",
-      suggestion: "Fleurs de cire, bougies parfumées, objets déco pour offrir"
-    }
+  restaurant: {
+    concept: "Cuisine végétarienne centrée sur le fromage",
+    formula: "Plat du jour + dessert",
+    planche: "Planche de fromages avec accompagnement de saison (salade ou velouté)",
+    philosophy: "Le fromage se suffit à lui-même - nous le sublimmons"
   },
 
-  features: [
-    {
-      title: "Artisanat authentique",
-      description: "Produits de qualité issus de l'artisanat marocain"
-    },
-    {
-      title: "Marques de niche",
-      description: "Sélection pointue de pièces uniques"
-    },
-    {
-      title: "Collections évolutives",
-      description: "Nouveautés régulières au gré des découvertes"
-    },
-    {
-      title: "Espace chaleureux",
-      description: "Petit cocon pour découvrir les produits dans une ambiance intimiste"
-    }
-  ],
-
-  press: [
-    {
-      title: "Laura ouvre un magasin de décoration au Mans",
-      quote: "Un voyage et ma maladie ont joué dans le fait de me lancer",
-      description: "À 27 ans, Laura Dauphin réalise son rêve en ouvrant Maison Bahia dans le centre-ville du Mans. Une boutique où elle propose objets de décoration et mobilier original aux accents exotiques."
-    }
-  ],
-
-  location: {
-    region: "Pays de la Loire",
-    department: "Sarthe (72)",
-    city: "Le Mans",
-    district: "Centre-ville",
-    nearbyLandmarks: [
-      "Place de la République",
-      "Cathédrale Saint-Julien",
-      "Cité Plantagenêt"
+  epicerie: {
+    products: [
+      "Œufs bio du Petit Chemin de la Ferme (Montaigu)",
+      "Yaourts locaux",
+      "Soda rennais Okipic",
+      "Vins des bords de Loire en conversion bio (Morille-Luneau)",
+      "Charcuterie (à venir)"
     ]
+  },
+
+  services: [
+    {
+      title: "Fromages artisanaux",
+      description: "Sélection de fromages locaux, bio et raisonnés de France, Espagne et Italie",
+      icon: "cheese"
+    },
+    {
+      title: "Restaurant le midi",
+      description: "Plat du jour végétarien sublimant le fromage + planches fromagères",
+      icon: "utensils"
+    },
+    {
+      title: "Épicerie fine",
+      description: "Produits locaux : œufs bio, yaourts, boissons artisanales, vins",
+      icon: "shopping-basket"
+    },
+    {
+      title: "AMAP & Livraison",
+      description: "Accueil de l'AMAP du quartier + livraison en vélocargo",
+      icon: "bike"
+    }
+  ],
+
+  engagement: [
+    {
+      title: "Local & Bio",
+      description: "Produits de Loire-Atlantique, Vendée et Bretagne prioritairement",
+      icon: "map-pin"
+    },
+    {
+      title: "Bien-être animal",
+      description: "Fromages issus d'élevages respectueux",
+      icon: "heart"
+    },
+    {
+      title: "Saisonnalité",
+      description: "Respect du rythme des saisons et des terroirs",
+      icon: "leaf"
+    },
+    {
+      title: "Prix justes",
+      description: "Accessibilité pour tous avec des prix négociés équitablement",
+      icon: "euro"
+    }
+  ],
+
+  reviews: {
+    rating: 5.0,
+    count: 22,
+    platform: "Google"
   },
 
   seo: {
+    title: "Croûte | Fromagerie Artisanale & Restaurant - Nantes Champ de Mars",
+    description: "Fromagerie artisanale à Nantes : fromages locaux bio, restaurant le midi, épicerie fine. Produits de Loire-Atlantique, Vendée, France, Espagne, Italie. Rue Fouré. ☎ 02 28 44 59 90",
     keywords: [
-      "décoration orientale Le Mans",
-      "boutique décoration marocaine Sarthe",
-      "artisanat marocain Le Mans",
-      "tapis berbère Le Mans",
-      "luminaire oriental Le Mans",
-      "céramique artisanale Le Mans",
-      "mobilier marocain",
-      "Maison Bahia",
-      "décoration ethnique Le Mans",
-      "bleu Majorelle",
-      "magasin décoration centre-ville Le Mans",
-      "artisanat authentique Sarthe"
+      "fromagerie Nantes",
+      "fromage artisanal Nantes",
+      "Croûte Nantes",
+      "restaurant fromager Nantes",
+      "fromage local Loire-Atlantique",
+      "Curé Nantais",
+      "fromagerie Champ de Mars",
+      "fromagerie Olivettes",
+      "fromage bio Nantes",
+      "restaurant midi Nantes",
+      "Régis Ferré",
+      "rue Fouré Nantes",
+      "épicerie fine Nantes",
+      "fromage terroir 44"
     ],
-    title: "Maison Bahia - Décoration Orientale & Artisanat Marocain | Le Mans",
-    metaDescription: "Boutique de décoration orientale au centre du Mans. Mobilier original, céramiques, tapis berbères, luminaires. Artisanat marocain authentique. Ouverture 5 février 2026.",
     og: {
-      title: "Maison Bahia - L'art de vivre marocain au cœur du Mans",
-      description: "Découvrez notre sélection d'artisanat marocain : luminaires, tapis berbères, céramiques faites main. Ouverture le 5 février 2026 au 8 rue du Cornet.",
-      image: "/og-image-maison-bahia.jpg",
+      title: "Croûte - Fromagerie Artisanale & Restaurant à Nantes",
+      description: "Fromages locaux, bio et raisonnés + restaurant le midi. L'engagement fromager au cœur du quartier Champ de Mars.",
+      image: "/og-image.jpg",
       type: "website"
     }
   },
 
-  branding: {
-    primaryColor: "#A67B5B", // Terracotta (from logo)
-    secondaryColor: "#2B5F9E", // Bleu Majorelle
-    accentColor: "#5BA8A0", // Turquoise
-    neutralLight: "#F5EBE0", // Crème
-    neutralDark: "#3D3028", // Brun foncé
-    backgroundColor: "#FFFBF7", // Blanc cassé chaud
-    textColor: "#3D3028",
-    logoStyle: "Geometric Art Deco diamond pattern with nested shapes"
-  },
-
-  specialties: {
-    signature: "Bleu Majorelle",
-    materials: [
-      "Céramique faite main",
-      "Tapis berbères authentiques",
-      "Luminaires en Doum",
-      "Lampes en raphia",
-      "Vannerie naturelle"
-    ],
-    priceRange: "Accessible (ex: fleurs de cire à 7,50€)",
-    style: "Oriental contemporain, méditerranéen chic"
+  colors: {
+    cream: "#f5ede4", // Crème fromage
+    ochre: "#d4a574", // Ocre pain
+    terracotta: "#c87850", // Terracotta croûte
+    wood: "#6b5744", // Bois marron
+    sage: "#8a9a7b", // Vert sauge
+    darkBrown: "#3d2f24", // Brun foncé
+    white: "#ffffff"
   }
 };
