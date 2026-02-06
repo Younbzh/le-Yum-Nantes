@@ -1,193 +1,186 @@
 export const siteConfig = {
-  name: "Croûte",
-  fullName: "Fromagerie Croûte",
-  tagline: "Fromagerie engagée & décalée",
-  description: "Fromagerie artisanale à Nantes proposant des fromages locaux, bio et raisonnés. Restaurant le midi avec une offre fromagère sur place ou à emporter.",
+  name: "Le Yum",
+  fullName: "Le Yum Shake Bar",
+  tagline: "Nouveau concept healthy • Coaching nutrition & sport",
+  description: "Premier concept australien en France : shake bar diététique + coaching nutrition personnalisé + sport. Perdez du poids avec notre méthode 80% nutrition / 20% sport.",
   
   contact: {
-    address: "37 Rue Fouré, 44000 Nantes",
-    quartier: "Champ de Mars / Olivettes",
-    phone: "02 28 44 59 90",
-    instagram: "https://www.instagram.com/fromageriecroute/",
+    address: "61 Quai Magellan, 44000 Nantes",
+    phone: "06 48 45 84 33",
+    instagram: "https://www.instagram.com/yum.shakebar/",
+    facebook: "https://www.facebook.com/p/Le-Yum-Shake-Bar-Nantes-100090433685734/",
     location: {
-      lat: 47.2184,
-      lng: -1.5536
+      lat: 47.20956,
+      lng: -1.5469752
     }
   },
 
   hours: {
     schedule: {
-      lundi: "9h30 - 19h",
-      mardi: "9h30 - 19h",
-      mercredi: "9h30 - 19h",
-      jeudi: "9h30 - 19h",
-      vendredi: "9h30 - 19h",
-      samedi: "9h - 13h",
+      lundi: "12h - 18h",
+      mardi: "12h - 18h",
+      mercredi: "12h - 18h",
+      jeudi: "12h - 18h",
+      vendredi: "12h - 18h",
+      samedi: "Fermé",
       dimanche: "Fermé"
     },
-    restaurant: "Service le midi du lundi au vendredi"
+    sport: "Séances de sport : Mercredi & Samedi"
   },
 
-  founders: {
-    regis: {
-      name: "Régis Ferré",
-      origin: "Vendéen de Challans",
-      experience: "15 ans avec Pascal Bellevaire (Machecoul-Paris)",
-      expertise: "Expert fromager, formé sur les marchés de Vendée"
-    },
-    virginie: {
-      name: "Virginie Bercegeay",
-      background: "10 ans assistante du président de la CCI Nantes",
-      reconversion: "Passionnée de gastronomie, reconversion dans le fromage et la cuisine"
-    }
+  founder: {
+    name: "Élise",
+    background: "Études en nutrition + communication & marketing",
+    origin: "Concept découvert en Australie",
+    role: "Coach en nutrition & sport",
+    mission: "Aider les Français : 1 sur 2 est en surpoids"
   },
 
-  story: {
-    meeting: "Janvier 2024",
-    opening: "Mai 2025",
-    concept: "Une fromagerie qui allie engagement local, produits raisonnés et une offre de restauration fromagère unique à Nantes. Les deux associés habitaient déjà le quartier et ont voulu créer un lieu qui manquait : une fromagerie avec restaurant.",
-    values: ["Local & Bio", "Bien-être animal", "Saisonnalité", "Prix accessibles"]
+  concept: {
+    origin: "Importé d'Australie - Premier en France",
+    formula: "80% nutrition + 20% sport",
+    philosophy: "Les deux sont essentiels pour des résultats durables",
+    guarantee: "Résultats garantis",
+    approach: "Conseils avec douceur et fermeté",
+    unique: "Concept unique alliant shake bar + coaching personnalisé"
   },
 
-  fromages: {
-    locaux: [
+  process: {
+    steps: [
       {
-        name: "Tomme de Retz",
-        type: "Vache bio",
-        description: "Produite en bio dans la région"
+        number: 1,
+        title: "Entretien initial",
+        description: "Discussion sur vos objectifs et le travail à effectuer"
       },
       {
-        name: "Curé Nantais",
-        type: "Vache lait cru",
-        description: "Traditionnel fromage nantais, pâte tendre et croûte orange"
+        number: 2,
+        title: "Coaching nutrition",
+        description: "Élise gère votre alimentation et vous guide sur vos efforts"
       },
       {
-        name: "Pavé du Gois",
-        type: "Création Beillevaire",
-        description: "Hommage au célèbre passage de Noirmoutier"
+        number: 3,
+        title: "Séances sport",
+        description: "Entraînements encadrés mercredi et samedi"
       },
       {
-        name: "Machecoulais",
-        type: "Vache lait cru",
-        description: "Petit pain de fromage à pâte molle en corbeille bois"
-      },
-      {
-        name: "Tomme au fenugrec",
-        type: "Vache bio",
-        description: "Cousin régional du Saint-Nectaire"
-      },
-      {
-        name: "Chèvres du Hallay",
-        type: "Chèvre",
-        description: "Secs ou frais aux fleurs"
+        number: 4,
+        title: "Suivi personnalisé",
+        description: "Conseils continus et ajustements réguliers"
       }
-    ],
-    origine: ["France", "Espagne", "Italie"]
+    ]
   },
 
-  restaurant: {
-    concept: "Cuisine végétarienne centrée sur le fromage",
-    formula: "Plat du jour + dessert",
-    planche: "Planche de fromages avec accompagnement de saison (salade ou velouté)",
-    philosophy: "Le fromage se suffit à lui-même - nous le sublimmons"
-  },
-
-  epicerie: {
+  shakeBar: {
+    concept: "Bar cosy où déguster nos créations",
     products: [
-      "Œufs bio du Petit Chemin de la Ferme (Montaigu)",
-      "Yaourts locaux",
-      "Soda rennais Okipic",
-      "Vins des bords de Loire en conversion bio (Morille-Luneau)",
-      "Charcuterie (à venir)"
+      {
+        name: "Smoothies maison",
+        description: "Succulents et diététiques, préparés avec soin",
+        icon: "smoothie"
+      },
+      {
+        name: "Thés de spécialité",
+        description: "Sélection de thés pour tous les moments",
+        icon: "tea"
+      },
+      {
+        name: "Shakes gourmands",
+        description: "Diététiques et savoureux",
+        icon: "shake"
+      }
     ]
   },
 
   services: [
     {
-      title: "Fromages artisanaux",
-      description: "Sélection de fromages locaux, bio et raisonnés de France, Espagne et Italie",
-      icon: "cheese"
+      title: "Coaching Nutrition",
+      description: "80% de la méthode : conseils alimentaires personnalisés, gestion de votre alimentation au quotidien",
+      icon: "apple",
+      percentage: 80
     },
     {
-      title: "Restaurant le midi",
-      description: "Plat du jour végétarien sublimant le fromage + planches fromagères",
-      icon: "utensils"
+      title: "Entraînement Sport",
+      description: "20% de la méthode : séances encadrées pour compléter votre transformation",
+      icon: "dumbbell",
+      percentage: 20
     },
     {
-      title: "Épicerie fine",
-      description: "Produits locaux : œufs bio, yaourts, boissons artisanales, vins",
-      icon: "shopping-basket"
+      title: "Shake Bar",
+      description: "Smoothies et thés pour se récompenser dans une ambiance conviviale",
+      icon: "cup",
+      percentage: null
     },
     {
-      title: "AMAP & Livraison",
-      description: "Accueil de l'AMAP du quartier + livraison en vélocargo",
-      icon: "bike"
+      title: "Suivi Personnalisé",
+      description: "Accompagnement continu et ajustements selon vos progrès",
+      icon: "chart",
+      percentage: null
     }
   ],
 
-  engagement: [
+  benefits: [
     {
-      title: "Local & Bio",
-      description: "Produits de Loire-Atlantique, Vendée et Bretagne prioritairement",
-      icon: "map-pin"
+      title: "Résultats garantis",
+      description: "Méthode éprouvée avec des résultats concrets",
+      icon: "check"
     },
     {
-      title: "Bien-être animal",
-      description: "Fromages issus d'élevages respectueux",
+      title: "Premier en France",
+      description: "Concept unique importé d'Australie",
+      icon: "star"
+    },
+    {
+      title: "Approche douce",
+      description: "Conseils fermes mais bienveillants",
       icon: "heart"
     },
     {
-      title: "Saisonnalité",
-      description: "Respect du rythme des saisons et des terroirs",
-      icon: "leaf"
-    },
-    {
-      title: "Prix justes",
-      description: "Accessibilité pour tous avec des prix négociés équitablement",
-      icon: "euro"
+      title: "Ambiance conviviale",
+      description: "Un lieu où l'on revient avec plaisir",
+      icon: "smile"
     }
   ],
 
-  reviews: {
-    rating: 5.0,
-    count: 22,
-    platform: "Google"
+  stats: {
+    formula: "80/20",
+    origin: "Australie",
+    target: "1 Français sur 2 en surpoids",
+    first: "Premier concept en France"
   },
 
   seo: {
-    title: "Croûte | Fromagerie Artisanale & Restaurant - Nantes Champ de Mars",
-    description: "Fromagerie artisanale à Nantes : fromages locaux bio, restaurant le midi, épicerie fine. Produits de Loire-Atlantique, Vendée, France, Espagne, Italie. Rue Fouré. ☎ 02 28 44 59 90",
+    title: "Le Yum Nantes | Shake Bar & Coaching Nutrition/Sport - Concept Australien",
+    description: "Premier concept australien en France : shake bar + coaching nutrition personnalisé + sport. Méthode 80% nutrition / 20% sport pour perdre du poids. Résultats garantis. ☎ 06 48 45 84 33",
     keywords: [
-      "fromagerie Nantes",
-      "fromage artisanal Nantes",
-      "Croûte Nantes",
-      "restaurant fromager Nantes",
-      "fromage local Loire-Atlantique",
-      "Curé Nantais",
-      "fromagerie Champ de Mars",
-      "fromagerie Olivettes",
-      "fromage bio Nantes",
-      "restaurant midi Nantes",
-      "Régis Ferré",
-      "rue Fouré Nantes",
-      "épicerie fine Nantes",
-      "fromage terroir 44"
+      "Le Yum Nantes",
+      "shake bar Nantes",
+      "coaching nutrition Nantes",
+      "perte de poids Nantes",
+      "smoothie diététique Nantes",
+      "coach nutrition Nantes",
+      "sport Nantes",
+      "concept australien Nantes",
+      "maigrir Nantes",
+      "healthy Nantes",
+      "Élise coach",
+      "quai Magellan Nantes",
+      "nutrition sport 80 20"
     ],
     og: {
-      title: "Croûte - Fromagerie Artisanale & Restaurant à Nantes",
-      description: "Fromages locaux, bio et raisonnés + restaurant le midi. L'engagement fromager au cœur du quartier Champ de Mars.",
+      title: "Le Yum - Shake Bar & Coaching Nutrition/Sport à Nantes",
+      description: "Concept australien unique : 80% nutrition + 20% sport. Smoothies, thés, coaching personnalisé. Résultats garantis !",
       image: "/og-image.jpg",
       type: "website"
     }
   },
 
   colors: {
-    cream: "#f5ede4", // Crème fromage
-    ochre: "#d4a574", // Ocre pain
-    terracotta: "#c87850", // Terracotta croûte
-    wood: "#6b5744", // Bois marron
-    sage: "#8a9a7b", // Vert sauge
-    darkBrown: "#3d2f24", // Brun foncé
-    white: "#ffffff"
+    jungle: "#00a86b", // Vert jungle principal
+    lime: "#98d90a", // Vert lime énergique
+    yellow: "#ffd700", // Jaune tropical
+    orange: "#ff8c42", // Orange smoothie
+    cream: "#faf8f3", // Crème doux
+    white: "#ffffff",
+    dark: "#1a3a2c" // Vert foncé
   }
 };
